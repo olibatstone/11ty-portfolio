@@ -1,0 +1,21 @@
+:root {
+    background-color: 333333;;
+}
+
+body {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: clamp(24px, calc((100vw - 540px) / 2), 72px) 0;
+    background-color: 333333;
+  }
+
+p {
+    color: red;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
