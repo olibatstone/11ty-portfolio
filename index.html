@@ -1,5 +1,7 @@
 ---
-title: Oli Batstone, UXC
+title: Oli Batstone
+description: Product design leader with 9 years of experience defining exceptional web and mobile software across sectors. Delivered effective user-centred UK & US experiences at speed with business leaders, designers, engineers and users in socially responsible companies. Currently leading the design of Health Insights, a polygenic risk prediction service by Genomics Ltd.
+image: /images/oli-photo.jpg
 ---
 
 <!DOCTYPE html>
@@ -9,22 +11,49 @@ title: Oli Batstone, UXC
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/bundle.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 <body>
-    <header>
+    <header class="intro">
+        <img class="profile" src="{{ image }}"/>
         <h1>{{ title }}</h1>
+        <span></span>
     </header>
     <main>
+        <h2>About</h2>
         <p>
-            Product design leader with 9 years of experience defining exceptional web and mobile software across sectors. Delivered effective user-centred UK & US experiences at speed with business leaders, designers, engineers and users in socially responsible companies.
+            {{ description }}
         </p>
+        <section class="key-skills"><h2>Key skills</h2>
+            <ul>
+                <li>UI/UX Design</li>
+                <li>Visual Design</li>
+                <li>Rapid Prototyping</li>
+                <li>User Research</li>
+                <li>Motion Design</li>
+                <li>Design Leadership</li>
+                <li>Product Strategy</li>
+                <li>Business Strategy</li>
+            </ul>
+        </section>
+        <section><h2>Selected work</h2>
         {%- for post in collections.post -%}
-            <h2><a href="{{ post.url }}">{{ post.data.title }}</h2></a>
-            <p>{{ post.data.description }}</p>
+            <article class="thumbnail">
+                <a href="{{ post.url }}">
+                    <img src="{{ post.data.image }}">
+                    <p><span class="title">{{ post.data.title }}. </span>{{ post.data.description }} →</p>
+                </a>
+            </article>
         {%- endfor -%}
+        </section>
     </main>
     <footer>
-        <p>&copy; 2023 Your Name</p>
+        <a class="button" href="#">↑ Back to top</a>
+        <section class="legals">
+            <p>© Oli Batstone 2025.</p>
+            <p>Built quickly with Eleventy.js.</p>
+        </section>
     </footer>
 </body>
 </html>
