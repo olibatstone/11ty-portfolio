@@ -3,7 +3,7 @@ layout: layout.html
 tags: post
 date: 2021-01-01
 title: Gifting garden memberships
-image: /images/gifting-detail-and-email-screens.png
+image: /images/gifting-garden-memberships/gifting-detail-and-email-screens.png
 description: I designed a garden membership gifting service, driving £32k revenue over Xmas 2021 and unblocking 13 gardens from partnering with us.
 ---
 ## Summary
@@ -22,17 +22,17 @@ I interviewed 5 people who'd gifted a digital membership in the last year, and 5
 
 The challenge was to convince a prospective gifter even the most elderly parent could receive and use it, design an experience where that was true, and create a digital gift that feels as meaningful as a physical one. I ran two team workshops to discuss this, talk technical needs and generate solution ideas to vote on.
 
-![Voted opportunities and ideas post-its](/images/voted-opportunities-and-ideas-post-its.jpg)
+![Voted opportunities and ideas post-its](/images/gifting-garden-memberships/voted-opportunities-and-ideas-post-its.jpg)
 
 ## Digital and meaningful
 
 We chose a multi-step flow asking gifters all we could to minimise work for receivers. We added a pre-start link to the receiving process so that a concerned gifter could check before entering the flow. To add emotional value, we supported personal messages and nicknames for v1.
 
-![Storymap of gifting to two adults](/images/storymap-of-gifting-to-two-adults.jpg)
+![Storymap of gifting to two adults](/images/gifting-garden-memberships/storymap-of-gifting-to-two-adults.jpg)
 
-![Key screens for gifting to two adults](/images/key-screens-for-gifting-to-two-adults.jpg)
+![Key screens for gifting to two adults](/images/gifting-garden-memberships/key-screens-for-gifting-to-two-adults.jpg)
 
-![Key receiving screens for two adults](/images/key-receiving-screens-for-two-adults.jpg)
+![Key receiving screens for two adults](/images/gifting-garden-memberships/key-receiving-screens-for-two-adults.jpg)
 
 ## Impact
 

@@ -3,12 +3,12 @@ layout: layout.html
 tags: post
 date: 2022-03-01
 title: Driving garden visitation
-image: /images/garden-home-page-mock-up.png
-description: I led the design of a new home page in March 2022, turning it into a destination and improving bounce rate by -5% over a two week period.
+image: /images/driving-garden-visitation/garden-home-page-mock-up.png
+description: I led the design of a new home page in March 2022, turning it into a destination and reducing bounce rate by 5% over a two week period.
 ---
 ## Summary
 
-We refreshed the home page in March 2022, turning it into a destination and improving bounce rate by -5% over a two week period. Working with four developers and a data scientist, I shared contribution of product, research, UX and UI work with another designer in 2022.
+We refreshed the home page in March 2022, turning it into a destination and reducing bounce rate by 5% over a two week period. Working with four developers and a data scientist, I shared contribution of product, research, UX and UI work with another designer in 2022.
 
 ## The need
 
@@ -28,19 +28,19 @@ The key challenges were selling Candide to first time users, engaging passive us
 
 We ported and re-organised the existing garden discovery content hidden in depth pages. For active visitors, we promoted search in visual hierarchy and functionality to get to a specific garden faster. For passive visitors we showed nearby gardens and encouraged garden tourism with nearby and popular regions. Working with marketing, we designed dynamic hero and editorial cards to inspire passive visitors and encourage repeat visits.
 
-![Final home page design comps at different viewport sizes](/images/garden-home-page-mock-ups.png)
+![Final home page design comps at different viewport sizes](/images/driving-garden-visitation/garden-home-page-mock-ups.png)
 
 ## Refreshing the brand
 
 We developed the brand identity to match our new value proposition. With upcoming priorities, we knew we wouldn't have the opportunity to do this retrospectively so included it as part of later project phases.
 
-![An exploration of hero, nearby gardens and editorial card sections](/images/garden-home-page-mock-up.png)
+![An exploration of hero, nearby gardens and editorial card sections](/images/driving-garden-visitation/garden-home-page-mock-up.png)
 
-![Iterating on hero layouts in core Candide colour ideas](/images/garden-home-page-hero-colours.png)
+![Iterating on hero layouts in core Candide colour ideas](/images/driving-garden-visitation/garden-home-page-hero-colours.png)
 
 I gave design updates to depth pages to match the visual language of the home page. We had to deprioritise these due to challenges with team capacity.
 
-![Refreshed garden map featuring adjusted garden cards](/images/garden-map-mock-up.png)
+![Refreshed garden map featuring adjusted garden cards](/images/driving-garden-visitation/garden-map-mock-up.png)
 
 ## Impact
 
