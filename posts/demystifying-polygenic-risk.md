@@ -40,4 +40,4 @@ One of the key factors for users when considering a test was accuracy. Usability
 ![A phone mock up of online instructions for using a test kit with a physical test kit box next to it alongside a test tube device.](/images/demystifying-polygenic-risk/home-page.png) <figcaption>Final home page</figcaption>
 
 ## Impact
-We launched the redeigned website at the end of 2023. We observed an increase in sign up rate of 5.3% in January 2024, indicating we met the needs of more users. The website, product name and visual identity received praise from US customers and led to greater interest from others.
+We launched the redesigned website at the end of 2023. We observed an increase in sign up rate of 5.3% in January 2024, indicating we met the needs of more users. The website, product name and visual identity received praise from US customers and led to greater interest from others.
