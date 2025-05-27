@@ -4,7 +4,7 @@ tags: post
 date: 2018-01-01
 title: Unlocking Uber transit
 image: /images/unlocking-uber-transit/buying-a-ticket-in-uber.png
-description: I designed a way to use our fare collection technology in partner apps, driving ticket sales for our client RTD by 39.2% and Uber trips in Denver starting or ending at a transport station by 11.6%.
+description: I designed a way to use our fare collection technology in partner apps, driving ticket sales for our client RTD by 39.2%.
 ---
 ## Summary
 
