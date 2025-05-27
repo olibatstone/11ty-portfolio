@@ -4,7 +4,7 @@ tags: post
 date: 2022-03-01
 title: Driving garden visitation
 image: /images/driving-garden-visitation/garden-home-page-mock-up.png
-description: I led the design of a new home page in March 2022, turning it into a destination and reducing bounce rate by 5% over a two week period.
+description: I led the design of a new home page, reducing bounce rate by 5%.
 ---
 ## Summary
 

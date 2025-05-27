@@ -4,25 +4,23 @@ tags: post
 date: 2023-01-01
 title: Tuning the test kit
 image: /images/tuning-the-test-kit/final-instructions-with-test-kit.png
-description: I designed a new physical test kit with online instructions, increasing usable samples by 9.7% in Nov 2023.
+description: I designed a new way to add a sample to a genetic test kit, increasing usable samples by 9.7%.
 ---
 
-![A phone mock up of online instructions for using a test kit with a physical test kit box next to it alongside a test tube device.](/images/tuning-the-test-kit/final-instructions-with-test-kit.png) <figcaption>Online instructions with test kit</figcaption>
-
 ## Summary
-I designed a new test kit experience for our genetic testing service Health Insights. This increased successful kit use by 9.7% as of Jan 2024 since launch in Nov 2023 compared to our initial pilot service. Ideating with a product owner, a product designer and two developers, I contributed and owned product, user research, UX, UI and packaging design work in 2023.
+I designed a new test kit experience for a genetic testing service Health Insights in November 2023. This increased successful kit use by 9.7% as of January 2024 compared to the initial pilot service. Ideating with a product owner, a product designer and two developers, I contributed and owned product, user research, UX, UI and packaging design work in 2023.
 
 ## Mistaken identity
-The pilot of our genetic testing service showed that 10% of 1367 test kits returned to the lab were invalid. 5% were unidentifiable - no written date of birth - and 5% had unusable or missing saliva samples. This meant the lab couldn't return test results to those users and had to order them a new kit. It would take weeks to arrive. Previous user research also showed that some users did not find instructions easy.
+In the pilot service, 10% of 1367 test kits returned to the lab were invalid. 5% were unidentifiable - no written date of birth - and 5% had unusable or missing saliva samples. This meant the lab couldn't return test results to those users and had to order them a new kit. It would take weeks to arrive. Previous user research also showed that some users did not find instructions easy.
 
 'Consider rewriting the instructions - they were tricky.'
 Sept 2022 questionnaire feedback
 
 ## A new way to separate saliva
-Working with developers, supply and lab teams, we found a new way for the lab to identify test kits instead of date of birth. For every test kit sent to users, we'd generate a unique code and print a copy on the tube inside. Before adding a sample, users would confirm their identity by entering the code into our website. If it matched the corresponding code in our database, we'd show instructions for giving a sample.
+Working with developers, supply and lab teams, we found a new way for the lab to identify test kits instead of date of birth. For every test kit sent to users, we'd generate a unique code and print a copy on the tube inside. Before adding a sample, users would confirm their identity by entering the code into a website. If it matched the corresponding code in our database, we'd show instructions for giving a sample.
 
 ## Test kit design overhaul
-To support this, we needed to signpost users to activate online from the test kit. We already needed to redesign the test kit to support our new brand identity, so there was a lot of creative opportunities for me to explore. We settled on a design based on informal feedback and printing cost considerations.
+To support this, we needed to signpost users to activate online from the test kit. We already needed to redesign the test kit to support our new brand identity, so there was a lot of opportunities for exploration. I settled on a design based on informal feedback and printing cost considerations.
 
 ![5 different test kit boxes with different designs and printing finishes.](/images/tuning-the-test-kit/test-kits.jpeg)<figcaption> Different kit designs and finishes - my colleague led on colour accuracy and finish testing</figcaption>
 

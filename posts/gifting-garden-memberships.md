@@ -4,7 +4,7 @@ tags: post
 date: 2021-01-01
 title: Gifting garden memberships
 image: /images/gifting-garden-memberships/gifting-detail-and-email-screens.png
-description: I designed a garden membership gifting service, driving £32k revenue over Xmas 2021 and unblocking 13 gardens from partnering with us.
+description: I designed a garden membership gifting service, driving £32k revenue and unblocking 13 gardens from partnering with us.
 ---
 ## Summary
 
