@@ -2,8 +2,8 @@
 layout: layout.html
 tags: post
 date: 2023-01-01
-title: Tuning the test kit
-image: /images/tuning-the-test-kit/final-instructions-with-test-kit.png
+title: Tuning a test kit
+image: /images/tuning-a-test-kit/final-instructions-with-test-kit.png
 description: I designed a new way to add a sample to a genetic test kit, increasing usable samples by 9.7%.
 ---
 
@@ -22,25 +22,25 @@ Working with developers, supply and lab teams, we found a new way for the lab to
 ## Test kit design overhaul
 To support this, we needed to signpost users to activate online from the test kit. We already needed to redesign the test kit to support our new brand identity, so there was a lot of opportunities for exploration. I settled on a design based on informal feedback and printing cost considerations.
 
-![5 different test kit boxes with different designs and printing finishes.](/images/tuning-the-test-kit/test-kits.jpeg)<figcaption> Different kit designs and finishes - my colleague led on colour accuracy and finish testing</figcaption>
+![5 different test kit boxes with different designs and printing finishes.](/images/tuning-a-test-kit/test-kits.jpeg)<figcaption> Different kit designs and finishes - my colleague led on colour accuracy and finish testing</figcaption>
 
-![The front of a test kit.](/images/tuning-the-test-kit/final-test-kit.jpg)<figcaption>The final test kit that I designed featuring the circular motif - a key brand element created by my colleague</figcaption>
+![The front of a test kit.](/images/tuning-a-test-kit/final-test-kit.jpg)<figcaption>The final test kit that I designed featuring the circular motif - a key brand element created by my colleague</figcaption>
 
-![The inside panel of a test kit showing instructions for use and a QR code to start.](/images/tuning-the-test-kit/test-kit-inside-panel.jpg)<figcaption>The final test kit inside panel that I designed featuring new instructions and QR code</figcaption>
+![The inside panel of a test kit showing instructions for use and a QR code to start.](/images/tuning-a-test-kit/test-kit-inside-panel.jpg)<figcaption>The final test kit inside panel that I designed featuring new instructions and QR code</figcaption>
 
 ## Online instructions
 Taking our test kit experience online meant we could define instructions with fewer steps and support browser preferences like larger text. This addressed issues with the paper instructions used in the pilot that may have contributed to unusable samples.
 
-![3 phone mock ups showing stages in the kit activation flow of opening the container, entering the code and spitting and closing.](/images/tuning-the-test-kit/instructions-previous-1.png)<figcaption>Exploring different types of illustrations and the right balance of information for each step.</figcaption>
+![3 phone mock ups showing stages in the kit activation flow of opening the container, entering the code and spitting and closing.](/images/tuning-a-test-kit/instructions-previous-1.png)<figcaption>Exploring different types of illustrations and the right balance of information for each step.</figcaption>
 
-![3 phone mock ups showing stages in the kit activation flow of opening the container, entering the code and spitting and closing.](/images/tuning-the-test-kit/instructions-previous-2.png)<figcaption>Another variant of online instructions.</figcaption>
+![3 phone mock ups showing stages in the kit activation flow of opening the container, entering the code and spitting and closing.](/images/tuning-a-test-kit/instructions-previous-2.png)<figcaption>Another variant of online instructions.</figcaption>
 
 ## Finding ways to test
 Our US kit supplier had logistical challenges in providing us with kit contents before launch. This meant we couldn't send prototype test kits to prospective users in the US. As an interim measure, we uncovered critical usability issues by testing with new colleagues in the US not familiar with our test kit. Staggered service invites, our new easy-to-adjust online instructions and a plan to test with users after launch gave us confidence in our approach.
 
-![6 phone mock ups showing all stages of the kit activation flow.](/images/tuning-the-test-kit/kit-activation-final-mobile.png)<figcaption>The final online kit instructions featuring custom illustrations</figcaption>
+![6 phone mock ups showing all stages of the kit activation flow.](/images/tuning-a-test-kit/kit-activation-final-mobile.png)<figcaption>The final online kit instructions featuring custom illustrations</figcaption>
 
-![1 desktop mock up showing the swapping and shaking stage of the online kit instructions.](/images/tuning-the-test-kit/kit-activation-final-desktop.png)<figcaption>Example desktop version</figcaption>
+![1 desktop mock up showing the swapping and shaking stage of the online kit instructions.](/images/tuning-a-test-kit/kit-activation-final-desktop.png)<figcaption>Example desktop version</figcaption>
 
 ## More good spits
 Out of 518 kits delivered, the rate of unusable samples reduced to 0.5%, an improvement of 4.5%. The rate of unidentifiable samples shrank to 0.2%, an improvement of 4.8%. This meant an overall increase in successful samples by 9.7%.
