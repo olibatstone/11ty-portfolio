@@ -213,4 +213,9 @@ footer {
   p {
     font-size: 14px;
   }
+  a {
+    font-size: 14px;
+    margin-right: 16px;
+    padding-bottom: 32px;
+  }
 }
