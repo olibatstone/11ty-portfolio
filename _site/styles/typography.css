@@ -1,0 +1,53 @@
+@import "./variables.css";
+
+:root {
+    font-family: var(--font-family);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.page-title, h1, h2, a {
+    color: var(--header-color);
+    font-weight: 400;
+    margin: var(--space-lg) 0 var(--space-sm) 0;
+}
+
+span {
+    color: var(--header-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-title {
+    font-size: 1.8rem;
+}
+
+h1, h2, p, a, ul, li, blockquote {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+figcaption {
+    font-size: 1.3rem;
+    padding: var(--space-xs) 0 var(--space-lg) 0;
+}
+
+blockquote {
+    margin: 0 0 var(--space-md) 0;
+}
+
+p, ul, blockquote, figcaption {
+    color: var(--text-color);
+}
+
+p {
+    margin: 0;
+}
+
+.legals p {
+    margin-top: var(--space-md);
+}

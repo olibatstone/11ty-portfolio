@@ -1,0 +1,41 @@
+@import "./variables.css";
+@import "./typography.css";
+
+.button {
+    display: inline-block;
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--shared-box-shadow);
+    padding: var(--space-xs) var(--space-sm);
+    margin: 0 24px 0 0;
+}
+
+.small-thumbnail {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  color: var(--grey1);
+  background-color: var(--grey2);
+  padding: 16px 0;
+  border-radius: 8px;
+}
+
+.small-thumbnail img {
+  width: 160px;
+  height: auto;
+  margin: 0;
+}
+
+.small-thumbnail p {
+  margin: 0; /* Remove default margin */
+  font-size: 14px; /* Adjust text size */
+  line-height: 1.6; /* Adjust line height for readability */
+}
+
+.thumbnail a p {
+  margin-top: 8px;
+}
+
+.actions {
+  margin-top: 32px;
+}

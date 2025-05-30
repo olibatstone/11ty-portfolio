@@ -1,3 +1,3 @@
-export default function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("bundle.css");
-  };
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("styles/");
+};

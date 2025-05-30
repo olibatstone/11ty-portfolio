@@ -1,0 +1,14 @@
+:root {
+    --font-family: Inter, sans-serif;
+    --background-color: #222;
+    --header-color: #eee;
+    --text-color: #bbb;
+    --decorative-color: #333;
+    --shared-box-shadow: 0 0 0 1px rgb(255 255 255 / 0.1) inset;
+    --border-radius-sm: 8px;
+    --border-radius-md: 14px;
+    --space-lg: 40px;
+    --space-md: 24px;
+    --space-sm: 16px;
+    --space-xs: 8px;
+}
