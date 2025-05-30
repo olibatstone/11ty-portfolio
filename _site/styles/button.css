@@ -6,7 +6,7 @@
     border-radius: var(--border-radius-sm);
     box-shadow: var(--shared-box-shadow);
     padding: var(--space-xs) var(--space-sm);
-    margin: 0 24px 0 0;
+    margin: 0 var(--space-md) 0 0;
 }
 
 .small-thumbnail {

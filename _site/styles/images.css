@@ -3,7 +3,7 @@
 img {
     width: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: var(--border-radius-sm);
     margin: var(--space-lg) 0 0 0;
 }
 
@@ -17,8 +17,8 @@ img {
 .intro {
     display: flex;
     flex-direction: row;
-    gap: 32px;
-    margin: 40px 0;
+    gap: var(--space-md);
+    margin: var(--space-md) 0;
     .page-title {
         margin: 0;
     }
