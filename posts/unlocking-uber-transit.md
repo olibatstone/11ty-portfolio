@@ -3,7 +3,7 @@ layout: layout.html
 tags: post
 date: 2018-01-01
 title: Unlocking Uber transit
-image: /images/unlocking-uber-transit/buying-a-ticket-in-uber.png
+image: /images/unlocking-uber-transit/5.webp
 description: I designed a way to use our fare collection technology in partner apps, driving ticket sales for our client RTD by 39.2%.
 ---
 ## Summary

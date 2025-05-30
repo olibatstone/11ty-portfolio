@@ -22,6 +22,12 @@ body {
   padding: 32px 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  opacity: 0;
+  transition: opacity 0.8s ease 0.5;
+}
+
+body.fade-in {
+  opacity: 1;
 }
 
 @media only screen and (max-width:540px) {

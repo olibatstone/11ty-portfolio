@@ -3,7 +3,7 @@ layout: layout.html
 tags: post
 date: 2022-03-01
 title: Driving garden visitation
-image: /images/driving-garden-visitation/garden-home-page-mock-up.png
+image: /images/driving-garden-visitation/3.webp
 description: I led the design of a new home page, reducing bounce rate by 5%.
 ---
 ## Summary

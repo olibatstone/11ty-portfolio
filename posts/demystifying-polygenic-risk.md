@@ -3,7 +3,7 @@ layout: layout.html
 tags: post
 date: 2025-05-10
 title: Demystifying polygenic risk
-image: /images/demystifying-polygenic-risk/placeholder.png
+image: /images/demystifying-polygenic-risk/1.webp
 description: I redesigned the marketing website of a genetic testing service, boosting sign up rate by 5.3%.
 ---
 

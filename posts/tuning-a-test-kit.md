@@ -3,7 +3,7 @@ layout: layout.html
 tags: post
 date: 2023-01-01
 title: Tuning a test kit
-image: /images/tuning-a-test-kit/final-instructions-with-test-kit.png
+image: /images/tuning-a-test-kit/2.webp
 description: I designed a new way to add a sample to a genetic test kit, increasing usable samples by 9.7%.
 ---
 
