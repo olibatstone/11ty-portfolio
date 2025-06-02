@@ -9,13 +9,29 @@
   margin: 0 var(--space-md) 0 0;
 }
 
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: 4px 0;
+}
+
+.thumbnail {
+    li, img, a {
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      margin: 2px 0 0 0;
+    }
+}
+
 .small-thumbnail {
   display: flex;
   align-items: center;
   gap: 16px;
   margin: 0;
   color: var(--grey1);
-  background-color: var(--grey2);
   padding: 16px 0;
   border-radius: 8px;
 }
@@ -32,11 +48,7 @@
   line-height: 1.6; /* Adjust line height for readability */
 }
 
-.thumbnail a p {
-  margin-top: 8px;
-}
-
-.actions {
+.actions, .legals {
   margin-top: 40px;
 }
 
