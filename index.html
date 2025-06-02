@@ -7,6 +7,7 @@ image: /images/oli-photo.jpeg
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +21,14 @@ image: /images/oli-photo.jpeg
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
+
 <body>
     <header class="intro">
-        <img class="profile" src="{{ image }}"/>
+        <img class="profile" src="{{ image }}" />
         <summary class="summary">
-        <h1 class="page-title">{{ title }}</h1>
-        <p>{{ tagline }}</p>
-        <p>Available from June 2025.</p>
+            <h1 class="page-title">{{ title }}</h1>
+            <p>{{ tagline }}</p>
+            <p>Available from June 2025.</p>
         </summary>
     </header>
     <main>
@@ -34,7 +36,8 @@ image: /images/oli-photo.jpeg
         <p>
             {{ about }}
         </p>
-        <section class="key-skills"><h2>Key skills</h2>
+        <section class="key-skills">
+            <h2>Key skills</h2>
             <ul>
                 <li>UI Design</li>
                 <li>UX Design</li>
@@ -49,33 +52,55 @@ image: /images/oli-photo.jpeg
                 <li>Figma</li>
                 <li>VS Code</li>
         </section>
-        <section><h2>Selected work</h2>
-        {%- for post in collections.post reversed -%}
+        <section>
+            <h2>Selected work</h2>
+            {%- for post in collections.post reversed -%}
             <article class="thumbnail">
                 <a href="{{ post.url }}">
                     <img src="{{ post.data.image }}">
-                    <p><span class="title">{{ post.data.title }}. </span>{{ post.data.description }} →</p>
+                    <p><span>{{ post.data.title }}. </span>{{ post.data.description }} →</p>
                 </a>
             </article>
-        {%- endfor -%}
+            {%- endfor -%}
+        </section>
+        <!-- <section>
+            <h2>Recommendations</h2>
+            {%- for recommendation in collections.recommendation reversed -%}
+            <div class="recommendation">
+                <p><span>{{ recommendation.data.name }}. </span>{{ recommendation.data.role }}.</p>
+                <p>{{ recommendation.data.quote }}</p>
+            </div>
+            {%- endfor -%}
+
+            <a href="linkedin.com/in/olibatstone">More recommendations on LinkedIn</a>
+            
+        </section> -->
+
+        <section>
+            <h2>Contact</h2>
+            <ul class="links">
+                <a href="mailto:hi@olibatstone.com">hi@olibatstone.com</a>
+                <a href="https://linkedin.com/in/olibatstone">LinkedIn</a>
+                <a href="https://github.com/olibatstone">Github</a>       
+            </ul>
+        </section>
+        <section class="actions">
+            <a class="button" href="#">↑ Back to top</a>
         </section>
     </main>
     <footer>
-            <section class="actions">
-        <a class="button" href="#">↑ Back to top</a>
-        </section>
-        
         <section class="legals">
             <p>Developed by hand. Debugged with Copilot.</p>
             <p>© Oli Batstone 2025. All rights reserved.</p>
         </section>
     </footer>
-<script>
-  window.addEventListener('DOMContentLoaded', function() {
-    document.body.classList.add('fade-in');
-  });
-</script>
-<!-- 100% privacy-first analytics -->
-<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            document.body.classList.add('fade-in');
+        });
+    </script>
+    <!-- 100% privacy-first analytics -->
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
+
 </html>

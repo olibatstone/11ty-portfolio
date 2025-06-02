@@ -2,11 +2,11 @@
 @import "./typography.css";
 
 .button {
-    display: inline-block;
-    border-radius: var(--border-radius-sm);
-    box-shadow: var(--shared-box-shadow);
-    padding: var(--space-xs) var(--space-sm);
-    margin: 0 var(--space-md) 0 0;
+  display: inline-block;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shared-box-shadow);
+  padding: var(--space-xs) var(--space-sm);
+  margin: 0 var(--space-md) 0 0;
 }
 
 .small-thumbnail {
@@ -37,5 +37,15 @@
 }
 
 .actions {
-  margin-top: 32px;
+  margin-top: 40px;
+}
+
+.links {
+  display: flex;
+  margin: 0;
+  flex-direction: row;
+  gap: 16px;
+  a {
+    margin: 0;
+  }
 }
