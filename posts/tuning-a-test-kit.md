@@ -13,8 +13,7 @@ I designed a new test kit experience for Health Insights, a genetic testing serv
 ## Mistaken identity
 In the pilot service, 10% of 1367 test kits returned to the lab were invalid. 5% were unidentifiable - no written date of birth - and 5% had unusable or missing saliva samples. This meant the lab couldn't return test results to those users and had to order them a new kit. It would take weeks to arrive. Previous user research also showed that some users did not find instructions easy.
 
-'Consider rewriting the instructions - they were tricky.'
-Sept 2022 questionnaire feedback
+> 'Consider rewriting the instructions - they were tricky.' - Sept 2022 questionnaire feedback
 
 ## A new way to separate saliva
 Working with developers, supply and lab teams, we found a new way for the lab to identify test kits instead of date of birth. For every test kit sent to users, we'd generate a unique code and print a copy on the tube inside. Before adding a sample, users would confirm their identity by entering the code into a website. If it matched the corresponding code in our database, we'd show instructions for giving a sample.
