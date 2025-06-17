@@ -28,11 +28,11 @@ The challenge was to convince a prospective gifter even the most elderly parent 
 
 We chose a multi-step flow asking gifters all we could to minimise work for receivers. We added a pre-start link to the receiving process so that a concerned gifter could check before entering the flow. To add emotional value, we supported personal messages and nicknames for v1.
 
-![Storymap of gifting to two adults](/images/gifting-garden-memberships/storymap-of-gifting-to-two-adults.jpg)
+![Several post-its on a digital whiteboard showing the user journey of gifting to two adults](/images/gifting-garden-memberships/storymap-of-gifting-to-two-adults.jpg)<figcaption>Storymap of gifting to two adults</figcaption>
 
-![Key screens for gifting to two adults](/images/gifting-garden-memberships/key-screens-for-gifting-to-two-adults.jpg)
+![4 mobile website screens showing each stage of gifting a membership](/images/gifting-garden-memberships/key-screens-for-gifting-to-two-adults.jpg)<figcaption>Key screens for gifting to two adults</figcaption>
 
-![Key receiving screens for two adults](/images/gifting-garden-memberships/key-receiving-screens-for-two-adults.jpg)
+![4 mobile website screens showing each stage of receiving a membership](/images/gifting-garden-memberships/key-receiving-screens-for-two-adults.jpg)<figcaption>Key receiving screens for two adults</figcaption>
 
 ## Impact
 

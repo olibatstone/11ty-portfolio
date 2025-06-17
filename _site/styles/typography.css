@@ -29,6 +29,7 @@ a {
 h1, h2, p, a, ul, li, blockquote {
     font-size: 1.4rem;
     line-height: 1.6;
+    list-style-type: none;
 }
 
 figcaption {

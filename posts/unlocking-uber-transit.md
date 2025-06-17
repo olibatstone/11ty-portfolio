@@ -38,7 +38,7 @@ We launched the SDK in May 2019, first to RTD Denver, Uber and later MTA. Conduc
 
 ![RTD Denver's ticket UI in Uber via our SDK](/images/unlocking-uber-transit/rta-via-uber-with-our-SDK.jpg)<figcaption>RTD Denver's ticket UI in Uber via our SDK</figcaption>
 
-![New ticket UI in client apps from Italy, the Netherlands and the UK](/images/unlocking-uber-transit/new-ticket-ui-in-other-apps.png)<figcaption> New ticket UI in client apps from Italy, the Netherlands and the UK</figcaption>
+![New ticket UI in client apps from Italy, the Netherlands and the UK](/images/unlocking-uber-transit/new-ticket-ui-in-other-apps.png)<figcaption>New ticket UI in client apps from Italy, the Netherlands and the UK</figcaption>
 
 ## Learnings
 
