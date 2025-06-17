@@ -22,7 +22,7 @@ I interviewed 5 people who'd gifted a digital membership in the last year, and 5
 
 The challenge was to convince a prospective gifter even the most elderly parent could receive and use it, design an experience where that was true, and create a digital gift that feels as meaningful as a physical one. I ran two team workshops to discuss this, talk technical needs and generate solution ideas to vote on.
 
-![Voted opportunities and ideas post-its](/images/gifting-garden-memberships/voted-opportunities-and-ideas-post-its.jpg)
+![Several ideas and opportunities post-its that have been voted on with emoji](/images/gifting-garden-memberships/voted-opportunities-and-ideas-post-its.jpg)<figcaption>Voted opportunities and ideas post-its</figcaption>
 
 ## Digital and meaningful
 
