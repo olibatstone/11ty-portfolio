@@ -4,7 +4,7 @@ tags: post
 date: 2022-03-01
 title: Driving garden visitation
 image: /images/driving-garden-visitation/3.webp
-description: I led the design of a new home page, reducing bounce rate by 5%.
+description: I led the redesign of a garden tourism website, reducing bounce rate by 5%.
 ---
 ## Summary
 
@@ -20,13 +20,11 @@ My colleague and I collected 85 survey responses via Hotjar to understand existi
 
 ## How do people plan days out?
 
-We then interviewed 5 people to learn why they visited a public garden and how they chose it. We noted a conflation of gardens and parks with price as a blocker for people used to free green spaces. And that people started their search with Google Maps and other curation services.
-
-The key challenges were selling Candide to first time users, engaging passive users with gardens they could visit and making it easy for prospective clients to find the information they need to partner with us.
+I then interviewed 5 people to learn why they visited a public garden and how they chose it. We noted a conflation of gardens and parks with price as a blocker for people used to free green spaces. And that people started their search with Google Maps and other curation services. The key challenges were selling Candide to first time users, engaging passive users with gardens they could visit and making it easy for prospective clients to find the information they need to partner with us.
 
 ## Spotlight on discovery
 
-We ported and re-organised the existing garden discovery content hidden in depth pages. For active visitors, we promoted search in visual hierarchy and functionality to get to a specific garden faster. For passive visitors we showed nearby gardens and encouraged garden tourism with nearby and popular regions. Working with marketing, we designed dynamic hero and editorial cards to inspire passive visitors and encourage repeat visits.
+I ported and re-organised the existing garden discovery content hidden in depth pages. For active visitors, I promoted search in visual hierarchy and functionality to get to a specific garden faster. For passive visitors we showed nearby gardens and encouraged garden tourism with nearby and popular regions. Working with marketing, we designed dynamic hero and editorial cards to inspire passive visitors and encourage repeat visits.
 
 ![Final home page design comps at different viewport sizes](/images/driving-garden-visitation/garden-home-page-mock-ups.png)
 
