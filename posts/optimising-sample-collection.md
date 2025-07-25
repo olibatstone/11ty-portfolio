@@ -5,6 +5,7 @@ date: 2023-01-01
 title: Optimising sample collection
 image: /images/optimising-sample-collection/2.webp
 description: I designed a new way to add a sample to a genetic test kit, increasing usable samples by 9.7%.
+meta-description: increasing usable samples by 9.7%.
 ---
 
 ## Summary

@@ -5,6 +5,7 @@ date: 2022-03-01
 title: Driving garden visitation
 image: /images/driving-garden-visitation/3.webp
 description: I led the redesign of a garden tourism website, reducing bounce rate by 5%.
+meta-description: reducing bounce rate by 5%.
 ---
 ## Summary
 

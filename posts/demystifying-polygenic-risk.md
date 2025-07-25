@@ -4,7 +4,8 @@ tags: post
 date: 2025-05-10
 title: Demystifying polygenic risk
 image: /images/demystifying-polygenic-risk/1.webp
-description: I redesigned the marketing website of a genetic testing service, boosting sign up rate by 5.3%.
+description: I redesigned the marketing website of a genetic testing service, boosting sign-up rate by 5.3%.
+meta-description: boosting sign-up rate by 5.3%.
 ---
 
 ## Summary

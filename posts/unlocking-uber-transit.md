@@ -5,6 +5,7 @@ date: 2018-01-01
 title: Unlocking Uber transit
 image: /images/unlocking-uber-transit/5.webp
 description: I designed a way to use our fare collection technology in partner apps, driving revenue for our client by 39.2%.
+meta-description: driving revenue for our client by 39.2%.
 ---
 ## Summary
 
