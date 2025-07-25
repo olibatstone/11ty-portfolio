@@ -8,10 +8,10 @@ description: I redesigned the marketing website of a genetic testing service, bo
 ---
 
 ## Summary
-I redesigned the marketing website of a genetic testing service to support a pilot scale-up in November 2023. This boosted sign up rate by 5.3% compared to the pilot. I owned user research including usability testing, UX design, UI design and motion graphics design work.
+I redesigned the marketing website of a genetic testing service to support a pilot scale-up in November 2023. This boosted sign up rate by 5.3% compared to the pilot. I contributed all user research including usability testing, UX design, UI design and motion graphics design work.
 
 ## The need
-We invited 3000 MassMutual policyholders to discover their genetic risk of common health conditions as a free benefit in 2022. 54% signed up. A survey showed the remainder needed additional assurances including on privacy, hidden costs and the company behind the test. In preparation for a scale-up, we needed to meet these needs to maximise sign up rates and increase our customer value proposition.
+We invited 3000 policyholders to discover their genetic risk of common health conditions as a free benefit in 2022. 54% signed up. A survey showed the remainder needed additional assurances including on privacy, hidden costs and the company behind the test. In preparation for a scale-up, we needed to meet these needs to maximise sign-up rates and increase our customer value proposition.
 
 ## A new product identity
 We also needed a product name and visual brand identity - I suggested Health Insights which was favoured in preference testing. On internal agreement, I led the creation of the visual identity in collaboration with my colleague. He created a circular motif to represent multiple polygenic risk scores in the abstract sense for use across touch points. I iterated on his concept to see whether it could also be modified to communicate the test more literally as a hero image.
@@ -40,4 +40,4 @@ One of the key factors for users when considering a test was accuracy. Usability
 ![A phone mock up of online instructions for using a test kit with a physical test kit box next to it alongside a test tube device.](/images/demystifying-polygenic-risk/home-page.png) <figcaption>Final home page</figcaption>
 
 ## Impact
-We launched the redesigned website at the end of 2023. We observed an increase in sign up rate of 5.3% in January 2024, indicating we met the needs of more users. The website, product name and visual identity received praise from US customers and led to greater interest from others.
+We launched the redesigned website at the end of 2023. We observed an increase in sign-up rate of 5.3% in January 2024, indicating we met the needs of more users. The website, product name and visual identity received praise from US customers and led to greater interest from others.

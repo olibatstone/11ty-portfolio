@@ -12,11 +12,7 @@ We refreshed the home page in March 2022, turning it into a destination and redu
 
 ## The need
 
-Our home page didn't reflect the garden visitation proposition since exiting the marketplace business. We needed to reinvent Candide as a destination to drive our core goals of 200 clients and increased ticket revenue by 2023.
-
-## Who visited the website
-
-My colleague and I collected 85 survey responses via Hotjar to understand existing user needs. Most common were accessing ticket products, second discovering new gardens, and third getting help.
+Our home page didn't reflect the garden visitation proposition since exiting the marketplace business. We needed to reinvent Candide as a destination to drive our core goals of 200 clients and increased ticket revenue by 2023. To start, my colleague and I collected 85 survey responses via Hotjar to understand existing user needs. Most common were accessing ticket products, second discovering new gardens, and third getting help.
 
 ## How do people plan days out?
 
