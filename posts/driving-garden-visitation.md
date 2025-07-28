@@ -23,19 +23,19 @@ I then interviewed 5 people to learn why they visited a public garden and how th
 
 I ported and re-organised the existing garden discovery content hidden in depth pages. For active visitors, I promoted search in visual hierarchy and functionality to get to a specific garden faster. For passive visitors we showed nearby gardens and encouraged garden tourism with nearby and popular regions. Working with marketing, we designed dynamic hero and editorial cards to inspire passive visitors and encourage repeat visits.
 
-![Final home page design comps at different viewport sizes](/images/driving-garden-visitation/garden-home-page-mock-ups.png)
+![A website design at different screen sizes showing public gardens to visit organised by category and proximity, featuring a large image of snowdrops at the top and a search function.](/images/driving-garden-visitation/garden-home-page-mock-ups.png) <figcaption>The final home page I designed.</figcaption>
 
 ## Refreshing the brand
 
 We developed the brand identity to match our new value proposition. With upcoming priorities, we knew we wouldn't have the opportunity to do this retrospectively so included it as part of later project phases.
 
-![An exploration of hero, nearby gardens and editorial card sections](/images/driving-garden-visitation/garden-home-page-mock-up.png)
+![A website design at desktop size showing an image of snowdrops eclipsed in an organic circular shape with a light orange and blue colour scheme.](/images/driving-garden-visitation/garden-home-page-mock-up.png) <figcaption>My design explorations of hero, nearby gardens and editorial card sections</figcaption>
 
-![Iterating on hero layouts in core Candide colour ideas](/images/driving-garden-visitation/garden-home-page-hero-colours.png)
+![3 website designs on a mobile screen each with a different colour scheme of orange, maroon and azure.](/images/driving-garden-visitation/garden-home-page-hero-colours.png) <figcaption>My iterations on hero layouts in core Candide brand colour ideas</figcaption>
 
 I gave design updates to depth pages to match the visual language of the home page. We had to deprioritise these due to challenges with team capacity.
 
-![Refreshed garden map featuring adjusted garden cards](/images/driving-garden-visitation/garden-map-mock-up.png)
+![A website design featuring a list of gardens in a sidebar and an accompanying map with pins on it, as well as a search bar at the top.](/images/driving-garden-visitation/garden-map-mock-up.png) <figcaption>Refreshed garden map I designed featuring adjusted garden cards</figcaption>
 
 ## Impact
 

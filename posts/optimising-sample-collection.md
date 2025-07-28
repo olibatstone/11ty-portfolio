@@ -31,9 +31,9 @@ To support this, we needed to signpost users to activate online from the test ki
 ## Online instructions
 Taking our test kit experience online meant we could define instructions with fewer steps and support browser preferences like larger text. This addressed issues with the paper instructions used in the pilot that may have contributed to unusable samples.
 
-![3 phone mock ups showing stages in the kit activation flow of opening the container, entering the code and spitting and closing.](/images/optimising-sample-collection/instructions-previous-1.png)<figcaption>Exploring different types of illustrations and the right balance of information for each step.</figcaption>
+![3 phone mock ups showing stages in the kit activation flow of opening the container, entering the code and spitting and closing.](/images/optimising-sample-collection/instructions-previous-1.png)<figcaption>Exploring different types of illustrations and the right balance of information for each step</figcaption>
 
-![3 phone mock ups showing stages in the kit activation flow of opening the container, entering the code and spitting and closing.](/images/optimising-sample-collection/instructions-previous-2.png)<figcaption>Another variant of online instructions.</figcaption>
+![3 phone mock ups showing stages in the kit activation flow of opening the container, entering the code and spitting and closing.](/images/optimising-sample-collection/instructions-previous-2.png)<figcaption>Another variant of online instructions</figcaption>
 
 ## Finding ways to test
 Our US kit supplier had logistical challenges in providing us with kit contents before launch. This meant we couldn't send prototype test kits to prospective users in the US. As an interim measure, we uncovered critical usability issues by testing with new colleagues in the US not familiar with our test kit. Staggered service invites, our new easy-to-adjust online instructions and a plan to test with users after launch gave us confidence in our approach.

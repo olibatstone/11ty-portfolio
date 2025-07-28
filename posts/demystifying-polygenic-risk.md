@@ -9,7 +9,7 @@ meta-description: boosting sign-up rate by 5.3%.
 ---
 
 ## Summary
-I redesigned the marketing website of a genetic testing service to support a pilot scale-up in November 2023. This boosted sign up rate by 5.3% compared to the pilot. I contributed all user research including usability testing, UX design, UI design and motion graphics design work.
+I redesigned the marketing website of a genetic testing service to support a pilot scale-up in November 2023. This boosted the sign-up rate by 5.3% compared to the pilot. I contributed all user research including usability testing, UX design, UI design and motion graphics design work.
 
 ## The need
 We invited 3000 policyholders to discover their genetic risk of common health conditions as a free benefit in 2022. 54% signed up. A survey showed the remainder needed additional assurances including on privacy, hidden costs and the company behind the test. In preparation for a scale-up, we needed to meet these needs to maximise sign-up rates and increase our customer value proposition.
