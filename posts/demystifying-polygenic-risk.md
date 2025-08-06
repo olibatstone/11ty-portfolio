@@ -7,6 +7,7 @@ image: /images/demystifying-polygenic-risk/1.webp
 description: I redesigned the marketing website of a genetic testing service, boosting sign-up rate by 5.3%.
 meta-description: boosting sign-up rate by 5.3%.
 ---
+2 minute read
 
 ## Summary
 I redesigned the marketing website of a genetic testing service to support a pilot scale-up in November 2023. This boosted the sign-up rate by 5.3% compared to the pilot. I contributed all user research including usability testing, UX design, UI design and motion graphics design work.

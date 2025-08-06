@@ -7,6 +7,9 @@ image: /images/unlocking-uber-transit/5.webp
 description: I designed a way to use our fare collection technology in partner apps, driving revenue for our client by 39.2%.
 meta-description: driving revenue for our client by 39.2%.
 ---
+
+2 minute read
+
 ## Summary
 
 We built a way to use our fare collection technology in partner apps, driving revenue for our client RTD by 39.2% and Uber trips in Denver starting or ending at a transport station by 11.6%. Working with a product manager, four developers and a QA developer, I contributed all product, research, UX and UI design work in 2018.

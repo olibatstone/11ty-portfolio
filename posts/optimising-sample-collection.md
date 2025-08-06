@@ -8,6 +8,8 @@ description: I designed a new way to add a sample to a genetic test kit, increas
 meta-description: increasing usable samples by 9.7%.
 ---
 
+2 minute read
+
 ## Summary
 I designed a new test kit experience for Health Insights, a genetic testing service in November 2023. This increased successful kit use by 9.7% as of January 2024 compared to the initial pilot service. Ideating with a product owner, a product designer and two developers, I contributed and owned product, user research, UX, UI and packaging design work in 2023.
 

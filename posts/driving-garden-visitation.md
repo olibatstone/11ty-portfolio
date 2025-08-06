@@ -7,6 +7,8 @@ image: /images/driving-garden-visitation/3.webp
 description: I led the redesign of a garden tourism website, reducing bounce rate by 5%.
 meta-description: reducing bounce rate by 5%.
 ---
+2 minute read
+
 ## Summary
 
 We refreshed the home page in March 2022, turning it into a destination and reducing bounce rate by 5% over a two week period. Working with four developers and a data scientist, I shared contribution of product, research, UX and UI work with another designer in 2022.

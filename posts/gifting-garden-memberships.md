@@ -7,6 +7,8 @@ image: /images/gifting-garden-memberships/4.webp
 description: I designed a garden membership gifting service, driving £32k revenue and unblocking 13 new clients.
 meta-description: driving £32k revenue and unblocking 13 new clients.
 ---
+2 minute read
+
 ## Summary
 
 We launched a garden membership gifting service, driving £32k revenue over Xmas 2021 and unblocking 13 gardens from partnering with us. Working with a product manager, four developers and a data scientist, I contributed all product, user research, UX and UI design work in 2021.
@@ -31,9 +33,17 @@ We chose a multi-step flow asking gifters all we could to minimise work for rece
 
 ![Several post-its on a digital whiteboard showing the user journey of gifting to two adults](/images/gifting-garden-memberships/storymap-of-gifting-to-two-adults.jpg)<figcaption>Storymap of gifting to two adults</figcaption>
 
+![A date picker component for the month of December showing different error states](/images/gifting-garden-memberships/exploration-of-date-picker-ui.webp)<figcaption>Exploration of date picker UI</figcaption>
+
 ![4 mobile website screens showing each stage of gifting a membership](/images/gifting-garden-memberships/key-screens-for-gifting-to-two-adults.jpg)<figcaption>Key screens for gifting to two adults</figcaption>
 
 ![4 mobile website screens showing each stage of receiving a membership](/images/gifting-garden-memberships/key-receiving-screens-for-two-adults.jpg)<figcaption>Key receiving screens for two adults</figcaption>
+
+![1 desktop website showing an account creation form](/images/gifting-garden-memberships/desktop-variant-of-account-creation.webp)<figcaption>Desktop variant of account creation</figcaption>
+
+![3 mobile website screens showing membership activation and access stages via account](/images/gifting-garden-memberships/key-receiving-screens-for-membership-activation.webp)<figcaption>Key receiving screens for membership activation and access in account</figcaption>
+
+![1 desktop website showing membership access via account](/images/gifting-garden-memberships/desktop-variant-of-membership-access.webp)<figcaption>Desktop variant of membership access in account</figcaption>
 
 ## Impact
 
