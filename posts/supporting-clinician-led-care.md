@@ -10,7 +10,7 @@ meta-description: leading to a successful launch with Bupa.
 2 minute read
 
 ## Summary
-I designed a new version of Health Insights, a US genetic testing service, to support a UK clinician-led experience in July 2024. This led to the successful launch in July 2025 with Genomics’ first UK client, Bupa, and the start of a UK rollout. I contributed all design work including user research, usability testing, UX design and UI design.
+I designed a new version of Health Insights, a US genetic testing service, to support a UK clinician-led experience in July 2024. This led to the successful launch in June 2025 with Genomics’ first UK client, Bupa, and the start of a UK rollout. I contributed all design work including user research, usability testing, UX design and UI design.
 
 ## The need
 Bupa UK wanted to provide Health Insights to their patients as part of a clinician-led model. As our existing US-based service is patient-led, we needed to define a new joining experience. This new approach would meet Bupa’s needs but also other UK clinics who were interested. Bupa also wanted to brand the journey so that patients knew it was a Bupa supported service.
