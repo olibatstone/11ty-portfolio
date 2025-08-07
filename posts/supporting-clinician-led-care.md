@@ -23,12 +23,12 @@ In our US service, patients enter the multi-step sign-up flow from the marketing
 
 ![4 mobile screens with a question on each; what is your date of birth, what sex were you assigned at birth, which of these best describe your race of ethnicity, and what is your phone number.](/images/supporting-clinician-led-care/6.png) <figcaption>Part of the US-based existing flow I helped design</figcaption>
 
-For the clinician-led UK model, Bupa provides us with a list of patient data before they send an invite email to each. We repurposed the confirmation page to reassure patients about the information we would already hold and how it will be used, enhancing transparency and trust.
+For the clinician-led UK model, Bupa provides us with a list of patient data before they send an invite email to each. I repurposed the confirmation page to reassure patients about the information we would already hold and how it will be used, enhancing transparency and trust.
 
 ![3 mobile screens that show different approaches to showing information about what Health Insights collects and what it does with it.](/images/supporting-clinician-led-care/7.png) <figcaption>Exploring different ways to allow patients to learn more on the confirmation page</figcaption>
 
 ## Address look-up
-Although Bupa supplied patient data, shipping addresses might be outdated. To verify and update addresses efficiently, we integrated SmartyStreets, a reliable address lookup service, ensuring accurate delivery.
+Although Bupa supplied patient data, shipping addresses might be outdated. To verify and update addresses efficiently, we integrated SmartyStreets, a reliable address lookup service. This ensured accurate delivery.
 
 ![-](/images/supporting-clinician-led-care/8.png) <figcaption>Exploring different ways to provide a list of addresses</figcaption>
 
