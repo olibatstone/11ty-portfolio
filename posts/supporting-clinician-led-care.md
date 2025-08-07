@@ -32,16 +32,16 @@ Although Bupa supplied patient data, shipping addresses might be outdated. To ve
 
 ![-](/images/supporting-clinician-led-care/8.png) <figcaption>Exploring different ways to provide a list of addresses</figcaption>
 
-![-](/images/supporting-clinician-led-care/11.png) <figcaption>Exploring different ways to provide a list of addresses</figcaption>
+![-](/images/supporting-clinician-led-care/11.png) <figcaption>Further exploring different ways to provide a list of addresses</figcaption>
 
-![-](/images/supporting-clinician-led-care/12.png) <figcaption>Exploring different ways to provide a list of addresses</figcaption>
+![-](/images/supporting-clinician-led-care/12.png) <figcaption>Further exploring different ways to provide a list of addresses</figcaption>
 
 ## Supporting co-branding
 To meet the branding preferences of Bupa and future UK clients, I developed flexible design components that allow easy customisation and maintenance of co-branded screens without extensive engineering overhead.
 
 ![-](/images/supporting-clinician-led-care/9.png) <figcaption>Exploring ways to brand our key screens</figcaption>
 
-## Final designs
+## Final user journey
 I designed a practical, adaptable solution balancing user needs with engineering constraints. This resulted in a flexible codebase that supports scalable co-branding and smooth patient flows.
 
 ![-](/images/supporting-clinician-led-care/1.png) <figcaption>Final designs of the first part of the new sign-up solution</figcaption>
