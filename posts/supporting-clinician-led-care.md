@@ -30,29 +30,31 @@ For the clinician-led UK model, Bupa provides us with a list of patient data bef
 ## Address look-up
 Although Bupa supplied patient data, shipping addresses might be outdated. To verify and update addresses efficiently, we integrated SmartyStreets, a reliable address lookup service. This ensured accurate delivery.
 
-![-](/images/supporting-clinician-led-care/8.png) <figcaption>Exploring different ways to provide a list of addresses</figcaption>
+![-](/images/supporting-clinician-led-care/8.png) <figcaption>Exploring different ways to render a list of addresses</figcaption>
 
-![-](/images/supporting-clinician-led-care/11.png) <figcaption>Further exploring different ways to provide a list of addresses</figcaption>
+![-](/images/supporting-clinician-led-care/11.png) <figcaption>Further exploration in wider context</figcaption>
 
-![-](/images/supporting-clinician-led-care/12.png) <figcaption>Further exploring different ways to provide a list of addresses</figcaption>
+A limitation of SmartyStreets we encountered meant that we couldn’t render the full list of addresses client-side - we needed to use a dropdown list that populated results dynamically.
+
+![-](/images/supporting-clinician-led-care/12.png) <figcaption>Further exploration featuring new dynamic component</figcaption>
 
 ## Supporting co-branding
 To meet the branding preferences of Bupa and future UK clients, I developed flexible design components that allow easy customisation and maintenance of co-branded screens without extensive engineering overhead.
 
-![-](/images/supporting-clinician-led-care/9.png) <figcaption>Exploring ways to brand our key screens</figcaption>
+![-](/images/supporting-clinician-led-care/9.png) <figcaption>One of my explorations in branding key screens</figcaption>
 
 ## Final user journey
 I designed a practical, adaptable solution balancing user needs with engineering constraints. This resulted in a flexible codebase that supports scalable co-branding and smooth patient flows.
 
-![-](/images/supporting-clinician-led-care/1.png) <figcaption>Final designs of the first part of the new sign-up solution</figcaption>
+![-](/images/supporting-clinician-led-care/1.png) <figcaption>New sign-up journey (1 of 5)</figcaption>
 
-![-](/images/supporting-clinician-led-care/2.png) <figcaption>Final designs of the second part of the new sign-up solution</figcaption>
+![-](/images/supporting-clinician-led-care/2.png) <figcaption> New sign-up journey (2 of 5)</figcaption>
 
-![-](/images/supporting-clinician-led-care/3.png) <figcaption>Final designs of the third part of the new sign-up solution</figcaption>
+![-](/images/supporting-clinician-led-care/3.png) <figcaption> New sign-up journey (3 of 5)</figcaption>
 
-![-](/images/supporting-clinician-led-care/4.png) <figcaption>Final designs of the fourth part of the new sign-up solution</figcaption>
+![-](/images/supporting-clinician-led-care/4.png) <figcaption> New sign-up journey (4 of 5)</figcaption>
 
-![-](/images/supporting-clinician-led-care/5.png) <figcaption>Final designs of the last part of the new sign-up solution</figcaption>
+![-](/images/supporting-clinician-led-care/5.png) <figcaption> New sign-up journey (5 of 5)</figcaption>
 
 ## Impact
-We launched successfully in July 2025 with Bupa, receiving positive patient feedback. The clinician-led experience has since been rolled out to additional UK clients, starting with Well Life.
+We launched successfully in July 2025 with Bupa, receiving positive patient feedback. It has since been rolled out to additional UK clients as Health Insights UK, starting with Well Life.
