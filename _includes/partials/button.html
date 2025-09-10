@@ -1,0 +1,8 @@
+<a
+  class="button {{ classes }}"
+  href="{{ href }}"
+  {%- if href contains '://' %} target="_blank" rel="noopener noreferrer"{% endif -%}
+  {%- if page and page.url and href == page.url %} aria-current="page"{% endif -%}
+>
+  {{ label }}
+</a>

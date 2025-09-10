@@ -1,0 +1,26 @@
+<ul class="recommendations" role="list">
+  {% assign sorted = collections.recommendation | sort: "date" | reverse %}
+  {% for recommendation in sorted %}
+    <li role="listitem">
+      <figure class="recommendation">
+        <blockquote>
+          <p>{{ recommendation.data.quote }}</p>
+        </blockquote>
+        <figcaption>
+          <img
+            src="{{ recommendation.data.image }}"
+            alt="Portrait of {{ recommendation.data.name }}"
+            class="avatar"
+            loading="lazy"
+            decoding="async"
+          />
+          <span class="meta">
+            <cite class="name">{{ recommendation.data.name }}</cite>
+            <span class="role">{{ recommendation.data.role }}</span>
+            <span class="date">{{ recommendation.date | date: "%B %Y" }}</span>
+          </span>
+        </figcaption>
+      </figure>
+    </li>
+  {% endfor %}
+</ul>

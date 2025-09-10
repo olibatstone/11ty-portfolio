@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <nav aria-label="Footer">
+    <ul class="footer-links">
+      {% for link in site.footerActions %}
+        <li>{{ link.label }}<a href="{{ link.url }}">{{ link.text }}</a></li>
+      {% endfor %}
+      {% for link in site.footerLinks %}
+        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+    <p>Developed by hand. Debugged with Copilot.</p>
+  <p>&copy; {{ site.title }} {{ 'now' | date: '%Y' }}</p>
+</footer>

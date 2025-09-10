@@ -1,0 +1,7 @@
+{
+  "layout": "selected-work.html",
+  "tags": "work",
+  "eleventyComputed": {
+    "toc": "{% buildToc content %}"
+  }
+}

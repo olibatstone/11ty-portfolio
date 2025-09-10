@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include "partials/head.html" %}
+</head>
+
+<body id="top">
+  {%- include "partials/button.html", href: "#main", classes: "skip-link", label: "Skip to content ↓" -%}
+  <header>
+    <img src="{{ image }}" alt=" " loading="lazy" decoding="async">
+    {%- include "partials/button.html", href: "/", label: "← Home" -%}
+    <h1 class="page-title">{{ title }}</h1>
+    <section class="work-metadata">{% include "partials/work-metadata.html" %}</section>
+  </header>
+  <main class="content-container" id="main" tabindex="-1">
+    <nav class="table-of-contents" role="navigation" aria-labelledby="toc-heading">
+      <h2 id="toc-heading">On this page</h2>
+      {{ content | toc: '{"tags":["h2", "h3"]}' }}
+    </nav>
+    <section class="work-content">{{ content }}</section>
+    <nav role="navigation">
+      {%- include "partials/button.html", href: "#top", label: "Back to top ↑" -%}
+      {%- include "partials/button.html", href: "/", label: "← Back to home" -%}
+    </nav>
+  </main>
+  <footer>
+    <section class="more-work-list-container">
+      <h2>More selected work</h2>
+      {% include "partials/work-list.html" %}
+    </section>
+    {% include "partials/footer.html" %}
+  </footer>
+
+    <div id="readmore-template" hidden>
+    {% include "partials/button.html",
+       as: "button",
+       classes: "button readmore-btn",
+       label: "Read more" %}
+  </div>
+  
+  {% include "partials/scripts.html"%}
+</body>
+
+
+
+</html>

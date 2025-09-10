@@ -1,0 +1,8 @@
+{
+  "title": "Oli Batstone",
+  "footerActions": [
+    { "label": "Phone", "text": "+44 117 441 5560", "url": "tel:+441174415560" },
+    { "label": "Email", "text": "hi@olibatstone.com", "url": "mailto:hi@olibatstone.com" },
+    { "label": "CV", "text": "View CV", "url": "/documents/olibatstone-cv-generic-082025.pdf" }
+  ]
+}
