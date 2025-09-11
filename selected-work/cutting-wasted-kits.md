@@ -43,7 +43,7 @@ tools:
 
 ## Summary
 
-I redesigned Health Insights’ genetic test kit and instructions to cut sample rejections in preparation for the scale-up. The reject rate fell from 10% to 0.3% (9.7 percentage point reduction) in the first month of launch, saving about $3,880 per 1,000 kits in kit costs alone.
+I redesigned Health Insights’ genetic test kit and online instructions to cut sample rejections during scale-up. I created a clearer activation process, overhauled kit design, and added step-by-step online guidance to reduce errors. The reject rate dropped 9.7 percentage points to 0.3%, saving about $3,880 per 1,000 kits and protecting patient trust.
 
 ## Problem
 
@@ -53,7 +53,7 @@ I redesigned Health Insights’ genetic test kit and instructions to cut sample 
 
 ## What I did
 
-### Investigated the problem with the lab team
+### Found root causes with the lab to target fixes
 
 - 5% didn’t have patient date of birth written on the sample device necessary to match the kit with the patient.
 - 5% had unusable or missing samples.
@@ -65,7 +65,7 @@ I redesigned Health Insights’ genetic test kit and instructions to cut sample 
 
 
 
-### Led a cross-functional ideation workshop
+### Linked kits to patients with activation codes to stop ID errors
 
 I ran a cross-functional ideation workshop with product, engineering, supply and regulatory teams, settling on a high-effort high-value solution for maximum return at scale.
 
@@ -80,7 +80,7 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
   caption: "Cross-functional ideation workshop."
 %}
 
-### Overhauled the kit to direct online
+### Redirected patients online via kit design to reduce paper-first mistakes
 
 - I overhauled the kit to align with Genomics’ new Health Insights brand identity, meeting patient expectations and fostering trust in the kit.
 - DNAGenotek supplied the sample device inside the kit which included the paper instructions. Regulations prevented removal. To mitigate the risk of use and skipping activation, I added a prominent QR code and additional prompts that directed patients online instead.
@@ -97,7 +97,7 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
   caption: "The inside of an early print test to validate QR scan distance and matte finish readability."
 %}
 
-### Designed online instructions that maximised comprehension
+### Built step-by-step instructions to lower collection errors
 
 To address unusable or missing samples, I designed progressively disclosed online instructions with one or two actions per page with simplified language. I included DNAGenotek’s illustrations as a quick way to enhance comprehension. The design would respond to browser preferences such as larger text.
 
@@ -107,7 +107,7 @@ To address unusable or missing samples, I designed progressively disclosed onlin
   caption: "First online instruction prototype. One to two actions per page with simplified copy."
 %}
 
-### Usability tested under supply constraints
+### Tested under constraints to surface risks quickly
 
 DNAGenotek couldn’t supply extra sample devices in time for US patient testing, so I tested in-person with 5 new UK colleagues unfamiliar with the kit to identify any major issues and maintain momentum.
 
@@ -122,19 +122,19 @@ Key instructions findings:
 - Some confused whether a page referred to the kit box or the sample device box.
 - All reported the online instructions were easy to use.
 
-### Iterated on the kit and instructions
+### Iterated kit and copy to address privacy and box confusion
 
 - To address paper-first behaviour and set patient expectations, I pushed the supply chain team to invest in printing on the large inside panel of the kit (about $0.40 or $400 per 1000 kits). I then designed an eye-catching set of steps with the QR alongside. I used the freed up space below the sample device for supporting signposts.
 - To address the partnership with DNAGenotek and relevant privacy concerns, I added content that explained the partnership and stated they do not receive patient personal data or samples.
 - To resolve the box confusion, I tightened wording and added targeted illustrations to help distinguish the kit box from the sample device box.
 
 
-### Resolved unexpected regulatory challenges
+### Navigated regulatory limits while keeping guidance clear
 
 - To further reduce the risk of paper-first behaviour, in the online instructions I added a first-page callout advising patients to ignore the paper version. Regulatory rules required softer wording to prevent CLIA non-compliance; as a compromise, I asked patients to refer to them only if they need to.
 - DNAGenotek’s illustrations were off-limits, so I created custom ones which made the experience more cohesive.
 
-### Observed improvement with US colleagues
+### Confirmed improvements in a US dry run before rollout
 
 A virtual usability test with 5 US colleagues showed no major threats - none referred to the paper instructions and all found the online ones clear.
 

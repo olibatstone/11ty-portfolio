@@ -45,7 +45,7 @@ tools:
 
 ## Summary
 
-I redesigned the marketing site of Genomics’ genetic testing service as part of a scale-up. Account-creation rose from 54% in the pilot to 59.3% as of January 2024 since December 2023 launch, a gain of 5.3 percentage points. This increase broke healthcare norms, where account-creation rates are typically less than 40%.
+I redesigned Genomics’ genetic testing marketing site to boost adoption during scale-up. I created a new product identity, clarified the value proposition with fresh content, and resolved trust concerns through transparency pages and usability testing. The redesign drove a 5.3 percentage point increase in account-creation to 59.3%, breaking healthcare benchmarks.
 
 ## Problem
 
@@ -66,7 +66,7 @@ Without resolving these pain points, the scale-up risked lower adoption and weak
 
 ## What I did
 
-### Created a new product identity to build trust
+### Created a product identity that built trust and supported conversion
 
 - Genomics lacked a product identity, which undermined trust and adoption. I proposed and validated the name Health Insights through a naming survey, where it ranked top.
 - After gaining approval, I analysed competitor visual systems to position us credibly in the market.
@@ -90,13 +90,13 @@ Without resolving these pain points, the scale-up risked lower adoption and weak
   caption: "Exploring how these logo concepts would appear across touchpoints."
 %}
 
-### Met user needs with new supporting content
+### Added content that removed privacy and cost concerns
 
 - I worked with executive and legal teams to design an *About us* page featuring founder and medical staff bios, published research, and media coverage.
 - To address privacy concerns, I added a *Trust and privacy* page with explicit statements on non-sharing with third parties, GDPR and ISO27001 credentials, and how patients controlled their data.
 - I created content that explained why insurers offered the test as a free benefit and assured that there are no hidden costs.
 
-### Redesigned content to clarify the value proposition
+### Redesigned content to clarify value and drive sign-ups
 
 - I added a sample report to the homepage hero as an easy way to show what patients would receive, adapting a pattern from other genetic services.
 - The *How it works* section was buried on the home page. I promoted it in hierarchy, created a dedicated page and new content describing how we use patient genetic data to generate results and what patients could do with them.
@@ -114,7 +114,7 @@ Without resolving these pain points, the scale-up risked lower adoption and weak
   caption: "Concept sample report hero desktop version."
 %}
 
-### Identified gaps with usability testing
+### Used testing to uncover confusion and improve decision-making
 
 I ran a moderated usability test with 5 participants from our target demographic (35-70, US, life insurance). The findings highlighted gaps:
 
@@ -133,7 +133,7 @@ I ran a moderated usability test with 5 participants from our target demographic
   caption: "Thematic analysis of the *How it works* page feedback in Miro"
 %}
 
-### Iterated to resolve confusion and help decision-making
+### Iterated to simplify, reassure, and increase intent
 
 - To resolve sample report confusion, I explored alternatives that balanced detail with simplicity. I partnered with the Lead Product Designer (working on another project) on this and adopted his abstract representation that conveyed the essence of the test without overwhelming patients. I animated it using avatars to show how results vary between individuals, reflecting the polygenic (not one gene but many) nature of the test.
 - To help patients evaluate the test, I looked at previous research on patient motivations and found that perceived test accuracy was a top factor in how many chose between tests. With this in mind, I created a comparison chart of competitor accuracy using newly published AUC (area under the curve) data from Genomic Prediction, 23andMe, and internal sources. The chart emphasised Health Insights’ stronger performance and guided patients to the *Science* page for a more detailed view.
@@ -141,7 +141,7 @@ I ran a moderated usability test with 5 participants from our target demographic
 
 A follow‑up test revealed that patients saw the animation as a helpful augmentation in understanding what the test is, found the comparison chart useful, and often went to the *Science* page as a next step. The expanded bios also gave extra confidence, and 4/5 said they would create an account.
 
-### Proactively mitigated risks in a changing market
+### Monitored market risks to protect conversion rates
 
 - 23andMe had a data breach in October 2023. To understand whether this was a threat to account-creation, I ran a quick pulse survey with 50 individuals in our target demographic. I explained the breach to participants, asked them to view a prototype of the marketing site and answer attitudinal questions.
 - Awareness of the breach was low (18%).
@@ -157,7 +157,8 @@ A follow‑up test revealed that patients saw the animation as a helpful augment
 </video>
 
 - Account-creation rose to 59.3% as of January 2024 since launch in December 2023, a 5.3 percentage point increase from the pilot’s 54%.
-- At least 3.2% of total account-creation came directly from Science, the largest of any other page, suggesting the new content gave more policyholders a better understanding of the test.
+- The new product identity and visual system reinforced credibility at scale, helping sustain pilot-level conversion rates and enabling the 5.3 percentage point lift.
+- At least 3.2% of total account-creation came directly from *Science*, the largest of any other page, suggesting the new content gave more policyholders a better understanding of the test.
 - The service outperformed healthcare benchmarks, where account-creation rates typically stayed below 40%.
 - Genomics strengthened its customer value proposition.
 

@@ -38,7 +38,7 @@ tools:
 
 ## Summary
 
-I designed and launched gifting for garden memberships ahead of Christmas. In the first three months post-launch, visitors bought 505 gifts worth £32k and 13 new gardens initiated partner discussions.
+I designed and launched garden membership gifting ahead of Christmas to drive seasonal revenue. I simplified the flow, upgraded the calendar UI, and added receiver reassurance features. Visitors bought 505 gifts worth £32k in three months and 13 new gardens initiated partnership discussions.
 
 ## Problem
 
@@ -55,7 +55,7 @@ I designed and launched gifting for garden memberships ahead of Christmas. In th
 
 ## What I did
 
-### Identified pain points and user needs
+### Identified gifter and receiver needs that blocked purchase
 
 - To understand how access works via QR in the Candide iOS and Android app, I spoke to 10 visitors at The Newt in Somerset gate about their entry experience. I noticed first-time anxiety of using QR passes in older individuals and connectivity issues due to patchy mobile data coverage.
 - To learn about the needs of likely gifters and receivers, I interviewed 5 who'd gifted and 5 who'd received a membership or subscription within 2 years via userinterviews.com. To recruit quickly, the gift could be in a range of attractions, not just public gardens. I asked about their experience of buying, receiving and using, prompting for details such as cost considerations, delivery method, date and more.
@@ -79,7 +79,7 @@ I designed and launched gifting for garden memberships ahead of Christmas. In th
   caption: "Exploring the gifting flows of the National Trust, RHS and Blenheim Palace."
 %}
 
-### Turned research into focused ideation
+### Turned insights into a plan that shipped fast
 
 To address the opportunities identified in my research, I wrote 20 'how might we' statements. I used a team workshop to generate and prioritise Now, Next and Later solutions based on complexity. The top statements guided the following design moves.
 
@@ -89,7 +89,7 @@ To address the opportunities identified in my research, I wrote 20 'how might we
   caption: "Voted opportunities and ideas post-its for version 1."
 %}
 
-### Designed a simple and assuring multi-step flow
+### Designed a simple multi-step flow that reduced errors
 
 - To make things simple for both gifters and receivers, I designed a progressively disclosed multi-step flow with easy navigation, plain language, and ability to recover from errors.
 - I designed larger primary buttons, increased spacing between elements to support usability for older recipients, ensuring WCAG AAA standards where possible.
@@ -108,7 +108,7 @@ To address the opportunities identified in my research, I wrote 20 'how might we
   caption: "Storymap exploration of the gifting and receiving experience."
 %}
 
-### Upgraded the calendar UI to support distant delivery
+### Upgraded the calendar UI to enable advance gifting
 
 Candide had a date picker that visitors used to select a day ticket. However, this didn't support selecting dates far in the future. This was a problem because gifters would likely need to choose months in advance, so I designed a new one that enabled this.
 
@@ -142,20 +142,20 @@ Candide had a date picker that visitors used to select a day ticket. However, th
   caption: "Enhanced paginated UI states showing inline feedback."
 %}
 
-### Made it feel like a real gift
+### Made the digital gift feel meaningful without print
 
 - I couldn't offer an optional physical insert with a QR code for version 1 due to the timeline, but understood that we would learn a lot from version 1 that we could incorporate into the design of a physical insert.
 - To make a digital gift feel meaningful in the absence of a physical one, I added a personalised message at checkout and a polished receiver email.
 - To make value obvious for gifters, I'd planned to show how many visits it would take to break-even vs day tickets. However, due to the timeline, for version 1 I opted to front-load the garden imagery and include copy that describes how the garden changes throughout the year.
 
-### Handled edge cases and allowed easy redemption
+### Solved edge cases to cut support and ease redemption
 
 - To help less technically-able visitors to access their membership, I designed a way to access the QR online instead of via the app, requiring less mobile data. And I incorporated the activation code inside the recipient email, meaning one-click access if already logged in. Visitors could change their details on activation if needed.
 - To help receivers without a mobile device or internet connection, I prompted gifters to provide accurate name and email details to enable gate staff look up.
 - To solve for gifting to existing members, allowing the choice to extend a membership was the most voted solution in the workshop. However, this is complex from a user perspective and would require more research to reduce risk, so I worked with the team and settled on treating activation as the point of purchase. This meant memberships were pre-paid with no expiry date.
 - This solved Candide's constraint regarding selling memberships for following years and made our solution more attractive to other gardens with fixed-term seasonal products. They wouldn't be forced into a rolling membership model.
 
-### Ran unmoderated usability tests
+### Tested with real users and clarified confusing steps
 
 - I planned to test the gifting and receiving prototype with 5 gifters and receivers in a moderated usability session, but the deadline meant this wasn't doable.
 - To identify any major issues with the prototypes in the least amount of time, I instead ran an unmoderated usability test via usertesting.com with 20 participants, being sure to have a proportion of older people.
