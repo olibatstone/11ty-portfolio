@@ -50,14 +50,14 @@ I designed and launched gifting for garden memberships ahead of Christmas. In th
 ## Constraints
 
 - Small team with an immovable Christmas deadline.
-- Candide can't sell memberships for next year if the current year is active.
+- Candide can't sell memberships for next year if the current year is active; gifting a membership for a year that is ending is obviously bad value.
 - The Newt in Somerset and other gardens supported joint and multiple-holder memberships, with some gardens requiring the details of all holders linked to the membership.
 
 ## What I did
 
 ### Identified pain points and user needs
 
-- To understand how access currently works via QR in the Candide iOS and Android app, I spoke to 10 visitors at The Newt in Somerset gate about their entry experience. I noticed first-time anxiety of using QR passes in older individuals and connectivity issues due to patchy mobile data coverage.
+- To understand how access works via QR in the Candide iOS and Android app, I spoke to 10 visitors at The Newt in Somerset gate about their entry experience. I noticed first-time anxiety of using QR passes in older individuals and connectivity issues due to patchy mobile data coverage.
 - To learn about the needs of likely gifters and receivers, I interviewed 5 who'd gifted and 5 who'd received a membership or subscription within 2 years via userinterviews.com. To recruit quickly, the gift could be in a range of attractions, not just public gardens. I asked about their experience of buying, receiving and using, prompting for details such as cost considerations, delivery method, date and more.
 - Key themes across gifters and receivers included value for money as the top driver, concern that older receivers would struggle to use a digital gift, a preference for something physical, and the risk of gifting to someone who already has a membership.
 
@@ -108,7 +108,7 @@ To address the opportunities identified in my research, I wrote 20 'how might we
   caption: "Storymap exploration of the gifting and receiving experience."
 %}
 
-### Upgraded date picker to support far-future delivery dates
+### Upgraded the calendar UI to support distant delivery
 
 Candide had a date picker that visitors used to select a day ticket. However, this didn't support selecting dates far in the future. This was a problem because gifters would likely need to choose months in advance, so I designed a new one that enabled this.
 
@@ -184,4 +184,4 @@ Candide had a date picker that visitors used to select a day ticket. However, th
 
 ## Let’s talk
 
-If you need to open a high-intent revenue channel on a tight timeline, I can design and ship flows that convert.
+If you need to open a high-intent revenue channel on a tight timeline, I can help you design and ship flows that convert.

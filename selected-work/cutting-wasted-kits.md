@@ -159,4 +159,4 @@ A virtual usability test with 5 US colleagues showed no major threats - none ref
 
 ## Let’s talk
 
-If you need to reduce errors in sample collection or improve the patient experience, I can help design for clarity at first use.
+If you need to reduce errors in sample collection or improve the patient experience, I can help you design for clarity at first use.
