@@ -149,9 +149,9 @@ A follow‑up test revealed that patients saw the animation as a helpful augment
 
 ## Results
 
-<video autoplay loop muted playsinline>
-  <source src="/videos/simplifying-genetic-risk/preview-home-desktop.webm" type="video/webm">
-  <source src="/videos/simplifying-genetic-risk/preview-home-desktop.mp4" type="video/mp4">
+<video loop muted playsinline controls>
+  <source src="/videos/simplifying-genetic-risk/home-desktop-1080.webm" type="video/webm">
+  <source src="/videos/simplifying-genetic-risk/home-desktop-1080.mp4" type="video/mp4">
   <!-- Fallback text -->
   Your browser does not support the video tag.
 </video>
