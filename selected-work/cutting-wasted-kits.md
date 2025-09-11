@@ -13,7 +13,7 @@ client:
   name: "Genomics"
   stage: "Series B"
   size: "~150 employees"
-  businessModel: "B2B2C"
+  businessModel: "B2B2C SaaS (Genomics to Insurers/Employers to Patients)"
 sector: "Health"
 role: "Senior Product Designer"
 platform:
@@ -57,12 +57,12 @@ I redesigned Health Insights’ genetic test kit and instructions to cut sample 
 
 - 5% didn’t have patient date of birth written on the sample device necessary to match the kit with the patient.
 - 5% had unusable or missing samples.
-
-A patient survey showed many felt the instructions were complex.
+- A patient survey showed many felt the instructions were complex.
 
 > Consider rewriting the instructions, they were tricky
 >
 > Patient, September 2022
+
 
 
 ### Led a cross-functional ideation workshop

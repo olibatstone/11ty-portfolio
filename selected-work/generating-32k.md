@@ -3,8 +3,8 @@ layout: layouts/selected-work.html
 tags: work
 order: 2
 
-title: Unlocking £32k revenue in 3 months with new gifting service
-description: I designed a garden membership gifting service, generating £32k and unlocking 13 new clients in 3 months.
+title: Unlocking £32k revenue with new gifting feature
+description: I designed a garden membership gifting service, driving 13 new customer acquisition discussions.
 meta-description: generating £32k in 3 months.
 image: /images/gifting-garden-memberships/4.webp
 
@@ -42,7 +42,7 @@ I designed and launched gifting for garden memberships ahead of Christmas. In th
 
 ## Problem
 
-- Candide's primary customer, The Newt in Somerset, wanted visitors to be able to gift a 12-month membership to other individuals. This would increase their visitor base and drive revenue over the Christmas period where there is a natural slow-down.
+- Candide's primary customer, The Newt in Somerset, wanted visitors to be able to gift a 12-month membership to others. This would increase their visitor base and drive revenue over the Christmas period where there is a natural slow-down.
 - Visitors could buy a The Newt in Somerset membership from the Candide website, but could not give it directly or transfer it to another individual.
 - Candide had 100 support messages since December 2020 from The Newt in Somerset visitors asking if they could gift a membership.
 - If Candide didn't deliver a gifting service by Christmas 2021, they risked losing out on seasonal revenue opportunities, dealing with larger support overhead, undermining their relationship with a key customer and weakening their value proposition to other customers.
@@ -57,7 +57,7 @@ I designed and launched gifting for garden memberships ahead of Christmas. In th
 
 ### Identified pain points and user needs
 
-- To understand how access currently works via QR in the Candide iOS and Android app, I spoke to 10 visitors at The Newt in Somerset gate to understand their entry experience. I noticed first-time anxiety of using QR passes in older individuals and connectivity issues due to patchy mobile data coverage.
+- To understand how access currently works via QR in the Candide iOS and Android app, I spoke to 10 visitors at The Newt in Somerset gate about their entry experience. I noticed first-time anxiety of using QR passes in older individuals and connectivity issues due to patchy mobile data coverage.
 - To learn about the needs of likely gifters and receivers, I interviewed 5 who'd gifted and 5 who'd received a membership or subscription within 2 years via userinterviews.com. To recruit quickly, the gift could be in a range of attractions, not just public gardens. I asked about their experience of buying, receiving and using, prompting for details such as cost considerations, delivery method, date and more.
 - Key themes across gifters and receivers included value for money as the top driver, concern that older receivers would struggle to use a digital gift, a preference for something physical, and the risk of gifting to someone who already has a membership.
 
@@ -184,4 +184,4 @@ Candide had a date picker that visitors used to select a day ticket. However, th
 
 ## Let’s talk
 
-If you need to open a high-intent revenue channel on a tight timeline, I can design and ship flows that convert, handle edge cases and drive happy users.
+If you need to open a high-intent revenue channel on a tight timeline, I can design and ship flows that convert.

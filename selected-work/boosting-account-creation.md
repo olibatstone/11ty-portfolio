@@ -4,7 +4,7 @@ tags: work
 order: 1
 
 title: Boosting account-creation by 5.3% with marketing site redesign
-description: I redesigned the marketing site of Genomics' genetic testing service, outperforming healthcare benchmarks.
+description: I redesigned Genomics' genetic testing website, breaking healthcare benchmarks.
 meta-description: boosting account-creation to 59.3%.
 image: /images/simplifying-genetic-risk/1.webp
 
@@ -13,7 +13,7 @@ client:
   name: "Genomics"
   stage: "Series B"
   size: "~150 employees"
-  businessModel: "B2B2C SaaS (Genomics to Insurers or Employers to Patients)"
+  businessModel: "B2B2C SaaS (Genomics to Insurers/Employers to Patients)"
   description: "Genomics leverages genetics to provide population-scale disease-risk products and targeted drug discovery."
 sector: "Health"
 role: "Senior Product Designer"
@@ -49,7 +49,7 @@ I redesigned the marketing site of Genomics’ genetic testing service as part o
 
 ## Problem
 
-In late 2022, Genomics invited 3,000 MassMutual policyholders to discover their genetic risk of common health conditions as a free benefit. 54% created an account from the landing page. Surveys showed the rest had key concerns about:
+In late 2022, Genomics invited 3,000 MassMutual policyholders to discover their genetic risk of common health conditions as a free benefit. 54% created an account from the landing page. Surveys showed the rest had key concerns:
 
 - Lack of clarity about who was behind the test.
 - Unclear value proposition.
@@ -92,15 +92,15 @@ Without resolving these pain points, the scale-up risked lower adoption and weak
 
 ### Met user needs with new supporting content
 
-- I worked with executive and legal teams to design an About us page featuring founder and medical staff bios, published research, and media coverage.
-- To address privacy concerns, I added a Trust and privacy page with explicit statements on non-sharing with third parties, GDPR and ISO27001 credentials, and how patients controlled their data.
+- I worked with executive and legal teams to design an *About us* page featuring founder and medical staff bios, published research, and media coverage.
+- To address privacy concerns, I added a *Trust and privacy* page with explicit statements on non-sharing with third parties, GDPR and ISO27001 credentials, and how patients controlled their data.
 - I created content that explained why insurers offered the test as a free benefit and assured that there are no hidden costs.
 
 ### Redesigned content to clarify the value proposition
 
 - I added a sample report to the homepage hero as an easy way to show what patients would receive, adapting a pattern from other genetic services.
-- The How it works section was buried on the home page. I promoted it in hierarchy, created a dedicated page and new content describing how we use patient genetic data to generate results and what patients could do with them.
-- To simplify Science as much as possible, I worked with the science and medical teams to reduce jargon.
+- The *How it works* section was buried on the home page. I promoted it in hierarchy, created a dedicated page and new content describing how we use patient genetic data to generate results and what patients could do with them.
+- To simplify *Science* as much as possible, I worked with the science and medical teams to reduce jargon.
 
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/action-home-sample-report-mobile-1-@3x.png",
@@ -136,12 +136,12 @@ I ran a moderated usability test with 5 participants from our target demographic
 ### Iterated to resolve confusion and help decision-making
 
 - To resolve sample report confusion, I explored alternatives that balanced detail with simplicity. I partnered with the Lead Product Designer (working on another project) on this and adopted his abstract representation that conveyed the essence of the test without overwhelming patients. I animated it using avatars to show how results vary between individuals, reflecting the polygenic (not one gene but many) nature of the test.
-- To help patients evaluate the test, I looked at previous research on patient motivations and found that perceived test accuracy was a top factor in how many chose between tests. With this in mind, I created a comparison chart of competitor accuracy using newly published AUC (area under the curve) data from Genomic Prediction, 23andMe, and internal sources. The chart emphasised Health Insights’ stronger performance and guided patients to the Science page for a more detailed view.
+- To help patients evaluate the test, I looked at previous research on patient motivations and found that perceived test accuracy was a top factor in how many chose between tests. With this in mind, I created a comparison chart of competitor accuracy using newly published AUC (area under the curve) data from Genomic Prediction, 23andMe, and internal sources. The chart emphasised Health Insights’ stronger performance and guided patients to the *Science* page for a more detailed view.
 - To meet patient requests for transparency, I expanded executive and medical professional bios to include where individuals studied, their history, and why they joined the company.
 
-A follow‑up test revealed that patients saw the animation as a helpful augmentation in understanding what the test is, found the comparison chart useful, and often went to the Science page as a next step. The expanded bios also gave extra confidence, and 4/5 said they would create an account.
+A follow‑up test revealed that patients saw the animation as a helpful augmentation in understanding what the test is, found the comparison chart useful, and often went to the *Science* page as a next step. The expanded bios also gave extra confidence, and 4/5 said they would create an account.
 
-### Proactively reacted to market conditions
+### Proactively mitigated risks in a changing market
 
 - 23andMe had a data breach in October 2023. To understand whether this was a threat to account-creation, I ran a quick pulse survey with 50 individuals in our target demographic. I explained the breach to participants, asked them to view a prototype of the marketing site and answer attitudinal questions.
 - Awareness of the breach was low (18%).
@@ -163,4 +163,4 @@ A follow‑up test revealed that patients saw the animation as a helpful augment
 
 ## Let’s talk
 
-If you need to drive adoption of sensitive digital health products, I can help you design trust-building flows that exceed typical sign-up benchmarks.
+If you need to drive adoption of digital health products, I can help you design trust-building flows.
