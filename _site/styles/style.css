@@ -250,6 +250,29 @@ video {
   height: auto;
   border-radius: 8px; /* optional */
 }
+
+/* Video component wrapper (partial: video.html) */
+.video-demo {
+  width: var(--video-width, 70vw);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* The <video> element inside the component */
+.video-demo__media {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 80vh; /* prevents overly tall vertical videos */
+  object-fit: contain;
+}
+
+/* Caption styling */
+.video-demo__caption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem; /* matches step--1 approx */
+  color: var(--text-color);
+}
 .avatar {
   width: 3.5rem;
   height: 3.5rem;

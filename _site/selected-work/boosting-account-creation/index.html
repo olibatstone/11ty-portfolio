@@ -178,12 +178,24 @@
 <li>The majority indicated they would still create an account. While the survey size was small, I decided not to proactively modify the site content in the absence of an obvious threat.</li>
 </ul>
 <h2 id="results" tabindex="-1">Results</h2>
-<video loop muted playsinline controls>
-  <source src="/videos/simplifying-genetic-risk/home-desktop-1080.webm" type="video/webm">
-  <source src="/videos/simplifying-genetic-risk/home-desktop-1080.mp4" type="video/mp4">
-  <!-- Fallback text -->
-  Your browser does not support the video tag.
-</video>
+<figure class="video-demo">
+  <video
+    class="video-demo__media"
+    autoplay loop muted playsinline
+    controls
+    preload="metadata"
+    loading="lazy"
+    poster="/images/simplifying-genetic-risk/home-desktop-poster.jpg">
+    <!-- 1080p for wider screens -->
+    <source src="/videos/simplifying-genetic-risk/home-desktop-1080.webm" type="video/webm" media="(min-width: 768px)">
+    <source src="/videos/simplifying-genetic-risk/home-desktop-1080.mp4"  type="video/mp4"  media="(min-width: 768px)">
+    <!-- 720p default -->
+    <source src="/videos/simplifying-genetic-risk/home-desktop-720.webm" type="video/webm">
+    <source src="/videos/simplifying-genetic-risk/home-desktop-720.mp4"  type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption class="video-demo__caption">Home page</figcaption>
+</figure>
 <ul>
 <li>Account-creation rose to 59.3% as of January 2024 since launch in December 2023, a 5.3 percentage point increase from the pilot’s 54%.</li>
 <li>The new product identity and visual system reinforced credibility at scale, helping sustain pilot-level conversion rates and enabling the 5.3 percentage point lift.</li>

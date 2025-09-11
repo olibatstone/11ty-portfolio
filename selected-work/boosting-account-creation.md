@@ -149,12 +149,11 @@ A follow‑up test revealed that patients saw the animation as a helpful augment
 
 ## Results
 
-<video loop muted playsinline controls>
-  <source src="/videos/simplifying-genetic-risk/home-desktop-1080.webm" type="video/webm">
-  <source src="/videos/simplifying-genetic-risk/home-desktop-1080.mp4" type="video/mp4">
-  <!-- Fallback text -->
-  Your browser does not support the video tag.
-</video>
+{% render "partials/video.html",
+  base: "/videos/simplifying-genetic-risk/home-desktop",
+  poster: "/images/simplifying-genetic-risk/home-desktop-poster.jpg",
+  caption: "Home page"
+%}
 
 - Account-creation rose to 59.3% as of January 2024 since launch in December 2023, a 5.3 percentage point increase from the pilot’s 54%.
 - The new product identity and visual system reinforced credibility at scale, helping sustain pilot-level conversion rates and enabling the 5.3 percentage point lift.

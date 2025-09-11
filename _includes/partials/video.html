@@ -1,0 +1,18 @@
+<figure class="video-demo">
+  <video
+    class="video-demo__media"
+    autoplay loop muted playsinline
+    controls
+    preload="metadata"
+    loading="lazy"
+    poster="{{ poster }}">
+    <!-- 1080p for wider screens -->
+    <source src="{{ base }}-1080.webm" type="video/webm" media="(min-width: 768px)">
+    <source src="{{ base }}-1080.mp4"  type="video/mp4"  media="(min-width: 768px)">
+    <!-- 720p default -->
+    <source src="{{ base }}-720.webm" type="video/webm">
+    <source src="{{ base }}-720.mp4"  type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  {% if caption %}<figcaption class="video-demo__caption">{{ caption }}</figcaption>{% endif %}
+</figure>
