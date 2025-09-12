@@ -1,7 +1,7 @@
 <figure class="video-demo">
   <video
     class="video-demo__media"
-    autoplay loop muted playsinline
+    {% if autoplay == true %}autoplay loop muted playsinline{% endif %}
     controls
     preload="metadata"
     loading="lazy"
@@ -14,5 +14,5 @@
     <source src="{{ base }}-720.mp4"  type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  {% if caption %}<figcaption class="video-demo__caption">{{ caption }}</figcaption>{% endif %}
+  {% if caption %}<figcaption class="video-demo__caption">{{ caption | md }}</figcaption>{% endif %}
 </figure>

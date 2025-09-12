@@ -75,7 +75,7 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
 - With an invalid code, the system blocks progress and offers fixes (recheck, find code, contact support). The system requires activation for every kit, addressing the unidentifiable 5% by forcing identification.
 
 {% render "partials/figure.html",
-  src: "/images/cutting-sample-failures/cross-functional-workshop.jpeg",
+  src: "/images/cutting-sample-failures/cross-functional-workshop",
   alt: "Cross-functional ideation workshop",
   caption: "Cross-functional ideation workshop."
 %}
@@ -86,13 +86,13 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
 - DNAGenotek supplied the sample device inside the kit which included the paper instructions. Regulations prevented removal. To mitigate the risk of use and skipping activation, I added a prominent QR code and additional prompts that directed patients online instead.
 
 {% render "partials/figure.html",
-  src: "/images/cutting-sample-failures/first-printed-design-1.jpeg",
+  src: "/images/cutting-sample-failures/first-printed-design-1",
   alt: "First printed kit design with QR code",
   caption: "The front of an early print test to validate QR scan distance and matte finish readability."
 %}
 
 {% render "partials/figure.html",
-  src: "/images/cutting-sample-failures/first-printed-design-2.jpeg",
+  src: "/images/cutting-sample-failures/first-printed-design-2",
   alt: "First printed kit design with QR code",
   caption: "The inside of an early print test to validate QR scan distance and matte finish readability."
 %}
@@ -102,7 +102,7 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
 To address unusable or missing samples, I designed progressively disclosed online instructions with one or two actions per page with simplified language. I included DNAGenotek’s illustrations as a quick way to enhance comprehension. The design would respond to browser preferences such as larger text.
 
 {% render "partials/figure.html",
-  src: "/images/cutting-sample-failures/instructions-previous-1.png",
+  src: "/images/cutting-sample-failures/instructions-previous-1",
   alt: "Prototype of online instructions, one to two actions per page",
   caption: "First online instruction prototype. One to two actions per page with simplified copy."
 %}
@@ -139,7 +139,7 @@ Key instructions findings:
 A virtual usability test with 5 US colleagues showed no major threats - none referred to the paper instructions and all found the online ones clear.
 
 {% render "partials/figure.html",
-  src: "/images/cutting-sample-failures/final-test-kit.jpg",
+  src: "/images/cutting-sample-failures/final-test-kit",
   alt: "Final kit and print files",
   caption: "Final kit after regulatory and usability changes."
 %}
@@ -147,7 +147,7 @@ A virtual usability test with 5 US colleagues showed no major threats - none ref
 ## Results
 
 {% render "partials/figure.html",
-  src: "/images/cutting-sample-failures/kit-activation-final-mobile.png",
+  src: "/images/cutting-sample-failures/kit-activation-final-mobile",
   alt: "Released kit, print assets, and online instructions",
   caption: "Final online journey."
 %}

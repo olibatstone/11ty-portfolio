@@ -66,7 +66,7 @@ I designed and launched garden membership gifting ahead of Christmas to drive se
 > Moreen, 59
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/scan-membership.jpg",
+  src: "/images/gifting-garden-memberships/scan-membership",
   alt: "How The Newt in Somerset staff scanned QR codes.",
   caption: "How The Newt in Somerset staff scanned QR codes. Photo by Chris D'Agorne."
 %}
@@ -74,7 +74,7 @@ I designed and launched garden membership gifting ahead of Christmas to drive se
 - For technical inspiration, I reviewed the gifting flows of the largest public garden organisations, the National Trust, RHS and Blenheim Palace. All provided a physical membership, with the National Trust promoting cheaper pricing on condition of Direct Debit and the RHS offering a free pair of binoculars.
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/competitor-research-@2x.png",
+  src: "/images/gifting-garden-memberships/competitor-research-@2x",
   alt: "Exploring the gifting flows of the National Trust, RHS and Blenheim Palace.",
   caption: "Exploring the gifting flows of the National Trust, RHS and Blenheim Palace."
 %}
@@ -84,7 +84,7 @@ I designed and launched garden membership gifting ahead of Christmas to drive se
 To address the opportunities identified in my research, I wrote 20 'how might we' statements. I used a team workshop to generate and prioritise Now, Next and Later solutions based on complexity. The top statements guided the following design moves.
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/voted-opportunities-and-ideas-post-its.jpg",
+  src: "/images/gifting-garden-memberships/voted-opportunities-and-ideas-post-its",
   alt: "Voted opportunities and ideas post-its for version 1.",
   caption: "Voted opportunities and ideas post-its for version 1."
 %}
@@ -97,13 +97,13 @@ To address the opportunities identified in my research, I wrote 20 'how might we
 - To reassure gifters that the recipient will be able to use the membership, I included a pre-start link at the beginning that showed what the experience would be like for receivers.
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/flow-aug-1.png",
+  src: "/images/gifting-garden-memberships/flow-aug-1",
   alt: "Flow architecture exploration.",
   caption: "Flow architecture exploration."
 %}
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/storymap-of-gifting-to-two-adults.jpg",
+  src: "/images/gifting-garden-memberships/storymap-of-gifting-to-two-adults",
   alt: "Storymap exploration of the gifting and receiving experience.",
   caption: "Storymap exploration of the gifting and receiving experience."
 %}
@@ -113,31 +113,31 @@ To address the opportunities identified in my research, I wrote 20 'how might we
 Candide had a date picker that visitors used to select a day ticket. However, this didn't support selecting dates far in the future. This was a problem because gifters would likely need to choose months in advance, so I designed a new one that enabled this.
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/date-exploration-5.png",
+  src: "/images/gifting-garden-memberships/date-exploration-5",
   alt: "Existing date and time picker that I'd designed in a previous project.",
   caption: "Existing date and time picker that I'd designed in a previous project."
 %}
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/date-exploration-1-@3x.png",
+  src: "/images/gifting-garden-memberships/date-exploration-1-@3x",
   alt: "Date picker scroll UI concept scrapped due to large scroll length.",
   caption: "Date picker scroll UI concept scrapped due to large scroll length."
 %}
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/date-exploration-2-@3x.png",
+  src: "/images/gifting-garden-memberships/date-exploration-2-@3x",
   alt: "Paginated date picker UI concept favoured for simplicity and ability to provide inline feedback.",
   caption: "Paginated date picker UI concept favoured for simplicity and ability to provide inline feedback."
 %}
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/date-exploration-3-@3x.png",
+  src: "/images/gifting-garden-memberships/date-exploration-3-@3x",
   alt: "Enhanced paginated date picker UI for clearer touch targets.",
   caption: "Enhanced paginated date pickcer UI for clearer touch targets."
 %}
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/date-exploration-4-@3x.png",
+  src: "/images/gifting-garden-memberships/date-exploration-4-@3x",
   alt: "Enhanced paginated date picker UI states showing inline feedback.",
   caption: "Enhanced paginated UI states showing inline feedback."
 %}
@@ -165,13 +165,13 @@ Candide had a date picker that visitors used to select a day ticket. However, th
 ## Results
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/key-screens-for-gifting-to-two-adults.jpg",
+  src: "/images/gifting-garden-memberships/key-screens-for-gifting-to-two-adults",
   alt: "Key screens for gifting to two adults.",
   caption: "Key screens for gifting to two adults."
 %}
 
 {% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/key-receiving-screens-for-two-adults.jpg",
+  src: "/images/gifting-garden-memberships/key-receiving-screens-for-two-adults",
   alt: "Key receiving screens for two adults.",
   caption: "Key receiving screens for two adults."
 %}

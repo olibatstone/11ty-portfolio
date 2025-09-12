@@ -59,9 +59,10 @@ In late 2022, Genomics invited 3,000 MassMutual policyholders to discover their 
 Without resolving these pain points, the scale-up risked lower adoption and weaker customer buy-in.
 
 {% render "partials/figure.html",
-  src: "/images/simplifying-genetic-risk/original-hero.png",
+  src: "/images/simplifying-genetic-risk/other/original-hero",
   alt: "Original marketing site hero section with unclear value proposition",
-  caption: "Original marketing site hero section before redesign."
+  caption: "Original marketing site hero section before redesign.",
+  webp: false
 %}
 
 ## What I did
@@ -73,19 +74,19 @@ Without resolving these pain points, the scale-up risked lower adoption and weak
 - To reduce engineering effort in a small team with other priorities, I developed the Genomics brand rather than rebuilding it; extending the dominant navy colour and introducing bold gradients to stand out from lighter-toned competitors.
 
 {% render "partials/figure.html",
-  src: "/images/simplifying-genetic-risk/brand-exploration-1.png",
+  src: "/images/simplifying-genetic-risk/other/brand-exploration-1",
   alt: "Health Insights branding with new gradients and extended navy palette",
   caption: "Health Insights product identity. Extended Genomics brand with bold gradients and clear positioning in the market."
 %}
 
 {% render "partials/figure.html",
-  src: "/images/simplifying-genetic-risk/brand-exploration-2.png",
+  src: "/images/simplifying-genetic-risk/other/brand-exploration-2",
   alt: "Health Insights branding with new gradients and extended navy palette",
   caption: "Exploring logomarks that use the Genomics icon."
 %}
 
 {% render "partials/figure.html",
-  src: "/images/simplifying-genetic-risk/brand-exploration-3.png",
+  src: "/images/simplifying-genetic-risk/other/brand-exploration-3",
   alt: "Health Insights branding with new gradients and extended navy palette",
   caption: "Exploring how these logo concepts would appear across touchpoints."
 %}
@@ -103,13 +104,13 @@ Without resolving these pain points, the scale-up risked lower adoption and weak
 - To simplify *Science* as much as possible, I worked with the science and medical teams to reduce jargon.
 
 {% render "partials/figure.html",
-  src: "/images/simplifying-genetic-risk/action-home-sample-report-mobile-1-@3x.png",
+  src: "/images/simplifying-genetic-risk/mobile/action-home-sample-report-mobile-1-@3x",
   alt: "Concept sample report hero mobile version",
   caption: "Concept sample report hero mobile version."
 %}
 
 {% render "partials/figure.html",
-  src: "/images/simplifying-genetic-risk/action-home-sample-report-desktop-1-@3x.png",
+  src: "/images/simplifying-genetic-risk/desktop/action-home-sample-report-desktop-1-@3x",
   alt: "Concept sample report hero desktop version.",
   caption: "Concept sample report hero desktop version."
 %}
@@ -128,7 +129,7 @@ I ran a moderated usability test with 5 participants from our target demographic
 > Jack, 40
 
 {% render "partials/figure.html",
-  src: "/images/simplifying-genetic-risk/usability-test-1-how-it-works miro.png",
+  src: "/images/simplifying-genetic-risk/other/usability-test-1-how-it-works miro",
   alt: "How it works and Science sections explaining the genetic testing process",
   caption: "Thematic analysis of the *How it works* page feedback in Miro"
 %}
@@ -149,11 +150,58 @@ A follow‑up test revealed that patients saw the animation as a helpful augment
 
 ## Results
 
-{% render "partials/video.html",
-  base: "/videos/simplifying-genetic-risk/home-desktop",
-  poster: "/images/simplifying-genetic-risk/home-desktop-poster.jpg",
-  caption: "Home page"
+<div class="image-grid full-bleed">
+{% render "partials/figure.html",
+  src: "/images/simplifying-genetic-risk/mobile/result-home-mobile-1-@3x",
+  alt: "‌Hero section on *Home*",
+  caption: "‌Hero section on *Home*"
 %}
+{% render "partials/figure.html",
+  src: "/images/simplifying-genetic-risk/mobile/result-home-mobile-2-@3x",
+  alt: "‌*Science* section on *Home*",
+  caption: "‌*Science* section on *Home*"
+%}
+{% render "partials/figure.html",
+  src: "/images/simplifying-genetic-risk/mobile/result-home-mobile-3-@3x",
+  alt: "‌*How it works* section on *Home*",
+  caption: "‌*How it works* section on *Home*"
+%}
+
+{% render "partials/figure.html",
+  src: "/images/simplifying-genetic-risk/mobile/result-science-mobile-1-@3x",
+  alt: "PRS chart section on *Science*",
+  caption: "PRS chart section on *Science*"
+%}
+
+{% render "partials/video.html",
+  base: "/videos/simplifying-genetic-risk/home-desktop-full-scroll",
+  poster: "/images/simplifying-genetic-risk/home-desktop-poster.jpg",
+  caption: "Full *Home*",
+  autoplay: true
+%}
+
+{% render "partials/video.html",
+  base: "/videos/simplifying-genetic-risk/howitworks-desktop-full-scroll",
+  poster: "/images/simplifying-genetic-risk/home-desktop-poster.jpg",
+  caption: "Full *How it works*",
+  autoplay: false
+%}
+
+{% render "partials/video.html",
+  base: "/videos/simplifying-genetic-risk/science-desktop-full-scroll",
+  poster: "/images/simplifying-genetic-risk/home-desktop-poster.jpg",
+  caption: "Full *Science*",
+  autoplay: false
+%}
+
+{% render "partials/video.html",
+  base: "/videos/simplifying-genetic-risk/aboutus-desktop-full-scroll",
+  poster: "/images/simplifying-genetic-risk/home-desktop-poster.jpg",
+  caption: "Full *About us*",
+  autoplay: false
+%}
+
+</div>
 
 - Account-creation rose to 59.3% as of January 2024 since launch in December 2023, a 5.3 percentage point increase from the pilot’s 54%.
 - The new product identity and visual system reinforced credibility at scale, helping sustain pilot-level conversion rates and enabling the 5.3 percentage point lift.

@@ -217,31 +217,34 @@ img {
   margin: var(--space-4) 0 0 0;
 }
 
-/* .image-grid {
+/* Unified media grid: images and video */
+.image-grid {
   display: grid;
-  grid-template-columns: 70% 30%;
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin: var(--space-3) 0;
+}
+@media (min-width: 900px) {
+  .image-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
+/* Full-bleed but capped to 1440px and centered */
 .image-grid.full-bleed {
-  margin-block: var(--space-3);
-}
-
-.image-grid.full-bleed > * { padding-inline: 0; }
-
-.full-bleed {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  max-width: none;
-  box-sizing: border-box;
-  padding: var(--space-4);
-}
-
-.full-bleed > * {
+  width: min(100vw, 1440px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   padding-inline: var(--space-4);
-  box-sizing: border-box;
-} */
+}
+
+/* Make common media elements fill their grid cell */
+.image-grid > img,
+.image-grid > video,
+.image-grid > figure,
+.image-grid > .video-demo {
+  width: 100%;
+  height: auto;
+}
 
 video {
   display: block;
@@ -253,9 +256,14 @@ video {
 
 /* Video component wrapper (partial: video.html) */
 .video-demo {
-  width: var(--video-width, 70vw);
+  width: 100%;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
+  grid-column: span 1;
+}
+
+@media (min-width: 900px) {
+  .video-demo { grid-column: span 2; }
 }
 
 /* The <video> element inside the component */

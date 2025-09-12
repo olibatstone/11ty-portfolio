@@ -12,6 +12,10 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginTOC);
 
+  // Inline Markdown filter for captions
+  const mdInline = markdownIt({ html: true, linkify: true, breaks: false });
+  eleventyConfig.addLiquidFilter("md", (str) => (str ? mdInline.renderInline(String(str)) : ""));
+
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPassthroughCopy("styles/");
   eleventyConfig.addPassthroughCopy("images/");
@@ -20,4 +24,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("work", (api) =>
     api.getFilteredByTag("work").sort((a, b) => (a.data.order||0) - (b.data.order||0))
   );
+
+  return {
+    htmlTemplateEngine: "liquid",
+    markdownTemplateEngine: "liquid",
+    dir: { input: ".", output: "_site", includes: "_includes" }
+  };
 };
