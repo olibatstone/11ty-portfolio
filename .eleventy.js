@@ -17,9 +17,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLiquidFilter("md", (str) => (str ? mdInline.renderInline(String(str)) : ""));
 
   eleventyConfig.setUseGitIgnore(false);
-  eleventyConfig.addPassthroughCopy("styles/");
-  eleventyConfig.addPassthroughCopy("images/");
-  eleventyConfig.addPassthroughCopy("videos/");
+  eleventyConfig.addPassthroughCopy("src/styles/");
+  eleventyConfig.addPassthroughCopy("src/images/");
+  eleventyConfig.addPassthroughCopy("src/videos/");
 
   eleventyConfig.addCollection("work", (api) =>
     api.getFilteredByTag("work").sort((a, b) => (a.data.order||0) - (b.data.order||0))
@@ -28,6 +28,6 @@ module.exports = function(eleventyConfig) {
   return {
     htmlTemplateEngine: "liquid",
     markdownTemplateEngine: "liquid",
-    dir: { input: ".", output: "_site", includes: "_includes" }
+    dir: { input: "src", output: "_site", includes: "_includes" }
   };
 };

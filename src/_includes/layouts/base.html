@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include "partials/head.html" %}
+</head>
+
+<body id="top">
+  {%- include "partials/button.html", href: "#main", classes: "skip-link", label: "Skip to content ↓" -%}
+  <header>
+    <section class="hero">
+      {{ content }}
+    </section>
+  </header>
+  <main id="main" tabindex="-1" aria-label="Main content">
+    <section class="work-list-container" aria-labelledby="selected-work-heading">
+      <h2 id="selected-work-heading">Selected work</h2>
+      {% include "partials/work-list.html" %}
+    </section>
+    <section class="recommendations-list-container" aria-labelledby="recommendations-heading">
+      <h2 id="recommendations-heading">Recommendations</h2>
+      {% include "partials/recommendations.html" %}
+    </section>
+<!--     <section class="getiintouch-container" aria-labelledby="getintouch-heading">
+      <h2 id="getintouch-heading">Get in touch</h2>
+      <p>Explore my work or book a call to find out how I could help supercharge your business.</p>
+    </section> -->
+    {%- include "partials/button.html", href: "#top", label: "Back to top ↑" -%}
+  </main>
+  <footer>
+    {% include "partials/footer.html" %}
+  </footer>
+  {% include "partials/scripts.html" %}
+</body>
+
+</html>
