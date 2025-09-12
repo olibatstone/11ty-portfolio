@@ -175,28 +175,28 @@ A follow‑up test revealed that patients saw the animation as a helpful augment
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/home-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/home-desktop-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/home-desktop-full-scroll-poster.jpg",
   caption: "Full *Home*",
   autoplay: true
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/howitworks-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/home-desktop-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/howitworks-desktop-full-scroll-poster.jpg",
   caption: "Full *How it works*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/science-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/home-desktop-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/science-desktop-full-scroll-poster.jpg",
   caption: "Full *Science*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/aboutus-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/home-desktop-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/aboutus-desktop-full-scroll-poster.jpg",
   caption: "Full *About us*",
   autoplay: false
 %}

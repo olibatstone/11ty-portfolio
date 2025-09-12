@@ -1,8 +1,7 @@
 <figure class="video-demo">
   <video
     class="video-demo__media"
-    {% if autoplay == true %}autoplay loop muted playsinline{% endif %}
-    controls
+    {% if autoplay == true %}autoplay loop muted playsinline{% else %}controls{% endif %}
     preload="metadata"
     loading="lazy"
     poster="{{ poster }}">
