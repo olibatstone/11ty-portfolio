@@ -6,7 +6,7 @@ order: 1
 title: Boosting account-creation by 5.3% with marketing site redesign
 description: I redesigned Genomics' genetic testing website, breaking healthcare benchmarks.
 meta-description: boosting account-creation to 59.3%.
-image: /images/simplifying-genetic-risk/1.webp
+image: /images/simplifying-genetic-risk/other/1.webp
 
 timeline: "September - December 2023"
 client:
@@ -73,23 +73,27 @@ Without resolving these pain points, the scale-up risked lower adoption and weak
 - After gaining approval, I analysed competitor visual systems to position us credibly in the market.
 - To reduce engineering effort in a small team with other priorities, I developed the Genomics brand rather than rebuilding it; extending the dominant navy colour and introducing bold gradients to stand out from lighter-toned competitors.
 
+<div class="image-grid full-bleed three-columns">
+
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/other/brand-exploration-1",
   alt: "Health Insights branding with new gradients and extended navy palette",
-  caption: "Health Insights product identity. Extended Genomics brand with bold gradients and clear positioning in the market."
+  caption: "Logo explorations."
 %}
 
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/other/brand-exploration-2",
   alt: "Health Insights branding with new gradients and extended navy palette",
-  caption: "Exploring logomarks that use the Genomics icon."
+  caption: "Logomark explorations leveraging the Genomics icon."
 %}
 
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/other/brand-exploration-3",
   alt: "Health Insights branding with new gradients and extended navy palette",
-  caption: "Exploring how these logo concepts would appear across touchpoints."
+  caption: "Touchpoint exploration for each logo concept."
 %}
+
+</div>
 
 ### Added content that removed privacy and cost concerns
 
@@ -103,6 +107,7 @@ Without resolving these pain points, the scale-up risked lower adoption and weak
 - The *How it works* section was buried on the home page. I promoted it in hierarchy, created a dedicated page and new content describing how we use patient genetic data to generate results and what patients could do with them.
 - To simplify *Science* as much as possible, I worked with the science and medical teams to reduce jargon.
 
+<div class="image-grid full-bleed three-columns">
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/mobile/action-home-sample-report-mobile-1-@3x",
   alt: "Concept sample report hero mobile version",
@@ -110,10 +115,17 @@ Without resolving these pain points, the scale-up risked lower adoption and weak
 %}
 
 {% render "partials/figure.html",
-  src: "/images/simplifying-genetic-risk/desktop/action-home-sample-report-desktop-1-@3x",
-  alt: "Concept sample report hero desktop version.",
-  caption: "Concept sample report hero desktop version."
+  src: "/images/simplifying-genetic-risk/other/actions-redesignedcontent-howitworks",
+  alt: "Early *How it works* content ideation.",
+  caption: "Early *How it works* content ideation."
 %}
+
+{% render "partials/figure.html",
+  src: "/images/simplifying-genetic-risk/other/actions-redesignedcontent-science",
+  alt: "Iterating on *Science* content with the Science team",
+  caption: "Iterating on *Science* content with the Science team."
+%}
+</div>
 
 ### Used testing to uncover confusion and improve decision-making
 
@@ -175,35 +187,35 @@ A follow‑up test revealed that patients saw the animation as a helpful augment
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/home-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/home-desktop-full-scroll-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/desktop/home-desktop-full-scroll-poster.jpg",
   caption: "Full *Home*",
   autoplay: true
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/howitworks-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/howitworks-desktop-full-scroll-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/desktop/howitworks-desktop-full-scroll-poster.jpg",
   caption: "Full *How it works*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/science-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/science-desktop-full-scroll-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/desktop/science-desktop-full-scroll-poster.jpg",
   caption: "Full *Science*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/trustandprivacy-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/trustandprivacy-desktop-full-scroll-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/desktop/trustandprivacy-desktop-full-scroll-poster.jpg",
   caption: "Full *Trust and privacy*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/aboutus-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/aboutus-desktop-full-scroll-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/desktop/aboutus-desktop-full-scroll-poster.jpg",
   caption: "Full *About us*",
   autoplay: false
 %}

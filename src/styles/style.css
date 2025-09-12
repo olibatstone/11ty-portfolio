@@ -228,6 +228,7 @@ img {
 }
 @media (min-width: 900px) {
   .image-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .three-columns { grid-template-columns: repeat(3, minmax(0, 1fr));}
 }
 
 /* Full-bleed but capped to 1440px and centered */
