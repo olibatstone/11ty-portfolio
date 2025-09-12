@@ -127,7 +127,7 @@ Without resolving these pain points, the scale-up risked lower adoption and weak
 %}
 </div>
 
-### Used testing to uncover confusion and improve decision-making
+### Tested to uncover confusion and improve decision-making
 
 I ran a moderated usability test with 5 participants from our target demographic (35-70, US, life insurance). The findings highlighted gaps:
 

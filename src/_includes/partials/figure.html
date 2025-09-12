@@ -1,12 +1,11 @@
 <figure class="{{ classes }}">
+  {% assign ext = src | imgExt %}
   <picture>
     {% if webp != false %}
     <source srcset="{{ src }}.webp" type="image/webp">
     {% endif %}
-    <source srcset="{{ src }}.jpg" type="image/jpeg">
-    <source srcset="{{ src }}.jpeg" type="image/jpeg">
-    <source srcset="{{ src }}.png" type="image/png">
-    <img src="{{ src }}.jpg" alt="{{ alt }}" loading="lazy" decoding="async">
+    <source srcset="{{ src }}.{{ ext }}" type="image/{% if ext == 'png' %}png{% else %}jpeg{% endif %}">
+    <img src="{{ src }}.{{ ext }}" alt="{{ alt }}" loading="lazy" decoding="async">
   </picture>
   {% if caption %}
     <figcaption>{{ caption }}</figcaption>

@@ -135,7 +135,7 @@ Candide had a date picker that visitors used to select a day ticket. However, th
 {% render "partials/figure.html",
   src: "/images/gifting-garden-memberships/date-exploration-3-@3x",
   alt: "Enhanced paginated date picker UI for clearer touch targets.",
-  caption: "Enhanced paginated date pickcer UI for clearer touch targets."
+  caption: "Enhanced paginated date picker UI for clearer touch targets."
 %}
 
 </div>
@@ -159,7 +159,7 @@ Candide had a date picker that visitors used to select a day ticket. However, th
 - To solve for gifting to existing members, allowing the choice to extend a membership was the most voted solution in the workshop. However, this is complex from a user perspective and would require more research to reduce risk, so I worked with the team and settled on treating activation as the point of purchase. This meant memberships were pre-paid with no expiry date.
 - This solved Candide's constraint regarding selling memberships for following years and made our solution more attractive to other gardens with fixed-term seasonal products. They wouldn't be forced into a rolling membership model.
 
-### Tested with real users and clarified confusing steps
+### Usability tested and clarified confusing steps
 
 - I planned to test the gifting and receiving prototype with 5 gifters and receivers in a moderated usability session, but the deadline meant this wasn't doable.
 - To identify any major issues with the prototypes in the least amount of time, I instead ran an unmoderated usability test via usertesting.com with 20 participants, being sure to have a proportion of older people.
