@@ -223,6 +223,8 @@ img {
   grid-template-columns: 1fr;
   gap: var(--space-4);
   margin: var(--space-3) 0;
+  justify-content: center;
+  justify-items: center;
 }
 @media (min-width: 900px) {
   .image-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }

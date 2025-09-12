@@ -195,6 +195,13 @@ A follow‑up test revealed that patients saw the animation as a helpful augment
 %}
 
 {% render "partials/video.html",
+  base: "/videos/simplifying-genetic-risk/trustandprivacy-desktop-full-scroll",
+  poster: "/images/simplifying-genetic-risk/trustandprivacy-desktop-full-scroll-poster.jpg",
+  caption: "Full *Trust and privacy*",
+  autoplay: false
+%}
+
+{% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/aboutus-desktop-full-scroll",
   poster: "/images/simplifying-genetic-risk/aboutus-desktop-full-scroll-poster.jpg",
   caption: "Full *About us*",
