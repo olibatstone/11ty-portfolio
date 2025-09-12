@@ -112,6 +112,8 @@ To address the opportunities identified in my research, I wrote 20 'how might we
 
 Candide had a date picker that visitors used to select a day ticket. However, this didn't support selecting dates far in the future. This was a problem because gifters would likely need to choose months in advance, so I designed a new one that enabled this.
 
+<div class="image-grid full-bleed three-columns">
+
 {% render "partials/figure.html",
   src: "/images/gifting-garden-memberships/date-exploration-5",
   alt: "Existing date and time picker that I'd designed in a previous project.",
@@ -135,6 +137,8 @@ Candide had a date picker that visitors used to select a day ticket. However, th
   alt: "Enhanced paginated date picker UI for clearer touch targets.",
   caption: "Enhanced paginated date pickcer UI for clearer touch targets."
 %}
+
+</div>
 
 {% render "partials/figure.html",
   src: "/images/gifting-garden-memberships/date-exploration-4-@3x",

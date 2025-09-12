@@ -3,10 +3,10 @@
     {% if webp != false %}
     <source srcset="{{ src }}.webp" type="image/webp">
     {% endif %}
-    <source srcset="{{ src }}.png" type="image/png">
     <source srcset="{{ src }}.jpg" type="image/jpeg">
     <source srcset="{{ src }}.jpeg" type="image/jpeg">
-    <img src="{{ src }}.png" alt="{{ alt }}" loading="lazy" decoding="async">
+    <source srcset="{{ src }}.png" type="image/png">
+    <img src="{{ src }}.jpg" alt="{{ alt }}" loading="lazy" decoding="async">
   </picture>
   {% if caption %}
     <figcaption>{{ caption }}</figcaption>
