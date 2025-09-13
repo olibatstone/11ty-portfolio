@@ -430,7 +430,10 @@ details[open] summary::before {
 /* Details accordion enhancements */
 .details-accordion summary { cursor: pointer; }
 .details-accordion summary:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
-:target.details-accordion { outline: 2px solid currentColor; outline-offset: 4px; }
+/* Replace sticky :target outline with focus-within */
+.details-accordion { scroll-margin-top: 4rem; }
+.details-accordion:target { outline: none; }
+.details-accordion:focus-within { outline: 2px solid currentColor; outline-offset: 4px; }
 
 /* Posts */
 .posts {
