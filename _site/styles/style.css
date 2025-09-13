@@ -433,7 +433,7 @@ details[open] summary::before {
 /* Replace sticky :target outline with focus-within */
 .details-accordion { scroll-margin-top: 4rem; }
 .details-accordion:target { outline: none; }
-.details-accordion:focus-within { outline: 2px solid currentColor; outline-offset: 4px; }
+.details-accordion:focus-within:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 
 /* Posts */
 .posts {
