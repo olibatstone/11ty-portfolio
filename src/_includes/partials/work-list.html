@@ -1,10 +1,12 @@
 <ul>
   {% for work in collections.work %}
-    <li>
-      <a class="small-thumbnail" href="{{ work.url }}">
-        <img src="{{ work.data.image }}" alt="{{ work.data.title }}" loading="lazy" decoding="async">
-        <p><span class="title">{{ work.data.title }}. </span>{{ work.data.description }} →</p>
-      </a>
-    </li>
+    {% if work.url != page.url %}
+      <li>
+        <a class="small-thumbnail" href="{{ work.url }}">
+          <img src="{{ work.data.image }}" alt="{{ work.data.title }}" loading="lazy" decoding="async">
+          <p><span class="title">{{ work.data.title }}. </span>{{ work.data.description }} →</p>
+        </a>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>

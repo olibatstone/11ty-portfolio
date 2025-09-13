@@ -36,6 +36,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPassthroughCopy("src/styles/");
+  eleventyConfig.addPassthroughCopy("src/fonts/");
   eleventyConfig.addPassthroughCopy("src/images/");
   eleventyConfig.addPassthroughCopy("src/videos/");
 
