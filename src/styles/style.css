@@ -109,6 +109,11 @@ details blockquote {
   list-style: none;
 }
 
+.table-of-contents h2 {
+  margin-top: 0;
+  color: var(--text-color);
+}
+
 .toc li {
   margin-bottom: 1rem;
   list-style: none;
@@ -119,8 +124,10 @@ details blockquote {
   margin-left: 2rem;
 }
 
-.toc {
-  margin-left: 2rem;
+.table-of-contents {
+  box-shadow: var(--shared-box-shadow);
+  padding: var(--space-2);
+  border-radius: var(--border-radius-sm);
 }
 
 span {
@@ -414,6 +421,7 @@ details[open] summary::before {
 
 .small-thumbnail {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
   margin: 0;
@@ -423,7 +431,7 @@ details[open] summary::before {
 }
 
 .small-thumbnail img {
-  width: 10rem;
+  width: 100%;
   height: auto;
   margin: 0;
 }

@@ -59,11 +59,15 @@ I redesigned Health Insights’ genetic test kit and online instructions to cut 
 - 5% had unusable or missing samples.
 - A patient survey showed many felt the instructions were complex.
 
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/other/actions-original-instructions",
+  alt: "Original instructions.",
+  caption: "Original instructions."
+%}
+
 > Consider rewriting the instructions, they were tricky
 >
 > Patient, September 2022
-
-
 
 ### Linked kits to patients with activation codes to stop ID errors
 
@@ -88,13 +92,13 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/first-printed-design-1",
   alt: "First printed kit design with QR code",
-  caption: "The front of an early print test to validate QR scan distance and matte finish readability."
+  caption: "Design exploration for the front of the kit printed to test QR and see the print finish quality."
 %}
 
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/first-printed-design-2",
   alt: "First printed kit design with QR code",
-  caption: "The inside of an early print test to validate QR scan distance and matte finish readability."
+  caption: "The inside of the kit featuring the QR and online directive."
 %}
 
 ### Built step-by-step instructions to lower collection errors
@@ -128,6 +132,34 @@ Key instructions findings:
 - To address the partnership with DNAGenotek and relevant privacy concerns, I added content that explained the partnership and stated they do not receive patient personal data or samples.
 - To resolve the box confusion, I tightened wording and added targeted illustrations to help distinguish the kit box from the sample device box.
 
+<div class="image-grid full-bleed">
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/other/actions-box-print-file-1-@3x",
+  alt: "Exploring new signposts on the kit print.",
+  caption: "Exploring new instructions signpost on the kit print."
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/other/actions-box-print-file-2-@3x",
+  alt: "Exploring recognising the test device on the kit print.",
+  caption: "Exploring recognising the test device on the kit print."
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/other/actions-box-print-inside-file-4-@3x",
+  alt: "Exploring design options for the inside panel.",
+  caption: "Exploring design options for the inside panel."
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/other/actions-box-print-inside-file-3-@3x",
+  alt: "Exploring design options for the inside panel.",
+  caption: "Exploring design options for the inside panel."
+%}
+
+
+</div>
 
 ### Navigated regulatory limits while keeping guidance clear
 
@@ -138,13 +170,14 @@ Key instructions findings:
 
 A virtual usability test with 5 US colleagues showed no major threats - none referred to the paper instructions and all found the online ones clear.
 
+
+## Results
+
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/final-test-kit",
   alt: "Final kit and print files",
   caption: "Final kit after regulatory and usability changes."
 %}
-
-## Results
 
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/kit-activation-final-mobile",
