@@ -112,7 +112,7 @@ To address the opportunities identified in my research, I wrote 20 'how might we
 
 Candide had a date picker that visitors used to select a day ticket. However, this didn't support selecting dates far in the future. This was a problem because gifters would likely need to choose months in advance, so I designed a new one that enabled this.
 
-<div class="image-grid full-bleed three-columns">
+<div class="image-grid full-bleed">
 
 {% render "partials/figure.html",
   src: "/images/gifting-garden-memberships/date-exploration-5",

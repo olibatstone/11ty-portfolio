@@ -165,7 +165,7 @@ To resolve sample report confusion, I explored alternatives to represent the tes
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/other/action-home-1-@3x",
   alt: "Ideas on representing the test at different levels of abstraction.",
-  caption: "Ideas on representing the test at different levels of abstraction."
+  caption: "Ideas on representing the test at different levels of abstraction.
 %}
 
 {% render "partials/figure.html",
@@ -274,35 +274,35 @@ An additional usabiltiy test showed:
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/home-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/desktop/home-desktop-full-scroll-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/desktop/home-desktop-full-scroll-poster",
   caption: "Full *Home*",
   autoplay: true
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/howitworks-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/desktop/howitworks-desktop-full-scroll-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/desktop/howitworks-desktop-full-scroll-poster",
   caption: "Full *How it works*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/science-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/desktop/science-desktop-full-scroll-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/desktop/science-desktop-full-scroll-poster",
   caption: "Full *Science*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/trustandprivacy-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/desktop/trustandprivacy-desktop-full-scroll-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/desktop/trustandprivacy-desktop-full-scroll-poster",
   caption: "Full *Trust and privacy*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/aboutus-desktop-full-scroll",
-  poster: "/images/simplifying-genetic-risk/desktop/aboutus-desktop-full-scroll-poster.jpg",
+  poster: "/images/simplifying-genetic-risk/desktop/aboutus-desktop-full-scroll-poster",
   caption: "Full *About us*",
   autoplay: false
 %}
