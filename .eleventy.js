@@ -39,6 +39,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/fonts/");
   eleventyConfig.addPassthroughCopy("src/images/");
   eleventyConfig.addPassthroughCopy("src/videos/");
+  eleventyConfig.addPassthroughCopy("src/documents/");
 
   eleventyConfig.addCollection("work", (api) =>
     api.getFilteredByTag("work").sort((a, b) => (a.data.order||0) - (b.data.order||0))

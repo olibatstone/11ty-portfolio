@@ -8,11 +8,23 @@
 <body id="top">
   {%- include "partials/button.html", href: "#main", classes: "skip-link", label: "Skip to content ↓" -%}
   <header>
-    <section class="hero">
-      {{ content }}
+    <section class="hero-container">
+      {% render "partials/figure.html",
+      src: "/images/profile/oli-photo",
+      alt: "Finalised FAQs addressing the free benefit nature of the test reiterating how the test is different from
+      competitors.",
+      caption: " "
+      classes: "portrait"
+      %}
+      <h1>{{ site.title }}—{{ description }}</h1>
     </section>
   </header>
   <main id="main" tabindex="-1" aria-label="Main content">
+    <section class="work-list-container" aria-labelledby="selected-work-heading">
+      <h2 id="about-heading">About</h2>
+      <p>{{ about }}</p>
+      {%- include "partials/button.html", href: "/documents/olibatstone-cv-generic-082025.pdf", label: "View CV →" -%}
+    </section>
     <section class="work-list-container" aria-labelledby="selected-work-heading">
       <h2 id="selected-work-heading">Selected work</h2>
       {% include "partials/work-list.html" %}
@@ -23,7 +35,7 @@
     </section>
     <section class="getintouch-container" aria-labelledby="getintouch-heading">
       <h2 id="getintouch-heading">Get in touch</h2>
-      <p>Send an email or book a call to find out how I could help supercharge your business.</p>
+      <p>{{ cta }}</p>
     </section>
     {%- include "partials/button.html", href: "#top", label: "Back to top ↑" -%}
   </main>

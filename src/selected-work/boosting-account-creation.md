@@ -318,3 +318,8 @@ An additional usabiltiy test showed:
 ## Let’s talk
 
 If you need to drive adoption of digital health products, I can help you design trust-building flows.
+
+{% include "partials/button.html",
+  href: "https://cal.com/olibatstone/30min",
+  label: "Book a call"
+%}

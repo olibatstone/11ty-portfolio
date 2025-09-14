@@ -189,3 +189,8 @@ Candide had a date picker that visitors used to select a day ticket. However, th
 ## Let’s talk
 
 If you need to open a high-intent revenue channel on a tight timeline, I can help you design and ship flows that convert.
+
+{% include "partials/button.html",
+  href: "https://cal.com/olibatstone/30min",
+  label: "Book a call"
+%}
