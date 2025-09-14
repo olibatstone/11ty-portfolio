@@ -5,7 +5,13 @@
 </script>
 <!-- 100% privacy-first analytics -->
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<script async src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
+<script
+  async
+  data-collect="outbound,emails,downloads"
+  data-extensions="pdf,csv,docx,xlsx,zip,doc,xls"
+  data-use-title="true"
+  data-full-urls="true"
+  src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
 
 {% if layout == "layouts/selected-work.html" %}
 <script>
@@ -47,34 +53,107 @@ document.addEventListener('DOMContentLoaded', () => {
     h3.replaceWith(details);
   }
 
-  // Expand details when navigating to a hash target
-  function expandDetailsForHash(hash) {
-    const id = (hash || '').replace(/^#/,'');
-    if (!id) return;
-    const target = document.getElementById(id);
-    if (target && target.tagName === 'DETAILS') {
-      target.open = true;
-      const sum = target.querySelector('summary');
-      if (sum) { try { sum.focus({ preventScroll: true }); } catch(e) {} }
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const btns = document.querySelectorAll('.readmore-btn');
+  if (!btns.length) return;
+  if (typeof window.sa_event !== 'function') return;
+
+  btns.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      const isLast = i === btns.length - 1;
+      const id = btn.id || `readmore-${i+1}`;
+      if (!expanded) {
+        sa_event('readmore_open', { id, last: isLast });
+      } else {
+        sa_event('readmore_close', { id, last: isLast });
+      }
+    }, { passive: true });
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof window.sa_event !== 'function') return;
+
+  const container = document.querySelector('.work-content') || document.querySelector('main') || document.body;
+  const selector = container.classList && container.classList.contains('work-content') ? '.work-content' : (container.tagName ? container.tagName.toLowerCase() : 'body');
+
+  function getThresholds() {
+    const rect = container.getBoundingClientRect();
+    const start = window.scrollY + rect.top; // top of container in document coords
+    const total = container.scrollHeight - window.innerHeight; // scrollable within container relative to viewport
+    const maxY = start + Math.max(total, 0);
+    return {
+      p25: start + total * 0.25,
+      p50: start + total * 0.50,
+      p75: start + total * 0.75,
+      p100: maxY
+    };
+  }
+
+  let sent = { p25: false, p50: false, p75: false, p100: false };
+  let ticking = false;
+  let thresholds = getThresholds();
+
+  function check(y) {
+    if (!sent.p25 && y >= thresholds.p25) { sa_event('scroll_25', { container: selector, path: location.pathname }); sent.p25 = true; }
+    if (!sent.p50 && y >= thresholds.p50) { sa_event('scroll_50', { container: selector, path: location.pathname }); sent.p50 = true; }
+    if (!sent.p75 && y >= thresholds.p75) { sa_event('scroll_75', { container: selector, path: location.pathname }); sent.p75 = true; }
+    if (!sent.p100 && y + 2 >= thresholds.p100) { sa_event('scroll_100', { container: selector, path: location.pathname }); sent.p100 = true; }
+  }
+
+  function onScrollOrResize() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(() => {
+        thresholds = getThresholds();
+        check(window.scrollY);
+        ticking = false;
+      });
     }
   }
 
-  // Initial load with hash
-  expandDetailsForHash(decodeURIComponent(location.hash));
+  window.addEventListener('scroll', onScrollOrResize, { passive: true });
+  window.addEventListener('resize', onScrollOrResize, { passive: true });
 
-  // On hash changes
-  window.addEventListener('hashchange', () => expandDetailsForHash(decodeURIComponent(location.hash)));
+  // Initial check
+  check(window.scrollY);
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.back-to-top');
+  if (!btn) return;
+  if (typeof window.sa_event !== 'function') return;
 
-  // TOC clicks: open the corresponding details before scroll completes
-  const tocLinks = document.querySelectorAll('.table-of-contents a[href^="#"]');
-  tocLinks.forEach(a => {
+  btn.addEventListener('click', () => {
+    sa_event('back_to_top', { path: location.pathname });
+  }, { passive: true });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof window.sa_event !== 'function') return;
+
+  const links = Array.from(document.querySelectorAll('a[href]')).filter(a => {
+    const href = a.getAttribute('href');
+    if (!href || href.startsWith('#')) return false;
+    let url;
+    try { url = new URL(href, location.origin); } catch (_) { return false; }
+    if (url.origin !== location.origin) return false; // external
+    const isCaseStudy = /\b(selected-work|work)\b/.test(url.pathname);
+    return isCaseStudy && url.pathname !== location.pathname;
+  });
+
+  links.forEach(a => {
     a.addEventListener('click', () => {
-      const id = a.getAttribute('href').slice(1);
-      const target = document.getElementById(id);
-      if (target && target.tagName === 'DETAILS') {
-        target.open = true;
-      }
-    });
+      const url = new URL(a.getAttribute('href'), location.origin);
+      sa_event('case_study_next', { from: location.pathname, to: url.pathname });
+    }, { passive: true });
   });
 });
 </script>
