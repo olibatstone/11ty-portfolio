@@ -1,6 +1,6 @@
 {
   "title": "Oli Batstone",
-  "footerActions": [
+  "footerLinks": [
     { "label": "Phone", "text": "+44 117 441 5560", "url": "tel:+441174415560" },
     { "label": "Email", "text": "hi@olibatstone.com", "url": "mailto:hi@olibatstone.com" },
     { "label": "Book a call", "text": "cal.com/olibatstone", "url": "https://cal.com/olibatstone/30min" }

@@ -36,8 +36,15 @@
     <section class="getintouch-container" aria-labelledby="getintouch-heading">
       <h2 id="getintouch-heading">Get in touch</h2>
       <p>{{ cta }}</p>
+      {% include "partials/button.html",
+        href: "https://cal.com/olibatstone/30min",
+        label: "Book a call"
+      %}
+      {% include "partials/button.html",
+        href: "email:hi@olibatstone.com",
+        label: "Send an email"
+      %}
     </section>
-    {%- include "partials/button.html", href: "#top", label: "Back to top ↑" -%}
   </main>
   <footer>
     {% include "partials/footer.html" %}

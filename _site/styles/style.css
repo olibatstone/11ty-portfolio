@@ -216,6 +216,10 @@ figcaption {
   padding: var(--space-2) 0 var(--space-4) 0;
 }
 
+.recommendations li:last-child figcaption {
+  padding-bottom: 0;
+}
+
 blockquote {
   font-style: italic;
 }
@@ -522,23 +526,28 @@ details[open] summary::before {
 }
 
 /* Layout */
-footer {
-  margin: var(--space-5) 0 0 0;
-}
 
 .footer-links {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 32px;
+  flex-direction: row;
+  margin: 0 0 var(--space-1) 0;
+  gap: var(--space-3);
+}
+
+@media (max-width: 630px) {
+  .footer-links {
+    flex-direction: column;
+    gap: var(--space-2);
+    margin: 0 0 var(--space-2) 0;
+  }
 }
 
 .site-footer p {
-  margin-top: 1rem;
+  margin: 0 0 var(--space-1) 0;
 }
 
-.footer-links li a {
-  margin-left: 32px;
+.site-footer {
+  margin: var(--space-4) 0 0 0;
 }
 
 /* Accessibility: focus styles */
