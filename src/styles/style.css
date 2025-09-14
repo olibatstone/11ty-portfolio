@@ -99,6 +99,7 @@ a {
 
 h1 {
   color: var(--header-color);
+  font-weight: 400;
 }
 
 summary,
