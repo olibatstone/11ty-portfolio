@@ -95,7 +95,7 @@ a {
 }
 
 .page-title {
-  margin: var(--space-4) 0 var(--space-2) 0;
+  margin: var(--space-2) 0 var(--space-5) 0;
 }
 
 h1 {
@@ -108,10 +108,13 @@ p,
 a,
 ul,
 li,
-figcaption,
 blockquote {
   font-size: var(--step-0);
-  line-height: 2;
+  line-height: 1.9;
+}
+
+figcaption {
+  font-size: var(--step--1);
 }
 
 /* Heading sizes mapped to the scale */
@@ -156,24 +159,17 @@ details blockquote {
   list-style: none;
 }
 
-.table-of-contents h2 {
-  margin-top: 0;
-}
-
 .toc li {
-  margin-bottom: var(--space-2);
-  list-style: none;
+  list-style: none; /* remove default */
+  position: relative;
+  padding-left: 1.2em; /* space for bullet */
+  margin-bottom: var(--space-1);
 }
 
-.toc li ol {
-  margin-top: var(--space-2);
-  margin-left: 2rem;
-}
-
-.table-of-contents {
-  box-shadow: var(--shared-box-shadow);
-  padding: var(--space-2);
-  border-radius: var(--border-radius-sm);
+.toc li::before {
+  content: "↓";
+  position: absolute;
+  left: 0;
 }
 
 .getintouch-container {
@@ -202,10 +198,6 @@ a {
 .toc {
   padding-left: 0;
   margin: 0;
-}
-
-.toc ol {
-  margin: var(--space-1) 0 0 var(--space-2);
 }
 
 .page-title {
@@ -660,5 +652,15 @@ button:focus-visible,
 @media only screen and (max-width: 33.75rem) {
   body {
     padding: var(--space-3);
+  }
+}
+
+/* Back to top: fixed on right for desktop */
+@media (min-width: 1200px) {
+  .back-to-top {
+    position: fixed;
+    inset-block-end: var(--space-4);
+    inset-inline-end: var(--space-4);
+    z-index: 1000;
   }
 }

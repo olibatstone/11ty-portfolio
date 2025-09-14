@@ -16,11 +16,11 @@
   <main class="content-container" id="main" tabindex="-1">
     <nav class="table-of-contents" role="navigation" aria-labelledby="toc-heading">
       <h2 id="toc-heading">On this page</h2>
-      {{ content | toc: '{"tags":["h2", "h3"]}' }}
+      {{ content | toc: '{"tags":["h2"]}' }}
     </nav>
     <section class="work-content">{{ content }}</section>
     <nav role="navigation">
-      {%- include "partials/button.html", href: "#top", label: "Back to top ↑" -%}
+      {%- include "partials/button.html", href: "#top", classes: "button back-to-top", label: "Back to top ↑" -%}
       {%- include "partials/button.html", href: "/", label: "← Home" -%}
     </nav>
   </main>
