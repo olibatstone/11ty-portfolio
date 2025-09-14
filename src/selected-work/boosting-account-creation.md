@@ -3,9 +3,9 @@ layout: layouts/selected-work.html
 tags: work
 order: 1
 
-title: Boosting account-creation by 5.3% with marketing site redesign
+title: Boosting account creation by 5.3% with marketing site redesign
 description: I redesigned Genomics' genetic testing website, breaking healthcare benchmarks.
-meta-description: boosting account-creation to 59.3%.
+meta-description: boosting account creation to 59.3%.
 image: /images/simplifying-genetic-risk/other/1.webp
 
 timeline: "September - December 2023"
@@ -13,7 +13,7 @@ client:
   name: "Genomics"
   stage: "Series B"
   size: "~150 employees"
-  businessModel: "B2B2C SaaS (Genomics to Insurers/Employers to Patients)"
+  businessModel: "B2B2C SaaS (Genomics to Insurers to Patients)"
   description: "Genomics leverages genetics to provide population-scale disease-risk products and targeted drug discovery."
 sector: "Health"
 role: "Senior Product Designer"
@@ -45,7 +45,7 @@ tools:
 
 ## Summary
 
-I redesigned Genomics’ genetic testing marketing site to boost adoption during scale-up. I created a new product identity, clarified the value proposition with fresh content, and resolved trust concerns through transparency pages and usability testing. The redesign drove a 5.3 percentage point increase in account-creation to 59.3%, breaking healthcare benchmarks.
+I redesigned Genomics’ genetic testing marketing site to boost adoption during scale-up. I created a new product identity, clarified the value proposition with fresh content, and resolved trust concerns through transparency pages and usability testing. The redesign drove a 5.3 percentage point increase in account-creation to 59.3%, breaking [healthcare benchmarks](https://unbounce.com/conversion-benchmark-report/healthcare-wellness-conversion-rate/).
 
 ## Problem
 
@@ -165,7 +165,7 @@ To resolve sample report confusion, I explored alternatives to represent the tes
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/other/action-home-1-@3x",
   alt: "Ideas on representing the test at different levels of abstraction.",
-  caption: "Ideas on representing the test at different levels of abstraction.
+  caption: "Ideas on representing the test at different levels of abstraction."
 %}
 
 {% render "partials/figure.html",
@@ -186,7 +186,7 @@ I partnered with the Lead Product Designer (working on another project) on this 
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/other/hero-concept-1",
   alt: "One of my iterations on the motif concept.",
-  caption: "An alternative iteration on the circular concept featuring increasing and decreasing risk for various condtions."
+  caption: "An alternative iteration on the circular concept featuring increasing and decreasing risk for various conditions."
 %}
 
 ### Created a competitor comparison to drive uptake
@@ -234,7 +234,7 @@ To meet patient requests for transparency, I expanded executive and medical prof
 
 ### Observed an increase in account-creation intent
 
-An additional usabiltiy test showed:
+An additional usability test showed:
 
 - 4 out of 5 participants would create an account
 - All found the comparison chart useful, and often went to the *Science* page as a next step.
@@ -309,7 +309,7 @@ An additional usabiltiy test showed:
 
 </div>
 
-- Account-creation rose to 59.3% as of January 2024 since launch in December 2023, a 5.3 percentage point increase from the pilot’s 54%.
+- Account creation rose to 59.3% as of January 2024 since launch in December 2023, a 5.3 percentage point increase from the pilot’s 54%.
 - The new product identity and visual system reinforced credibility at scale, helping sustain pilot-level conversion rates and enabling the 5.3 percentage point lift.
 - At least 3.2% of total account-creation came directly from *Science*, the largest of any other page, suggesting the new content gave more policyholders a better understanding of the test.
 - The service outperformed healthcare benchmarks, where account-creation rates typically stayed below 40%.

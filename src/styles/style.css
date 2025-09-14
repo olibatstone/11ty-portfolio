@@ -113,8 +113,13 @@ blockquote {
   line-height: 1.9;
 }
 
+p a:not(.button, .button *) {
+  text-decoration: underline;
+}
+
 figcaption {
   font-size: var(--step--1);
+  line-height: 1.9;
 }
 
 /* Heading sizes mapped to the scale */

@@ -21,7 +21,6 @@
     <section class="work-content">{{ content }}</section>
     <nav role="navigation">
       {%- include "partials/button.html", href: "#top", classes: "button back-to-top", label: "Back to top ↑" -%}
-      {%- include "partials/button.html", href: "/", label: "← Home" -%}
     </nav>
   </main>
   <footer>
@@ -29,14 +28,15 @@
       <h2>More selected work</h2>
       {% include "partials/work-list.html" %}
     </section>
+    {%- include "partials/button.html", href: "/", label: "← Home" -%}
     {% include "partials/footer.html" %}
   </footer>
-
-    <div id="readmore-template" hidden>
+  
+  <div id="readmore-template" hidden>
     {% include "partials/button.html",
-       as: "button",
-       classes: "button readmore-btn",
-       label: "Read more" %}
+    as: "button",
+    classes: "button readmore-btn",
+    label: "Read more" %}
   </div>
   
   {% include "partials/scripts.html"%}

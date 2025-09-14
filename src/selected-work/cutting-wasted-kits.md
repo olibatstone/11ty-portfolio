@@ -13,7 +13,7 @@ client:
   name: "Genomics"
   stage: "Series B"
   size: "~150 employees"
-  businessModel: "B2B2C SaaS (Genomics to Insurers/Employers to Patients)"
+  businessModel: "B2B2C SaaS (Genomics to Insurers to Patients)"
 sector: "Health"
 role: "Senior Product Designer"
 platform:
@@ -61,8 +61,8 @@ I redesigned Health Insights’ genetic test kit and online instructions to cut 
 
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/other/actions-original-instructions",
-  alt: "Original instructions.",
-  caption: "Original instructions."
+  alt: "Original paper instructions.",
+  caption: "Original paper instructions."
 %}
 
 > Consider rewriting the instructions, they were tricky
@@ -128,23 +128,7 @@ Key instructions findings:
 
 ### Iterated kit and copy to address privacy and box confusion
 
-- To address paper-first behaviour and set patient expectations, I pushed the supply chain team to invest in printing on the large inside panel of the kit (about $0.40 or $400 per 1000 kits). I then designed an eye-catching set of steps with the QR alongside. I used the freed up space below the sample device for supporting signposts.
-- To address the partnership with DNAGenotek and relevant privacy concerns, I added content that explained the partnership and stated they do not receive patient personal data or samples.
-- To resolve the box confusion, I tightened wording and added targeted illustrations to help distinguish the kit box from the sample device box.
-
-<div class="image-grid full-bleed">
-
-{% render "partials/figure.html",
-  src: "/images/cutting-sample-failures/other/actions-box-print-file-1-@3x",
-  alt: "Exploring new signposts on the kit print.",
-  caption: "Exploring new instructions signpost on the kit print."
-%}
-
-{% render "partials/figure.html",
-  src: "/images/cutting-sample-failures/other/actions-box-print-file-2-@3x",
-  alt: "Exploring recognising the test device on the kit print.",
-  caption: "Exploring recognising the test device on the kit print."
-%}
+To address paper-first behaviour and set patient expectations, I pushed the supply chain team to invest in printing on the large inside panel of the kit (about $0.40 or $400 per 1000 kits). I then designed an eye-catching set of steps with the QR alongside.
 
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/other/actions-box-print-inside-file-4-@3x",
@@ -155,16 +139,34 @@ Key instructions findings:
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/other/actions-box-print-inside-file-3-@3x",
   alt: "Exploring design options for the inside panel.",
-  caption: "Exploring design options for the inside panel."
+  caption: ""
 %}
 
+With the QR moved to the inside panel, I used the freed up space below the sample device for supporting signposts. To address the partnership with DNAGenotek and relevant privacy concerns, I added content that explained the partnership and stated they do not receive patient personal data or samples both on the kit and in the online journey.
 
-</div>
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/other/actions-box-print-file-1-@3x",
+  alt: "Exploring new signposts on the kit print.",
+  caption: "Exploring new instructions signpost on the kit print."
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/other/actions-box-print-file-2-@3x",
+  alt: "Exploring recognising the test device on the kit print.",
+  caption: "Exploring DNAGenotek test device content on the kit print."
+%}
+
 
 ### Navigated regulatory limits while keeping guidance clear
 
 - To further reduce the risk of paper-first behaviour, in the online instructions I added a first-page callout advising patients to ignore the paper version. Regulatory rules required softer wording to prevent CLIA non-compliance; as a compromise, I asked patients to refer to them only if they need to.
-- DNAGenotek’s illustrations were off-limits, so I created custom ones which made the experience more cohesive.
+- DNAGenotek’s illustrations were off-limits, so I designed custom ones which made the experience more cohesive.
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/illustrations",
+  alt: "Exploring recognising the test device on the kit print.",
+  caption: "Illustrations for each step in the sample process."
+%}
 
 ### Confirmed improvements in a US dry run before rollout
 
@@ -176,13 +178,25 @@ A virtual usability test with 5 US colleagues showed no major threats - none ref
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/final-test-kit",
   alt: "Final kit and print files",
-  caption: "Final kit after regulatory and usability changes."
+  caption: "Front of the kit."
 %}
 
 {% render "partials/figure.html",
-  src: "/images/cutting-sample-failures/kit-activation-final-mobile",
+  src: "/images/cutting-sample-failures/other/actions-final-test-kit-2-@2x",
+  alt: "Final kit and print files",
+  caption: "Open view of the kit."
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/mobile/kit-activation-final-mobile",
   alt: "Released kit, print assets, and online instructions",
-  caption: "Final online journey."
+  caption: "Online kit activation journey."
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/desktop/actions-final-online-desktop-1",
+  alt: "Released kit, print assets, and online instructions",
+  caption: "Desktop example of online kit activation journey."
 %}
 
 - Patients returned 518 kits in January 2024. Reject rate fell to 0.3% from 10% (down 9.7 percentage points), saving about $2,000 in kit costs that month. This is a normalised saving of about $3,880 per 1,000 kits on kit costs alone; excludes shipping and support time costs.
