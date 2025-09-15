@@ -502,6 +502,20 @@ Book a call
     document.body.classList.add('fade-in');
   });
 </script>
+<script>
+  // Disable Simple Analytics custom events on local/dev
+  (function(){
+    var host = location.hostname;
+    var isLocal = host === 'localhost' || host === '127.0.0.1' || host.endsWith('.local');
+    if (isLocal) {
+      // no-op any sa_event calls
+      window.sa_event = function(){ /* dev noop */ };
+      // optional: mark for debugging
+      document.documentElement.setAttribute('data-sa-dev', 'true');
+      console.info('[SA] Custom events disabled in local/dev');
+    }
+  })();
+</script>
 <!-- 100% privacy-first analytics -->
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <script

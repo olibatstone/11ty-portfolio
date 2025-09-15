@@ -50,7 +50,7 @@
   <main id="main" tabindex="-1" aria-label="Main content">
     <section class="work-list-container" aria-labelledby="selected-work-heading">
       <h2 id="about-heading">About</h2>
-      <p>Hands-on product design leader that specialises in navigating ambiguity and complexity to design innovative solutions. Works end-to-end on social impact web and mobile products and services in cross-functional teams, often from zero to one. Loves to learn and teach. Finds inspiration in nature, architecture, cooking and travel.</p><a
+      <p>I’m a hands-on design leader who delivers value quickly through pragmatic UX, UI, and service design. I work end-to-end on social impact web and mobile products, most recently in health, often taking ideas from 0-1 in high-ambiguity environments. I share knowledge, mentor others, and keep learning to maximise client value. My stammer sharpens my focus on accessibility and empathy, leading to more inclusive, higher-quality design.</p><a
   class="button "
   href="/documents/olibatstone-cv-generic-082025.pdf">
   View CV →
@@ -207,6 +207,20 @@
   window.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('fade-in');
   });
+</script>
+<script>
+  // Disable Simple Analytics custom events on local/dev
+  (function(){
+    var host = location.hostname;
+    var isLocal = host === 'localhost' || host === '127.0.0.1' || host.endsWith('.local');
+    if (isLocal) {
+      // no-op any sa_event calls
+      window.sa_event = function(){ /* dev noop */ };
+      // optional: mark for debugging
+      document.documentElement.setAttribute('data-sa-dev', 'true');
+      console.info('[SA] Custom events disabled in local/dev');
+    }
+  })();
 </script>
 <!-- 100% privacy-first analytics -->
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
