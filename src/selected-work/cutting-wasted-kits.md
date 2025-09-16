@@ -43,7 +43,7 @@ tools:
 
 ## Summary
 
-I redesigned Health Insights’ genetic test kit and online instructions to cut sample rejections during scale-up. I created a clearer activation process, overhauled kit design, and added step-by-step online guidance to reduce errors. The reject rate dropped 9.7 percentage points to 0.3%, saving about $3,880 per 1,000 kits and protecting patient trust.
+I redesigned Health Insights’ genetic test kit and created new online instructions to cut sample rejections as part of a scale-up. The reject rate dropped 9.7 percentage points to 0.3%, saving about $3,880 per 1,000 kits and protecting patient trust.
 
 ## Problem
 
