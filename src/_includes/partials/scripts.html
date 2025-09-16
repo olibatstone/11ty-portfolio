@@ -80,21 +80,25 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const btns = document.querySelectorAll('.readmore-btn');
-  if (!btns.length) return;
+  // Delegate to support late-rendered buttons and avoid missing bindings
+  document.addEventListener('click', (evt) => {
+    const btn = evt.target.closest('.readmore-btn');
+    if (!btn) return;
 
-  btns.forEach((btn, i) => {
-    btn.addEventListener('click', () => {
+    // After the click default runs, aria-expanded may have changed.
+    // Use rAF to read the *new* state and emit the correct event.
+    requestAnimationFrame(() => {
+      const all = Array.from(document.querySelectorAll('.readmore-btn'));
+      const isLast = all.length ? all[all.length - 1] === btn : false;
+      const id = btn.id || `readmore-${Math.max(1, all.indexOf(btn) + 1)}`;
       const expanded = btn.getAttribute('aria-expanded') === 'true';
-      const isLast = i === btns.length - 1;
-      const id = btn.id || `readmore-${i+1}`;
-      if (!expanded) {
+      if (expanded) {
         sa_emit('readmore_open', { id, last: isLast });
       } else {
         sa_emit('readmore_close', { id, last: isLast });
       }
-    }, { passive: true });
-  });
+    });
+  }, { passive: true });
 });
 </script>
 <script>
@@ -124,6 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!sent.p50 && y >= thresholds.p50) { sa_emit('scroll_50', { container: selector, path: location.pathname }); sent.p50 = true; }
     if (!sent.p75 && y >= thresholds.p75) { sa_emit('scroll_75', { container: selector, path: location.pathname }); sent.p75 = true; }
     if (!sent.p100 && y + 2 >= thresholds.p100) { sa_emit('scroll_100', { container: selector, path: location.pathname }); sent.p100 = true; }
+    if (y + 2 >= thresholds.p100) { sa_emit('case_study_scrolled_100', { path: location.pathname }); }
   }
 
   function onScrollOrResize() {

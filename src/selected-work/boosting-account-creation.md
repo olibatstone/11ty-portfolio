@@ -323,3 +323,7 @@ If you need to drive adoption of digital health products, I can help you design 
   href: "https://cal.com/olibatstone/30min",
   label: "Book a call"
 %}
+{% include "partials/button.html",
+  href: "email:hi@olibatstone.com",
+  label: "Send an email"
+%}

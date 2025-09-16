@@ -249,11 +249,16 @@
 <li>13 other potential garden customers who were interested in the gifting feature reached out to have partnership discussions with Candide.</li>
 </ul>
 <h2 id="let-s-talk" tabindex="-1">Let’s talk</h2>
-<p>If you need to open a high-intent revenue channel on a tight timeline, I can help you design and ship flows that convert.</p>
+<p>If you need to deliver on a tight timeline, I can help you design and ship flows that convert.</p>
 <p><a
   class="button "
   href="https://cal.com/olibatstone/30min" target="_blank" rel="noopener noreferrer">
 Book a call
+</a>
+<a
+  class="button "
+  href="email:hi@olibatstone.com">
+Send an email
 </a></p>
 </section>
     <nav role="navigation"><a
@@ -405,21 +410,25 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const btns = document.querySelectorAll('.readmore-btn');
-  if (!btns.length) return;
+  // Delegate to support late-rendered buttons and avoid missing bindings
+  document.addEventListener('click', (evt) => {
+    const btn = evt.target.closest('.readmore-btn');
+    if (!btn) return;
 
-  btns.forEach((btn, i) => {
-    btn.addEventListener('click', () => {
+    // After the click default runs, aria-expanded may have changed.
+    // Use rAF to read the *new* state and emit the correct event.
+    requestAnimationFrame(() => {
+      const all = Array.from(document.querySelectorAll('.readmore-btn'));
+      const isLast = all.length ? all[all.length - 1] === btn : false;
+      const id = btn.id || `readmore-${Math.max(1, all.indexOf(btn) + 1)}`;
       const expanded = btn.getAttribute('aria-expanded') === 'true';
-      const isLast = i === btns.length - 1;
-      const id = btn.id || `readmore-${i+1}`;
-      if (!expanded) {
+      if (expanded) {
         sa_emit('readmore_open', { id, last: isLast });
       } else {
         sa_emit('readmore_close', { id, last: isLast });
       }
-    }, { passive: true });
-  });
+    });
+  }, { passive: true });
 });
 </script>
 <script>
