@@ -7,43 +7,21 @@
 
 :root {
   --font-family: Inter, sans-serif;
-
-  /* Colors */
   --background-color: #222;
   --header-color: #eee;
   --text-color: #bbb;
-  --decorative-color: #333;
-
-  /* Effects */
   --shared-box-shadow: 0 0 0 1px rgb(255 255 255 / 0.1) inset;
-
-  /* Radii stay in px */
-  --border-radius-sm: 8px;
-  --border-radius-md: 14px;
-
-  /* Spacing tokens in rem */
+  --border-radius-sm: 0.5rem;
   --space-1: 0.5rem;
-  /* 8px */
   --space-2: 1rem;
-  /* 16px */
   --space-3: 1.5rem;
-  /* 24px */
   --space-4: 2.5rem;
-  /* 40px */
   --space-5: 3.5rem;
-  /* 56px */
-
-  /* Type scale in rem */
   --step--1: 0.875rem;
-  /* 14px */
   --step-0: 1rem;
-  /* 16px */
   --step-1: 1.4rem;
-  /* 22.4px approx */
   --step-2: 2.75rem;
-  /* 28px */
   --step-3: 3.25rem;
-  /* 36px */
 
   color-scheme: dark;
 }
@@ -56,11 +34,10 @@
 }
 
 html {
-  font-size: 100%;
+  max-inline-size: 100vw;
 }
 
 /* 1rem follows user settings */
-html,
 body {
   max-inline-size: 100vw;
 }
@@ -85,21 +62,19 @@ body {
 }
 
 /* Typography */
-h2,
-h3,
-a {
+
+:is(h1, h2, h3) {
   color: var(--header-color);
   font-weight: 400;
   margin: var(--space-5) 0 var(--space-2) 0;
 }
 
-.page-title {
-  margin: var(--space-2) 0 var(--space-5) 0;
+.hero-container h1 {
+  margin: var(--space-2) 0 var(--space-2);
 }
 
-h1 {
-  color: var(--header-color);
-  font-weight: 400;
+.page-title {
+  margin: var(--space-2) 0 var(--space-5) 0;
 }
 
 summary,
@@ -168,9 +143,11 @@ details blockquote {
 }
 
 .toc li {
-  list-style: none; /* remove default */
+  list-style: none;
+  /* remove default */
   position: relative;
-  padding-left: 1.2em; /* space for bullet */
+  padding-left: 1.2em;
+  /* space for bullet */
   margin-bottom: var(--space-1);
 }
 
@@ -184,16 +161,13 @@ details blockquote {
   margin-bottom: 4rem;
 }
 
-.recommendation listitem:last-child {
-  padding-bottom: 0;
-}
-
-span {
-  color: var(--header-color);
-}
-
 a {
+  color: var(--header-color);
   text-decoration: none;
+}
+
+.title {
+  color: var(--header-color);
 }
 
 /* TOC utilities */
@@ -213,12 +187,6 @@ a {
   font-size: var(--step-2);
 }
 
-dt,
-dd,
-dd li {
-  font-size: var(--step--1);
-  list-style: none;
-}
 
 .work-content li:not(:last-child) {
   margin-bottom: var(--space-2);
@@ -275,13 +243,6 @@ cite {
   font-size: var(--step--1);
 }
 
-dt,
-dd,
-dd li {
-  font-size: var(--step--1);
-  list-style: none;
-}
-
 img {
   display: block;
   width: 100%;
@@ -326,14 +287,6 @@ img {
 .image-grid>.video-demo {
   width: 100%;
   height: auto;
-}
-
-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  /* optional */
 }
 
 /* Video component wrapper (partial: video.html) */
@@ -444,14 +397,9 @@ video {
 .meta-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-0) var(--space-0);
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.meta-list li {
-  display: inline;
 }
 
 .meta-list li:not(:last-child)::after {
@@ -474,15 +422,11 @@ details>summary {
   margin-bottom: 2rem;
 }
 
-/* Firefox */
+/* Chromium/WebKit */
 details>summary::-webkit-details-marker {
   display: none;
 }
 
-/* Safari/Chromium */
-details[open]>summary::-webkit-details-marker {
-  display: none;
-}
 
 details[open]>summary {
   margin-bottom: 1rem;
@@ -530,14 +474,6 @@ details[open] summary::before {
   scroll-margin-top: 4rem;
 }
 
-.details-accordion:target {
-  outline: none;
-}
-
-.details-accordion:focus-within:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 4px;
-}
 
 /* Posts */
 .posts {
