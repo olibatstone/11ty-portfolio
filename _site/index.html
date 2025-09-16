@@ -204,44 +204,146 @@
 </footer>
   </footer>
   <script>
-  window.addEventListener('DOMContentLoaded', function() {
-    document.body.classList.add('fade-in');
+document.addEventListener('DOMContentLoaded', () => {
+  // Scope to the "What I did" section
+  const h2 = [...document.querySelectorAll('h2')]
+    .find(h => h.textContent.trim() === 'What I did');
+  if (!h2) return;
+
+  // Collect siblings until the next H2
+  const nodes = [];
+  let n = h2.nextElementSibling;
+  while (n && n.tagName !== 'H2') { nodes.push(n); n = n.nextElementSibling; }
+
+  for (let i = 0; i < nodes.length; i++) {
+    const node = nodes[i];
+    if (!node || node.tagName !== 'H3') continue;
+
+    const h3 = node;
+    const anchorId = h3.id || null;
+
+    // Build <details><summary>…</summary>…content…</details>
+    const details = document.createElement('details');
+    details.className = 'details-accordion';
+    if (anchorId) { details.id = anchorId; }
+    const summary = document.createElement('summary');
+    summary.innerHTML = h3.innerHTML; // keep any inline markup in the H3
+    details.appendChild(summary);
+
+    // Move ALL following elements until next H3/H2 into the details
+    let j = i + 1, moved = 0;
+    while (j < nodes.length && !/^H[23]$/.test(nodes[j].tagName)) {
+      details.appendChild(nodes[j]);
+      nodes.splice(j, 1);
+      moved++;
+    }
+
+    // Replace the H3 with the details block
+    h3.replaceWith(details);
+  }
+
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Emit readmore events from <details class="details-accordion"> state changes
+  document.addEventListener('toggle', (e) => {
+    const d = e.target;
+    if (!(d instanceof HTMLDetailsElement)) return;
+    if (!d.classList || !d.classList.contains('details-accordion')) return;
+
+    const all = Array.from(document.querySelectorAll('details.details-accordion'));
+    const isLast = all.length ? all[all.length - 1] === d : false;
+    const id = d.id || `details-${Math.max(1, all.indexOf(d) + 1)}`;
+    const labelEl = d.querySelector('summary');
+    const label = labelEl ? (labelEl.textContent || '').trim() : '';
+
+    if (d.open) {
+      sa_emit('readmore_open', { id, last: isLast, label, path: location.pathname });
+    } else {
+      sa_emit('readmore_close', { id, last: isLast, label, path: location.pathname });
+    }
+  }, { passive: true });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.work-content') || document.querySelector('main') || document.body;
+  const selector = container.classList && container.classList.contains('work-content') ? '.work-content' : (container.tagName ? container.tagName.toLowerCase() : 'body');
+
+  function getThresholds() {
+    const rect = container.getBoundingClientRect();
+    const start = window.scrollY + rect.top; // top of container in document coords
+    const total = container.scrollHeight - window.innerHeight; // scrollable within container relative to viewport
+    const maxY = start + Math.max(total, 0);
+    return {
+      p25: start + total * 0.25,
+      p50: start + total * 0.50,
+      p75: start + total * 0.75,
+      p100: maxY
+    };
+  }
+
+  let sent = { p25: false, p50: false, p75: false, p100: false };
+  let ticking = false;
+  let thresholds = getThresholds();
+
+  function check(y) {
+    if (!sent.p25 && y >= thresholds.p25) { sa_emit('scroll_25', { container: selector, path: location.pathname }); sent.p25 = true; }
+    if (!sent.p50 && y >= thresholds.p50) { sa_emit('scroll_50', { container: selector, path: location.pathname }); sent.p50 = true; }
+    if (!sent.p75 && y >= thresholds.p75) { sa_emit('scroll_75', { container: selector, path: location.pathname }); sent.p75 = true; }
+    if (!sent.p100 && y + 2 >= thresholds.p100) { sa_emit('scroll_100', { container: selector, path: location.pathname }); sent.p100 = true; }
+    if (y + 2 >= thresholds.p100) { sa_emit('case_study_scrolled_100', { path: location.pathname }); }
+  }
+
+  function onScrollOrResize() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(() => {
+        thresholds = getThresholds();
+        check(window.scrollY);
+        ticking = false;
+      });
+    }
+  }
+
+  window.addEventListener('scroll', onScrollOrResize, { passive: true });
+  window.addEventListener('resize', onScrollOrResize, { passive: true });
+
+  // Initial check
+  check(window.scrollY);
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.back-to-top');
+  if (!btn) return;
+
+  btn.addEventListener('click', () => {
+    sa_emit('back_to_top', { path: location.pathname });
+  }, { passive: true });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const links = Array.from(document.querySelectorAll('a[href]')).filter(a => {
+    const href = a.getAttribute('href');
+    if (!href || href.startsWith('#')) return false;
+    let url;
+    try { url = new URL(href, location.origin); } catch (_) { return false; }
+    if (url.origin !== location.origin) return false; // external
+    const isCaseStudy = /\b(selected-work|work)\b/.test(url.pathname);
+    return isCaseStudy && url.pathname !== location.pathname;
   });
-</script>
-<script>
-  // Disable Simple Analytics custom events on local/dev
-  (function(){
-    var host = location.hostname;
-    var isLocal = host === 'localhost' || host === '127.0.0.1' || host.endsWith('.local');
-    if (isLocal) {
-      // no-op any sa_event calls
-      window.sa_event = function(){ /* dev noop */ };
-      // optional: mark for debugging
-      document.documentElement.setAttribute('data-sa-dev', 'true');
-      console.info('[SA] Custom events disabled in local/dev');
-    }
-  })();
-</script>
-<!-- 100% privacy-first analytics -->
-<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<script
-  async
-  data-collect="outbound,emails,downloads"
-  data-extensions="pdf,csv,docx,xlsx,zip,doc,xls"
-  data-use-title="true"
-  data-full-urls="true"
-  src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
-<script>
-  // Safe emitter: call SA if ready; otherwise noop
-  window.sa_emit = function() {
-    if (typeof window.sa_event === 'function') {
-      return window.sa_event.apply(null, arguments);
-    }
-    // not ready yet -> ignore to avoid breaking bindings
-  };
-</script>
 
-
+  links.forEach(a => {
+    a.addEventListener('click', () => {
+      const url = new URL(a.getAttribute('href'), location.origin);
+      sa_emit('case_study_next', { from: location.pathname, to: url.pathname });
+    }, { passive: true });
+  });
+});
+</script>
 </body>
 
 </html>

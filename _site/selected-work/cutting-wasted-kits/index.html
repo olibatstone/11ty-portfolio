@@ -337,45 +337,6 @@ Send an email
   </div>
   
   <script>
-  window.addEventListener('DOMContentLoaded', function() {
-    document.body.classList.add('fade-in');
-  });
-</script>
-<script>
-  // Disable Simple Analytics custom events on local/dev
-  (function(){
-    var host = location.hostname;
-    var isLocal = host === 'localhost' || host === '127.0.0.1' || host.endsWith('.local');
-    if (isLocal) {
-      // no-op any sa_event calls
-      window.sa_event = function(){ /* dev noop */ };
-      // optional: mark for debugging
-      document.documentElement.setAttribute('data-sa-dev', 'true');
-      console.info('[SA] Custom events disabled in local/dev');
-    }
-  })();
-</script>
-<!-- 100% privacy-first analytics -->
-<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<script
-  async
-  data-collect="outbound,emails,downloads"
-  data-extensions="pdf,csv,docx,xlsx,zip,doc,xls"
-  data-use-title="true"
-  data-full-urls="true"
-  src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
-<script>
-  // Safe emitter: call SA if ready; otherwise noop
-  window.sa_emit = function() {
-    if (typeof window.sa_event === 'function') {
-      return window.sa_event.apply(null, arguments);
-    }
-    // not ready yet -> ignore to avoid breaking bindings
-  };
-</script>
-
-
-<script>
 document.addEventListener('DOMContentLoaded', () => {
   // Scope to the "What I did" section
   const h2 = [...document.querySelectorAll('h2')]
@@ -418,24 +379,23 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  // Delegate to support late-rendered buttons and avoid missing bindings
-  document.addEventListener('click', (evt) => {
-    const btn = evt.target.closest('.readmore-btn');
-    if (!btn) return;
+  // Emit readmore events from <details class="details-accordion"> state changes
+  document.addEventListener('toggle', (e) => {
+    const d = e.target;
+    if (!(d instanceof HTMLDetailsElement)) return;
+    if (!d.classList || !d.classList.contains('details-accordion')) return;
 
-    // After the click default runs, aria-expanded may have changed.
-    // Use rAF to read the *new* state and emit the correct event.
-    requestAnimationFrame(() => {
-      const all = Array.from(document.querySelectorAll('.readmore-btn'));
-      const isLast = all.length ? all[all.length - 1] === btn : false;
-      const id = btn.id || `readmore-${Math.max(1, all.indexOf(btn) + 1)}`;
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      if (expanded) {
-        sa_emit('readmore_open', { id, last: isLast });
-      } else {
-        sa_emit('readmore_close', { id, last: isLast });
-      }
-    });
+    const all = Array.from(document.querySelectorAll('details.details-accordion'));
+    const isLast = all.length ? all[all.length - 1] === d : false;
+    const id = d.id || `details-${Math.max(1, all.indexOf(d) + 1)}`;
+    const labelEl = d.querySelector('summary');
+    const label = labelEl ? (labelEl.textContent || '').trim() : '';
+
+    if (d.open) {
+      sa_emit('readmore_open', { id, last: isLast, label, path: location.pathname });
+    } else {
+      sa_emit('readmore_close', { id, last: isLast, label, path: location.pathname });
+    }
   }, { passive: true });
 });
 </script>
@@ -466,6 +426,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!sent.p50 && y >= thresholds.p50) { sa_emit('scroll_50', { container: selector, path: location.pathname }); sent.p50 = true; }
     if (!sent.p75 && y >= thresholds.p75) { sa_emit('scroll_75', { container: selector, path: location.pathname }); sent.p75 = true; }
     if (!sent.p100 && y + 2 >= thresholds.p100) { sa_emit('scroll_100', { container: selector, path: location.pathname }); sent.p100 = true; }
+    if (y + 2 >= thresholds.p100) { sa_emit('case_study_scrolled_100', { path: location.pathname }); }
   }
 
   function onScrollOrResize() {
@@ -516,7 +477,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-
 </body>
 
 
