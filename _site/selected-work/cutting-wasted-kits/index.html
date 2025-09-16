@@ -359,6 +359,15 @@ Book a call
   data-use-title="true"
   data-full-urls="true"
   src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
+<script>
+  // Safe emitter: call SA if ready; otherwise noop
+  window.sa_emit = function() {
+    if (typeof window.sa_event === 'function') {
+      return window.sa_event.apply(null, arguments);
+    }
+    // not ready yet -> ignore to avoid breaking bindings
+  };
+</script>
 
 
 <script>
@@ -406,7 +415,6 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const btns = document.querySelectorAll('.readmore-btn');
   if (!btns.length) return;
-  if (typeof window.sa_event !== 'function') return;
 
   btns.forEach((btn, i) => {
     btn.addEventListener('click', () => {
@@ -414,9 +422,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const isLast = i === btns.length - 1;
       const id = btn.id || `readmore-${i+1}`;
       if (!expanded) {
-        sa_event('readmore_open', { id, last: isLast });
+        sa_emit('readmore_open', { id, last: isLast });
       } else {
-        sa_event('readmore_close', { id, last: isLast });
+        sa_emit('readmore_close', { id, last: isLast });
       }
     }, { passive: true });
   });
@@ -424,8 +432,6 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  if (typeof window.sa_event !== 'function') return;
-
   const container = document.querySelector('.work-content') || document.querySelector('main') || document.body;
   const selector = container.classList && container.classList.contains('work-content') ? '.work-content' : (container.tagName ? container.tagName.toLowerCase() : 'body');
 
@@ -447,10 +453,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let thresholds = getThresholds();
 
   function check(y) {
-    if (!sent.p25 && y >= thresholds.p25) { sa_event('scroll_25', { container: selector, path: location.pathname }); sent.p25 = true; }
-    if (!sent.p50 && y >= thresholds.p50) { sa_event('scroll_50', { container: selector, path: location.pathname }); sent.p50 = true; }
-    if (!sent.p75 && y >= thresholds.p75) { sa_event('scroll_75', { container: selector, path: location.pathname }); sent.p75 = true; }
-    if (!sent.p100 && y + 2 >= thresholds.p100) { sa_event('scroll_100', { container: selector, path: location.pathname }); sent.p100 = true; }
+    if (!sent.p25 && y >= thresholds.p25) { sa_emit('scroll_25', { container: selector, path: location.pathname }); sent.p25 = true; }
+    if (!sent.p50 && y >= thresholds.p50) { sa_emit('scroll_50', { container: selector, path: location.pathname }); sent.p50 = true; }
+    if (!sent.p75 && y >= thresholds.p75) { sa_emit('scroll_75', { container: selector, path: location.pathname }); sent.p75 = true; }
+    if (!sent.p100 && y + 2 >= thresholds.p100) { sa_emit('scroll_100', { container: selector, path: location.pathname }); sent.p100 = true; }
   }
 
   function onScrollOrResize() {
@@ -475,17 +481,14 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.querySelector('.back-to-top');
   if (!btn) return;
-  if (typeof window.sa_event !== 'function') return;
 
   btn.addEventListener('click', () => {
-    sa_event('back_to_top', { path: location.pathname });
+    sa_emit('back_to_top', { path: location.pathname });
   }, { passive: true });
 });
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  if (typeof window.sa_event !== 'function') return;
-
   const links = Array.from(document.querySelectorAll('a[href]')).filter(a => {
     const href = a.getAttribute('href');
     if (!href || href.startsWith('#')) return false;
@@ -499,7 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
   links.forEach(a => {
     a.addEventListener('click', () => {
       const url = new URL(a.getAttribute('href'), location.origin);
-      sa_event('case_study_next', { from: location.pathname, to: url.pathname });
+      sa_emit('case_study_next', { from: location.pathname, to: url.pathname });
     }, { passive: true });
   });
 });

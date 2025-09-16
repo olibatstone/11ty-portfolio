@@ -231,6 +231,15 @@
   data-use-title="true"
   data-full-urls="true"
   src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
+<script>
+  // Safe emitter: call SA if ready; otherwise noop
+  window.sa_emit = function() {
+    if (typeof window.sa_event === 'function') {
+      return window.sa_event.apply(null, arguments);
+    }
+    // not ready yet -> ignore to avoid breaking bindings
+  };
+</script>
 
 
 </body>
