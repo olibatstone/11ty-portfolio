@@ -204,50 +204,91 @@
 </footer>
   </footer>
   <script>
+// Minimal emitter: call SA if ready; no buffering
+window.sa_emit = function(){
+  if (typeof window.sa_event === 'function') {
+    return window.sa_event.apply(null, arguments);
+  }
+};
+</script>
+<script>
 document.addEventListener('DOMContentLoaded', () => {
-  // Scope to the "What I did" section
-  const h2 = [...document.querySelectorAll('h2')]
-    .find(h => h.textContent.trim() === 'What I did');
-  if (!h2) return;
+  const container = document.querySelector('.work-content') || document.querySelector('main');
+  if (!container) return;
 
-  // Collect siblings until the next H2
-  const nodes = [];
-  let n = h2.nextElementSibling;
-  while (n && n.tagName !== 'H2') { nodes.push(n); n = n.nextElementSibling; }
-
-  for (let i = 0; i < nodes.length; i++) {
-    const node = nodes[i];
-    if (!node || node.tagName !== 'H3') continue;
-
-    const h3 = node;
-    const anchorId = h3.id || null;
+  const h3s = Array.from(container.querySelectorAll('h3'));
+  h3s.forEach((h3, idx) => {
+    if (!h3 || h3.closest('details.details-accordion')) return; // skip already processed
 
     // Build <details><summary>…</summary>…content…</details>
     const details = document.createElement('details');
     details.className = 'details-accordion';
-    if (anchorId) { details.id = anchorId; }
+    if (h3.id) details.id = h3.id;
     const summary = document.createElement('summary');
-    summary.innerHTML = h3.innerHTML; // keep any inline markup in the H3
+    summary.innerHTML = h3.innerHTML; // preserve inline markup
     details.appendChild(summary);
 
-    // Move ALL following elements until next H3/H2 into the details
-    let j = i + 1, moved = 0;
-    while (j < nodes.length && !/^H[23]$/.test(nodes[j].tagName)) {
-      details.appendChild(nodes[j]);
-      nodes.splice(j, 1);
+    // Move following siblings until next H3/H2
+    let n = h3.nextElementSibling;
+    let moved = 0;
+    while (n && !/^H[23]$/.test(n.tagName)) {
+      const next = n.nextElementSibling;
+      details.appendChild(n);
+      n = next;
       moved++;
     }
 
-    // Replace the H3 with the details block
-    h3.replaceWith(details);
-  }
+    // Only replace if there was body content to move
+    if (!moved) return;
 
+    // Emit readmore events on toggle for this details
+    details.addEventListener('toggle', () => {
+      const d = details;
+      const all = Array.from((document.querySelector('.work-content')||document).querySelectorAll('details.details-accordion'));
+      const isLast = all.length ? all[all.length - 1] === d : false;
+      const id = d.id || `details-${Math.max(1, all.indexOf(d) + 1)}`;
+      const labelEl = d.querySelector('summary');
+      const label = labelEl ? (labelEl.textContent || '').trim() : '';
+      if (d.open) {
+        if (typeof window.sa_event === 'function') { sa_event('readmore_open', { id, last: isLast, label, path: location.pathname }); }
+      } else {
+        if (typeof window.sa_event === 'function') { sa_event('readmore_close', { id, last: isLast, label, path: location.pathname }); }
+      }
+    }, { passive: true });
+
+    // Swap H3 for details block
+    h3.replaceWith(details);
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.work-content') || document;
+  container.querySelectorAll('details.details-accordion').forEach((details, idx) => {
+    // skip if already has a toggle listener marker
+    if (details.__hasReadmoreListener) return;
+    details.__hasReadmoreListener = true;
+    details.addEventListener('toggle', () => {
+      const d = details;
+      const all = Array.from(container.querySelectorAll('details.details-accordion'));
+      const isLast = all.length ? all[all.length - 1] === d : false;
+      const id = d.id || `details-${Math.max(1, all.indexOf(d) + 1)}`;
+      const labelEl = d.querySelector('summary');
+      const label = labelEl ? (labelEl.textContent || '').trim() : '';
+      if (d.open) {
+        if (typeof window.sa_event === 'function') { sa_event('readmore_open', { id, last: isLast, label, path: location.pathname }); }
+      } else {
+        if (typeof window.sa_event === 'function') { sa_event('readmore_close', { id, last: isLast, label, path: location.pathname }); }
+      }
+    }, { passive: true });
+  });
 });
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   // Emit readmore events from <details class="details-accordion"> state changes
   document.addEventListener('toggle', (e) => {
+    if (e.target === document) return; // safety
     const d = e.target;
     if (!(d instanceof HTMLDetailsElement)) return;
     if (!d.classList || !d.classList.contains('details-accordion')) return;
@@ -259,11 +300,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const label = labelEl ? (labelEl.textContent || '').trim() : '';
 
     if (d.open) {
-      sa_emit('readmore_open', { id, last: isLast, label, path: location.pathname });
+      if (typeof window.sa_event === 'function') { sa_event('readmore_open', { id, last: isLast, label, path: location.pathname }); }
     } else {
-      sa_emit('readmore_close', { id, last: isLast, label, path: location.pathname });
+      if (typeof window.sa_event === 'function') { sa_event('readmore_close', { id, last: isLast, label, path: location.pathname }); }
     }
-  }, { passive: true });
+  }, { capture: true, passive: true });
 });
 </script>
 <script>
@@ -289,11 +330,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let thresholds = getThresholds();
 
   function check(y) {
-    if (!sent.p25 && y >= thresholds.p25) { sa_emit('scroll_25', { container: selector, path: location.pathname }); sent.p25 = true; }
-    if (!sent.p50 && y >= thresholds.p50) { sa_emit('scroll_50', { container: selector, path: location.pathname }); sent.p50 = true; }
-    if (!sent.p75 && y >= thresholds.p75) { sa_emit('scroll_75', { container: selector, path: location.pathname }); sent.p75 = true; }
-    if (!sent.p100 && y + 2 >= thresholds.p100) { sa_emit('scroll_100', { container: selector, path: location.pathname }); sent.p100 = true; }
-    if (y + 2 >= thresholds.p100) { sa_emit('case_study_scrolled_100', { path: location.pathname }); }
+    if (!sent.p25 && y >= thresholds.p25) { if (typeof window.sa_event === 'function') { sa_event('scroll_25', { container: selector, path: location.pathname }); } sent.p25 = true; }
+    if (!sent.p50 && y >= thresholds.p50) { if (typeof window.sa_event === 'function') { sa_event('scroll_50', { container: selector, path: location.pathname }); } sent.p50 = true; }
+    if (!sent.p75 && y >= thresholds.p75) { if (typeof window.sa_event === 'function') { sa_event('scroll_75', { container: selector, path: location.pathname }); } sent.p75 = true; }
+    if (!sent.p100 && y + 2 >= thresholds.p100) { if (typeof window.sa_event === 'function') { sa_event('scroll_100', { container: selector, path: location.pathname }); } sent.p100 = true; }
+    if (y + 2 >= thresholds.p100) { if (typeof window.sa_event === 'function') { sa_event('case_study_scrolled_100', { path: location.pathname }); } }
   }
 
   function onScrollOrResize() {
@@ -320,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!btn) return;
 
   btn.addEventListener('click', () => {
-    sa_emit('back_to_top', { path: location.pathname });
+    if (typeof window.sa_event === 'function') { sa_event('back_to_top', { path: location.pathname }); }
   }, { passive: true });
 });
 </script>
@@ -339,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
   links.forEach(a => {
     a.addEventListener('click', () => {
       const url = new URL(a.getAttribute('href'), location.origin);
-      sa_emit('case_study_next', { from: location.pathname, to: url.pathname });
+      if (typeof window.sa_event === 'function') { sa_event('case_study_next', { from: location.pathname, to: url.pathname }); }
     }, { passive: true });
   });
 });
