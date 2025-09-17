@@ -4,6 +4,11 @@
       "source": "/unlocking-%C2%A332k-revenue",
       "destination": "/unlocking-gifting-revenue",
       "permanent": true
+    },
+    {
+      "source": "/unlocking-£32k-revenue",
+      "destination": "/unlocking-gifting-revenue",
+      "permanent": true
     }
   ]
 }
