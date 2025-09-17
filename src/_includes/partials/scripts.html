@@ -33,6 +33,21 @@ document.addEventListener('DOMContentLoaded', () => {
       moved++;
     }
 
+    // Add direct toggle listener to details for analytics emission
+    details.addEventListener('toggle', () => {
+      const d = details;
+      const all = Array.from(document.querySelectorAll('details.details-accordion'));
+      const isLast = all.length ? all[all.length - 1] === d : false;
+      const id = d.id || `details-${Math.max(1, all.indexOf(d) + 1)}`;
+      const labelEl = d.querySelector('summary');
+      const label = labelEl ? (labelEl.textContent || '').trim() : '';
+      if (d.open) {
+        sa_emit('readmore_open', { id, last: isLast, label, path: location.pathname });
+      } else {
+        sa_emit('readmore_close', { id, last: isLast, label, path: location.pathname });
+      }
+    }, { passive: true });
+
     // Replace the H3 with the details block
     h3.replaceWith(details);
   }
@@ -58,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       sa_emit('readmore_close', { id, last: isLast, label, path: location.pathname });
     }
-  }, { passive: true });
+  }, { capture: true, passive: true });
 });
 </script>
 <script>
