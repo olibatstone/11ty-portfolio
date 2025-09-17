@@ -1,1 +1,9 @@
-{ "source": "/unlocking-%C2%A332k-revenue", "destination": "/unlocking-gifting-revenue", "permanent": true }
+{
+  "redirects": [
+    {
+      "source": "/unlocking-%C2%A332k-revenue",
+      "destination": "/unlocking-gifting-revenue",
+      "permanent": true
+    }
+  ]
+}
