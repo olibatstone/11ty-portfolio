@@ -73,13 +73,13 @@ In late 2022, Genomics invited 3,000 MassMutual policyholders to discover their 
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/other/brand-exploration-2",
   alt: "Health Insights branding with new gradients and extended navy palette",
-  caption: "Logomark explorations leveraging the Genomics icon."
+  caption: "Logomark variations on the Genomics icon."
 %}
 
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/other/brand-exploration-3",
   alt: "Health Insights branding with new gradients and extended navy palette",
-  caption: "Touchpoint exploration for each logo concept."
+  caption: "Touchpoint visualisation for each logo concept."
 %}
 
 ### Added content that removed privacy and cost concerns
@@ -105,12 +105,12 @@ To address privacy concerns, I added a *Trust and privacy* page with explicit st
   caption: "Early *Trust and privacy* content ideation."
 %}
 
-I created content that explained why insurers offered the test as a free benefit and assured that there are no hidden costs.
+I created FAQ content that explained why insurers offered the free-benefit test, assured that there are no hidden costs and reiterated how the test is different from competitors.
 
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/desktop/action-home-desktop-1-@2x",
   alt: "Finalised FAQs addressing the free benefit nature of the test reiterating how the test is different from competitors.",
-  caption: "Finalised FAQs addressing the free benefit nature of the test and reiterating how the test is different from competitors."
+  caption: " "
 %}
 
 ### Redesigned content to clarify value and drive sign-ups
@@ -165,7 +165,7 @@ To resolve sample report confusion, I explored alternatives to represent the tes
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/other/action-home-1-@3x",
   alt: "Ideas on representing the test at different levels of abstraction.",
-  caption: "Ideas on representing the test at different levels of abstraction."
+  caption: " "
 %}
 
 {% render "partials/figure.html",
@@ -186,7 +186,7 @@ I partnered with the Lead Product Designer (working on another project) on this 
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/other/hero-concept-1",
   alt: "One of my iterations on the motif concept.",
-  caption: "An alternative iteration on the circular concept featuring increasing and decreasing risk for various conditions."
+  caption: "An ideation on his concept featuring increasing and decreasing risk for various conditions."
 %}
 
 ### Created a competitor comparison to drive uptake
@@ -199,7 +199,7 @@ I partnered with the Lead Product Designer (working on another project) on this 
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/other/action-home-4-@3x",
   alt: "Ideas on representing the test at different levels of abstraction.",
-  caption: "PRS comparison chart explorations."
+  caption: "Chart explorations"
 %}
 
 {% render "partials/figure.html",
@@ -249,6 +249,14 @@ An additional usability test showed:
 
 ## Results
 
+- Account creation rose to 59.3% as of January 2024 since launch in December 2023, a 5.3 percentage point increase from the pilot’s 54%.
+- The new product identity and visual system reinforced credibility at scale, helping sustain pilot-level conversion rates and enabling the 5.3 percentage point lift.
+- At least 3.2% of total account-creation came directly from *Science*, the largest of any other page, suggesting the new content gave more policyholders a better understanding of the test.
+- The service outperformed healthcare benchmarks, where account-creation rates typically stayed below 40%.
+- Genomics strengthened its customer value proposition.
+
+Final designs:
+
 <div class="image-grid full-bleed">
 {% render "partials/figure.html",
   src: "/images/simplifying-genetic-risk/mobile/result-home-mobile-1-@3x",
@@ -275,14 +283,14 @@ An additional usability test showed:
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/home-desktop-full-scroll",
   poster: "/images/simplifying-genetic-risk/desktop/home-desktop-full-scroll-poster",
-  caption: "Full *Home*",
+  caption: "*Home*",
   autoplay: true
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/howitworks-desktop-full-scroll",
   poster: "/images/simplifying-genetic-risk/desktop/howitworks-desktop-full-scroll-poster",
-  caption: "Full *How it works*",
+  caption: "*How it works*",
   autoplay: false
 %}
 
@@ -296,24 +304,18 @@ An additional usability test showed:
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/trustandprivacy-desktop-full-scroll",
   poster: "/images/simplifying-genetic-risk/desktop/trustandprivacy-desktop-full-scroll-poster",
-  caption: "Full *Trust and privacy*",
+  caption: "*Trust and privacy*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "/videos/simplifying-genetic-risk/aboutus-desktop-full-scroll",
   poster: "/images/simplifying-genetic-risk/desktop/aboutus-desktop-full-scroll-poster",
-  caption: "Full *About us*",
+  caption: "*About us*",
   autoplay: false
 %}
 
 </div>
-
-- Account creation rose to 59.3% as of January 2024 since launch in December 2023, a 5.3 percentage point increase from the pilot’s 54%.
-- The new product identity and visual system reinforced credibility at scale, helping sustain pilot-level conversion rates and enabling the 5.3 percentage point lift.
-- At least 3.2% of total account-creation came directly from *Science*, the largest of any other page, suggesting the new content gave more policyholders a better understanding of the test.
-- The service outperformed healthcare benchmarks, where account-creation rates typically stayed below 40%.
-- Genomics strengthened its customer value proposition.
 
 ## Let’s talk
 

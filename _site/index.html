@@ -203,7 +203,17 @@
   <p>&copy; Oli Batstone 2025</p>
 </footer>
   </footer>
-  <script>
+  <!-- Simple Analytics core + auto-events must load before custom event code -->
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<script
+  async
+  data-collect="outbound,emails,downloads"
+  data-extensions="pdf,csv,docx,xlsx,zip,doc,xls"
+  data-use-title="true"
+  data-full-urls="true"
+  src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+<script>
 // Minimal emitter: call SA if ready; no buffering
 window.sa_emit = function(){
   if (typeof window.sa_event === 'function') {

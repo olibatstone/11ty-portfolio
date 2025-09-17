@@ -112,13 +112,7 @@ To address the opportunities identified in my research, I wrote 20 'how might we
 
 Candide had a date picker that visitors used to select a day ticket. However, this didn't support selecting dates far in the future. This was a problem because gifters would likely need to choose months in advance, so I designed a new one that enabled this.
 
-<div class="image-grid full-bleed">
-
-{% render "partials/figure.html",
-  src: "/images/gifting-garden-memberships/date-exploration-5",
-  alt: "Existing date and time picker that I'd designed in a previous project.",
-  caption: "Existing date and time picker that I'd designed in a previous project."
-%}
+<div class="image-grid full-bleed three-columns">
 
 {% render "partials/figure.html",
   src: "/images/gifting-garden-memberships/date-exploration-1-@3x",
@@ -168,6 +162,14 @@ Candide had a date picker that visitors used to select a day ticket. However, th
 
 ## Results
 
+- On launch in November 2021, The Newt in Somerset and other customers activated the gifting feature.
+- Visitors bought 505 gift membership orders to those destinations between December 2021 and February 2022, driving £32k revenue.
+- 92% of those gift membership purchases included a personal message suggesting gifters found value in the feature.
+- 80% of over 65 year olds who received a gift membership over that period from younger groups rated the receiving experience as very easy in a March 2022 survey.
+- 13 other potential garden customers who were interested in the gifting feature reached out to have partnership discussions with Candide.
+
+Final designs:
+
 {% render "partials/figure.html",
   src: "/images/gifting-garden-memberships/key-screens-for-gifting-to-two-adults",
   alt: "Key screens for gifting to two adults.",
@@ -180,11 +182,6 @@ Candide had a date picker that visitors used to select a day ticket. However, th
   caption: "Key receiving screens for two adults."
 %}
 
-- On launch in November 2021, The Newt in Somerset and other customers activated the gifting feature.
-- Visitors bought 505 gift membership orders to those destinations between December 2021 and February 2022, driving £32k revenue.
-- 92% of those gift membership purchases included a personal message suggesting gifters found value in the feature.
-- 80% of over 65 year olds who received a gift membership over that period from younger groups rated the receiving experience as very easy in a March 2022 survey.
-- 13 other potential garden customers who were interested in the gifting feature reached out to have partnership discussions with Candide.
 
 ## Let’s talk
 

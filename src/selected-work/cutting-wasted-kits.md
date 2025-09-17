@@ -98,7 +98,7 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/first-printed-design-2",
   alt: "First printed kit design with QR code",
-  caption: "The inside of the kit featuring the QR and online directive."
+  caption: " "
 %}
 
 ### Built step-by-step instructions to lower collection errors
@@ -153,7 +153,7 @@ With the QR moved to the inside panel, I used the freed up space below the sampl
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/other/actions-box-print-file-2-@3x",
   alt: "Exploring recognising the test device on the kit print.",
-  caption: "Exploring DNAGenotek test device content on the kit print."
+  caption: " "
 %}
 
 
@@ -175,16 +175,23 @@ A virtual usability test with 5 US colleagues showed no major threats - none ref
 
 ## Results
 
+- Patients returned 518 kits in January 2024. Reject rate fell to 0.3% from 10% (down 9.7 percentage points), saving about $2,000 in kit costs that month. This is a normalised saving of about $3,880 per 1,000 kits on kit costs alone; excludes shipping and support time costs.
+- Freed lab capacity for process improvement, reduced reships and support contacts, and strengthened customer confidence.
+- Maintained customer trust and increased appeal to new ones by lowering cost per completed test and shortening time to result, improving patient experience and de-risking scale-up.
+- Step-by-step online instructions approach performed so well my colleague adopted it for the sign-up flow.
+
+Final designs:
+
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/final-test-kit",
   alt: "Final kit and print files",
-  caption: "Front of the kit."
+  caption: " "
 %}
 
 {% render "partials/figure.html",
   src: "/images/cutting-sample-failures/other/actions-final-test-kit-2-@2x",
   alt: "Final kit and print files",
-  caption: "Open view of the kit."
+  caption: " "
 %}
 
 {% render "partials/figure.html",
@@ -199,20 +206,3 @@ A virtual usability test with 5 US colleagues showed no major threats - none ref
   caption: "Desktop example of online kit activation journey."
 %}
 
-- Patients returned 518 kits in January 2024. Reject rate fell to 0.3% from 10% (down 9.7 percentage points), saving about $2,000 in kit costs that month. This is a normalised saving of about $3,880 per 1,000 kits on kit costs alone; excludes shipping and support time costs.
-- Freed lab capacity for process improvement, reduced reships and support contacts, and strengthened customer confidence.
-- Maintained customer trust and increased appeal to new ones by lowering cost per completed test and shortening time to result, improving patient experience and de-risking scale-up.
-- Step-by-step online instructions approach performed so well my colleague adopted it for the sign-up flow.
-
-## Let’s talk
-
-If you need to reduce errors in sample collection or improve the patient experience, I can help you design for clarity at first use.
-
-{% include "partials/button.html",
-  href: "https://cal.com/olibatstone/30min",
-  label: "Book a call"
-%}
-{% include "partials/button.html",
-  href: "email:hi@olibatstone.com",
-  label: "Send an email"
-%}
