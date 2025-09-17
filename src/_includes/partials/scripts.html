@@ -28,6 +28,28 @@
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+  // Reliable readmore: delegate on summary clicks, then read details.open after toggle
+  document.addEventListener('click', (evt) => {
+    const summary = evt.target.closest('details.details-accordion > summary');
+    if (!summary) return;
+    const d = summary.parentElement;
+    // wait for native toggle to update .open
+    requestAnimationFrame(() => {
+      const all = Array.from(document.querySelectorAll('details.details-accordion'));
+      const isLast = all.length ? all[all.length - 1] === d : false;
+      const id = d.id || `details-${Math.max(1, all.indexOf(d) + 1)}`;
+      const label = (summary.textContent || '').trim();
+      if (d.open) {
+        sa_emit('readmore_open', { id, last: isLast, label, path: location.pathname });
+      } else {
+        sa_emit('readmore_close', { id, last: isLast, label, path: location.pathname });
+      }
+    });
+  }, { passive: true });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
   // Scope to the "What I did" section
   const h2 = [...document.querySelectorAll('h2')]
     .find(h => h.textContent.trim() === 'What I did');
@@ -86,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   // Emit readmore events from <details class="details-accordion"> state changes
   document.addEventListener('toggle', (e) => {
+    if (e.target === document) return; // safety
     const d = e.target;
     if (!(d instanceof HTMLDetailsElement)) return;
     if (!d.classList || !d.classList.contains('details-accordion')) return;
