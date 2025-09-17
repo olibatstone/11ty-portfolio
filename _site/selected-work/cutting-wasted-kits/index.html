@@ -336,6 +336,16 @@
   src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 <script>
+(function() {
+  const host = location.hostname;
+  if (host === 'localhost' || host === '127.0.0.1') {
+    // no-op SA events in local dev
+    window.sa_event = function() {};
+    console.info('[SA] Events disabled on local dev:', host);
+  }
+})();
+</script>
+<script>
 // Minimal emitter: call SA if ready; no buffering
 window.sa_emit = function(){
   if (typeof window.sa_event === 'function') {
