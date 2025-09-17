@@ -1,4 +1,32 @@
 <script>
+// Queueing emitter: buffer until Simple Analytics is ready, then flush
+(function(){
+  window.__saq = window.__saq || [];
+  window.sa_emit = function(){
+    if (typeof window.sa_event === 'function') {
+      return window.sa_event.apply(null, arguments);
+    }
+    // buffer args for later
+    window.__saq.push(Array.prototype.slice.call(arguments));
+  };
+  function flushSAQueue(){
+    if (typeof window.sa_event !== 'function') return false;
+    var q = window.__saq || [];
+    for (var i = 0; i < q.length; i++) {
+      try { window.sa_event.apply(null, q[i]); } catch(e) { /* ignore */ }
+    }
+    window.__saq = [];
+    return true;
+  }
+  // Poll until SA is present, then flush once
+  (function wait(){
+    if (!flushSAQueue()) { setTimeout(wait, 200); }
+  })();
+  // Also attempt flush on window load as a backstop
+  window.addEventListener('load', flushSAQueue, { once: true });
+})();
+</script>
+<script>
 document.addEventListener('DOMContentLoaded', () => {
   // Scope to the "What I did" section
   const h2 = [...document.querySelectorAll('h2')]
