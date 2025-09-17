@@ -3,7 +3,7 @@ layout: layouts/selected-work.html
 tags: work
 order: 1
 
-title: Boosting account creation by 5.3% with marketing site redesign
+title: Boosting account-creation by 5.3% with marketing site redesign
 description: I redesigned Genomics' genetic testing website, breaking healthcare benchmarks.
 meta-description: boosting account creation to 59.3%.
 image: /images/simplifying-genetic-risk/other/1.webp
