@@ -1,7 +1,6 @@
 <figure class="{{ classes }}">
   <picture>
-    <source srcset="{{ src }}.webp" type="image/webp">
-    <img src="{{ src }}.webp" alt="{{ alt }}" loading="lazy" decoding="async">
+    <img src="{{ src }}" alt="{{ alt }}" loading="lazy" decoding="async">
   </picture>
   {% if caption %}
     <figcaption>{{ caption }}</figcaption>

@@ -66,7 +66,7 @@ I designed and launched garden membership gifting ahead of Christmas to drive se
 > Moreen, 59
 
 {% render "partials/figure.html",
-  src: "./img/membership-scan",
+  src: "./img/membership-scan.webp",
   alt: "How The Newt in Somerset staff scanned QR codes.",
   caption: "How The Newt in Somerset staff scanned QR codes. Photo by Chris D'Agorne."
 %}
@@ -74,7 +74,7 @@ I designed and launched garden membership gifting ahead of Christmas to drive se
 - For technical inspiration, I reviewed the gifting flows of the largest public garden organisations, the National Trust, RHS and Blenheim Palace. All provided a physical membership, with the National Trust promoting cheaper pricing on condition of Direct Debit and the RHS offering a free pair of binoculars.
 
 {% render "partials/figure.html",
-  src: "./img/competitor-research",
+  src: "./img/competitor-research.webp",
   alt: "Exploring the gifting flows of the National Trust, RHS and Blenheim Palace.",
   caption: "Exploring the gifting flows of the National Trust, RHS and Blenheim Palace."
 %}
@@ -84,7 +84,7 @@ I designed and launched garden membership gifting ahead of Christmas to drive se
 To address the opportunities identified in my research, I wrote 20 'how might we' statements. I used a team workshop to generate and prioritise Now, Next and Later solutions based on complexity. The top statements guided the following design moves.
 
 {% render "partials/figure.html",
-  src: "./img/ideas-voted-postits",
+  src: "./img/ideas-voted-postits.webp",
   alt: "Voted opportunities and ideas post-its for version 1.",
   caption: "Voted opportunities and ideas post-its for version 1."
 %}
@@ -97,13 +97,13 @@ To address the opportunities identified in my research, I wrote 20 'how might we
 - To reassure gifters that the recipient will be able to use the membership, I included a pre-start link at the beginning that showed what the experience would be like for receivers.
 
 {% render "partials/figure.html",
-  src: "./img/gifting-flow-aug1",
+  src: "./img/gifting-flow-aug1.webp",
   alt: "Flow architecture exploration.",
   caption: "Flow architecture exploration."
 %}
 
 {% render "partials/figure.html",
-  src: "./img/gifting-storymap-twoadults",
+  src: "./img/gifting-storymap-twoadults.webp",
   alt: "Storymap exploration of the gifting and receiving experience.",
   caption: "Storymap exploration of the gifting and receiving experience."
 %}
@@ -115,19 +115,19 @@ Candide had a date picker that visitors used to select a day ticket. However, th
 <div class="image-grid full-bleed three-columns">
 
 {% render "partials/figure.html",
-  src: "./img/datepicker-exploration1",
+  src: "./img/datepicker-exploration1.webp",
   alt: "Date picker scroll UI concept scrapped due to large scroll length.",
   caption: "Date picker scroll UI concept scrapped due to large scroll length."
 %}
 
 {% render "partials/figure.html",
-  src: "./img/datepicker-exploration2",
+  src: "./img/datepicker-exploration2.webp",
   alt: "Paginated date picker UI concept favoured for simplicity and ability to provide inline feedback.",
   caption: "Paginated date picker UI concept favoured for simplicity and ability to provide inline feedback."
 %}
 
 {% render "partials/figure.html",
-  src: "./img/datepicker-exploration3",
+  src: "./img/datepicker-exploration3.webp",
   alt: "Enhanced paginated date picker UI for clearer touch targets.",
   caption: "Enhanced paginated date picker UI for clearer touch targets."
 %}
@@ -135,7 +135,7 @@ Candide had a date picker that visitors used to select a day ticket. However, th
 </div>
 
 {% render "partials/figure.html",
-  src: "./img/datepicker-exploration4",
+  src: "./img/datepicker-exploration4.webp",
   alt: "Enhanced paginated date picker UI states showing inline feedback.",
   caption: "Enhanced paginated UI states showing inline feedback."
 %}
@@ -171,13 +171,13 @@ Candide had a date picker that visitors used to select a day ticket. However, th
 Final designs:
 
 {% render "partials/figure.html",
-  src: "./img/gifting-screens-twoadults",
+  src: "./img/gifting-screens-twoadults.webp",
   alt: "Key screens for gifting to two adults.",
   caption: "Key screens for gifting to two adults."
 %}
 
 {% render "partials/figure.html",
-  src: "./img/gifting-receiving-twoadults",
+  src: "./img/gifting-receiving-twoadults.webp",
   alt: "Key receiving screens for two adults.",
   caption: "Key receiving screens for two adults."
 %}
