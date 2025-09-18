@@ -6,7 +6,7 @@ order: 1
 title: Boosting account-creation by 5.3% with marketing site redesign
 description: I redesigned Genomics' genetic testing website, breaking healthcare benchmarks.
 meta-description: boosting account creation to 59.3%.
-image: /selected-work/boosting-account-creation/img/other/1.webp
+image: /selected-work/boosting-account-creation/img/placeholder1.webp
 
 timeline: "September - December 2023"
 client:
@@ -52,7 +52,7 @@ I redesigned Genomics’ genetic testing marketing site to boost adoption during
 In late 2022, Genomics invited 3,000 MassMutual policyholders to discover their genetic risk of common health conditions as a free benefit. 54% created an account from the landing page. Surveys showed the rest lacked clarity as to the value of the test and who was behind it. Many worried about data security and any hidden costs despite the free benefit. Without resolving these pain points, the scale-up risked lower adoption and weaker customer buy-in.
 
 {% render "partials/figure.html",
-  src: "./img/other/original-hero",
+  src: "./img/hero-original",
   alt: "Original marketing site hero section with unclear value proposition",
   caption: "Original marketing site home."
 %}
@@ -65,19 +65,19 @@ In late 2022, Genomics invited 3,000 MassMutual policyholders to discover their 
 - For speed, I extended the existing Genomics brand as a visual identity, increasing the use of navy and introducing bold patterns to stand out from light-toned competitors.
 
 {% render "partials/figure.html",
-  src: "./img/other/brand-exploration-1",
+  src: "./img/brand-exploration1",
   alt: "Health Insights branding with new gradients and extended navy palette",
   caption: "Logo explorations."
 %}
 
 {% render "partials/figure.html",
-  src: "./img/other/brand-exploration-2",
+  src: "./img/brand-exploration2",
   alt: "Health Insights branding with new gradients and extended navy palette",
   caption: "Logomark variations on the Genomics icon."
 %}
 
 {% render "partials/figure.html",
-  src: "./img/other/brand-exploration-3",
+  src: "./img/brand-exploration3",
   alt: "Health Insights branding with new gradients and extended navy palette",
   caption: "Touchpoint visualisation for each logo concept."
 %}
@@ -87,20 +87,20 @@ In late 2022, Genomics invited 3,000 MassMutual policyholders to discover their 
 I worked with executive and legal teams to design an *About us* page featuring founder and medical staff bios, published research, and media coverage.
 
 {% render "partials/figure.html",
-  src: "./img/desktop/action-aboutus-desktop-2-@2x",
+  src: "./img/aboutus-action2",
   alt: "Early *About us* content ideation.",
   caption: "Early *About us* content ideation."
 %}
 
 {% render "partials/figure.html",
-  src: "./img/desktop/action-aboutus-desktop-1-@2x",
+  src: "./img/aboutus-action1",
   alt: "Early *About us* content ideation.",
   caption: "Early *About us* desktop layout ideation."
 %}
 
 To address privacy concerns, I added a *Trust and privacy* page with explicit statements on non-sharing with third parties, GDPR and ISO27001 credentials, and how patients controlled their data.
 {% render "partials/figure.html",
-  src: "./img/desktop/action-trustandprivacy-desktop-1-@2x",
+  src: "./img/trust-privacy-action1",
   alt: "Early *Trust and privacy* content ideation.",
   caption: "Early *Trust and privacy* content ideation."
 %}
@@ -108,7 +108,7 @@ To address privacy concerns, I added a *Trust and privacy* page with explicit st
 I created FAQ content that explained why insurers offered the free-benefit test, assured that there are no hidden costs and reiterated how the test is different from competitors.
 
 {% render "partials/figure.html",
-  src: "./img/desktop/action-home-desktop-1-@2x",
+  src: "./img/homepage-action1",
   alt: "Finalised FAQs addressing the free benefit nature of the test reiterating how the test is different from competitors.",
   caption: " "
 %}
@@ -118,7 +118,7 @@ I created FAQ content that explained why insurers offered the free-benefit test,
 I added a sample report to the homepage hero as an easy way to show what patients would receive, adapting a pattern from other genetic services.
 
 {% render "partials/figure.html",
-  src: "./img/mobile/action-home-sample-report-mobile-1-@3x",
+  src: "./img/homepage-sample-report",
   alt: "Concept sample report hero mobile version",
   caption: "Hero concept showing patients what they would receive in their online report."
 %}
@@ -126,7 +126,7 @@ I added a sample report to the homepage hero as an easy way to show what patient
 The *How it works* section was buried on the home page. I promoted it in hierarchy, created a dedicated page and new content describing how we use patient genetic data to generate results and what patients could do with them.
 
 {% render "partials/figure.html",
-  src: "./img/other/actions-redesignedcontent-howitworks",
+  src: "./img/howitworks-redesign",
   alt: "Early *How it works* content ideation.",
   caption: "Early *How it works* content ideation."
 %}
@@ -134,7 +134,7 @@ The *How it works* section was buried on the home page. I promoted it in hierarc
 To simplify *Science* as much as possible, I worked with the science and medical teams to reduce jargon.
 
 {% render "partials/figure.html",
-  src: "./img/other/actions-redesignedcontent-science",
+  src: "./img/science-redesign",
   alt: "Iterating on *Science* content with the Science team",
   caption: "Iterating on *Science* content with the Science team."
 %}
@@ -152,7 +152,7 @@ I ran a moderated usability test with 5 participants from our target demographic
 > Jack, 40
 
 {% render "partials/figure.html",
-  src: "./img/other/usability-test-1-how-it-works miro",
+  src: "./img/usertest-howitworks-miro1",
   alt: "How it works and Science sections explaining the genetic testing process",
   caption: "Thematic analysis of the *How it works* page feedback in Miro"
 %}
@@ -163,19 +163,19 @@ To resolve sample report confusion, I explored alternatives to represent the tes
 
 <div class="image-grid full-bleed three-columns">
 {% render "partials/figure.html",
-  src: "./img/other/action-home-1-@3x",
+  src: "./img/homepage-action2",
   alt: "Ideas on representing the test at different levels of abstraction.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/other/action-home-2-@3x",
+  src: "./img/homepage-action3",
   alt: "Ideas on representing the test at different levels of abstraction.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/other/action-home-3-@3x",
+  src: "./img/homepage-action4",
   alt: "Ideas on representing the test at different levels of abstraction.",
   caption: " "
 %}
@@ -184,7 +184,7 @@ To resolve sample report confusion, I explored alternatives to represent the tes
 I partnered with the Lead Product Designer (working on another project) on this and adopted his circular representation. I animated it using avatars to show how results vary between individuals, reflecting the polygenic (not one gene but many) nature of the test.
 
 {% render "partials/figure.html",
-  src: "./img/other/hero-concept-1",
+  src: "./img/hero-concept1",
   alt: "One of my iterations on the motif concept.",
   caption: "An ideation on his concept featuring increasing and decreasing risk for various conditions."
 %}
@@ -197,25 +197,25 @@ I partnered with the Lead Product Designer (working on another project) on this 
 
 <div class="image-grid full-bleed">
 {% render "partials/figure.html",
-  src: "./img/other/action-home-4-@3x",
+  src: "./img/homepage-action5",
   alt: "Ideas on representing the test at different levels of abstraction.",
   caption: "Chart explorations"
 %}
 
 {% render "partials/figure.html",
-  src: "./img/other/action-home-5-@3x",
+  src: "./img/homepage-action6",
   alt: "Ideas on representing the test at different levels of abstraction.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/other/action-home-6-@3x",
+  src: "./img/homepage-action7",
   alt: "Ideas on representing the test at different levels of abstraction.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/other/action-home-7-@3x",
+  src: "./img/homepage-action8",
   alt: "Ideas on representing the test at different levels of abstraction.",
   caption: " "
 %}
@@ -227,7 +227,7 @@ I partnered with the Lead Product Designer (working on another project) on this 
 To meet patient requests for transparency, I expanded executive and medical professional bios to include where individuals studied, their history, and why they joined the company.
 
 {% render "partials/figure.html",
-  src: "./img/other/actions-expanded-science-@2x",
+  src: "./img/science-action-expanded",
   alt: "Expanded version exploration.",
   caption: "Expanded version exploration."
 %}
@@ -259,58 +259,58 @@ Final designs:
 
 <div class="image-grid full-bleed">
 {% render "partials/figure.html",
-  src: "./img/mobile/result-home-mobile-1-@3x",
+  src: "./img/homepage-result1",
   alt: "‌Hero section on *Home*",
   caption: "‌Hero section on *Home*"
 %}
 {% render "partials/figure.html",
-  src: "./img/mobile/result-home-mobile-2-@3x",
+  src: "./img/homepage-result2",
   alt: "‌*Science* section on *Home*",
   caption: "‌*Science* section on *Home*"
 %}
 {% render "partials/figure.html",
-  src: "./img/mobile/result-home-mobile-3-@3x",
+  src: "./img/homepage-result3",
   alt: "‌*How it works* section on *Home*",
   caption: "‌*How it works* section on *Home*"
 %}
 
 {% render "partials/figure.html",
-  src: "./img/mobile/result-science-mobile-1-@3x",
+  src: "./img/science-result1",
   alt: "PRS chart section on *Science*",
   caption: "PRS chart section on *Science*"
 %}
 
 {% render "partials/video.html",
   base: "./video/home-desktop-full-scroll",
-  poster: "./img/desktop/home-desktop-full-scroll-poster",
+  poster: "./img/homepage-scroll-poster",
   caption: "*Home*",
   autoplay: true
 %}
 
 {% render "partials/video.html",
   base: "./video/howitworks-desktop-full-scroll",
-  poster: "./img/desktop/howitworks-desktop-full-scroll-poster",
+  poster: "./img/howitworks-scroll-poster",
   caption: "*How it works*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "./video/science-desktop-full-scroll",
-  poster: "./img/desktop/science-desktop-full-scroll-poster",
+  poster: "./img/science-scroll-poster",
   caption: "Full *Science*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "./video/trustandprivacy-desktop-full-scroll",
-  poster: "./img/desktop/trustandprivacy-desktop-full-scroll-poster",
+  poster: "./img/trust-privacy-scroll-poster",
   caption: "*Trust and privacy*",
   autoplay: false
 %}
 
 {% render "partials/video.html",
   base: "./video/aboutus-desktop-full-scroll",
-  poster: "./img/desktop/aboutus-desktop-full-scroll-poster",
+  poster: "./img/aboutus-scroll-poster",
   caption: "*About us*",
   autoplay: false
 %}

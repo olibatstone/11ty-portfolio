@@ -6,7 +6,7 @@ order: 2
 title: Cutting wasted kits by 9.7% with experience overhaul
 description: I redesigned the Health Insights sample collection experience, saving $2880 per 1000 kits.
 meta-description: cutting wasted kits to 0.3%.
-image: /selected-work/cutting-wasted-kits/img/2.webp
+image: /selected-work/cutting-wasted-kits/img/placeholder2.webp
 
 timeline: "November 2023 - January 2024"
 client:
@@ -60,7 +60,7 @@ I redesigned Health Insights’ genetic test kit and created new online instruct
 - A patient survey showed many felt the instructions were complex.
 
 {% render "partials/figure.html",
-  src: "./img/other/actions-original-instructions",
+  src: "./img/instructions-original",
   alt: "Original paper instructions.",
   caption: "Original paper instructions."
 %}
@@ -79,7 +79,7 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
 - With an invalid code, the system blocks progress and offers fixes (recheck, find code, contact support). The system requires activation for every kit, addressing the unidentifiable 5% by forcing identification.
 
 {% render "partials/figure.html",
-  src: "./img/cross-functional-workshop",
+  src: "./img/workshop-crossfunctional",
   alt: "Cross-functional ideation workshop",
   caption: "Cross-functional ideation workshop."
 %}
@@ -90,13 +90,13 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
 - DNAGenotek supplied the sample device inside the kit which included the paper instructions. Regulations prevented removal. To mitigate the risk of use and skipping activation, I added a prominent QR code and additional prompts that directed patients online instead.
 
 {% render "partials/figure.html",
-  src: "./img/first-printed-design-1",
+  src: "./img/first-print1",
   alt: "First printed kit design with QR code",
   caption: "Design exploration for the front of the kit printed to test QR and see the print finish quality."
 %}
 
 {% render "partials/figure.html",
-  src: "./img/first-printed-design-2",
+  src: "./img/first-print2",
   alt: "First printed kit design with QR code",
   caption: " "
 %}
@@ -106,7 +106,7 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
 To address unusable or missing samples, I designed progressively disclosed online instructions with one or two actions per page with simplified language. I included DNAGenotek’s illustrations as a quick way to enhance comprehension. The design would respond to browser preferences such as larger text.
 
 {% render "partials/figure.html",
-  src: "./img/instructions-previous-1",
+  src: "./img/instructions-previous1",
   alt: "Prototype of online instructions, one to two actions per page",
   caption: "First online instruction prototype. One to two actions per page with simplified copy."
 %}
@@ -131,13 +131,13 @@ Key instructions findings:
 To address paper-first behaviour and set patient expectations, I pushed the supply chain team to invest in printing on the large inside panel of the kit (about $0.40 or $400 per 1000 kits). I then designed an eye-catching set of steps with the QR alongside.
 
 {% render "partials/figure.html",
-  src: "./img/other/actions-box-print-inside-file-4-@3x",
+  src: "./img/box-print-inside2",
   alt: "Exploring design options for the inside panel.",
   caption: "Exploring design options for the inside panel."
 %}
 
 {% render "partials/figure.html",
-  src: "./img/other/actions-box-print-inside-file-3-@3x",
+  src: "./img/box-print-inside1",
   alt: "Exploring design options for the inside panel.",
   caption: ""
 %}
@@ -145,13 +145,13 @@ To address paper-first behaviour and set patient expectations, I pushed the supp
 With the QR moved to the inside panel, I used the freed up space below the sample device for supporting signposts. To address the partnership with DNAGenotek and relevant privacy concerns, I added content that explained the partnership and stated they do not receive patient personal data or samples both on the kit and in the online journey.
 
 {% render "partials/figure.html",
-  src: "./img/other/actions-box-print-file-1-@3x",
+  src: "./img/box-print1",
   alt: "Exploring new signposts on the kit print.",
   caption: "Exploring new instructions signpost on the kit print."
 %}
 
 {% render "partials/figure.html",
-  src: "./img/other/actions-box-print-file-2-@3x",
+  src: "./img/box-print2",
   alt: "Exploring recognising the test device on the kit print.",
   caption: " "
 %}
@@ -163,7 +163,7 @@ With the QR moved to the inside panel, I used the freed up space below the sampl
 - DNAGenotek’s illustrations were off-limits, so I designed custom ones which made the experience more cohesive.
 
 {% render "partials/figure.html",
-  src: "./img/illustrations",
+  src: "./img/illustrations-overview",
   alt: "Exploring recognising the test device on the kit print.",
   caption: "Illustrations for each step in the sample process."
 %}
@@ -183,13 +183,13 @@ A virtual usability test with 5 US colleagues showed no major threats - none ref
 Final designs:
 
 {% render "partials/figure.html",
-  src: "./img/final-test-kit",
+  src: "./img/testkit-final1",
   alt: "Final kit and print files",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/other/actions-final-test-kit-2-@2x",
+  src: "./img/testkit-final2",
   alt: "Final kit and print files",
   caption: " "
 %}
@@ -197,61 +197,61 @@ Final designs:
 <div class="image-grid full-bleed">
 
 {% render "partials/figure.html",
-  src: "./img/mobile/results-kit-flow-1-@3x",
+  src: "./img/kitflow-step1",
   alt: "Flow 1.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/mobile/results-kit-flow-2-@3x",
+  src: "./img/kitflow-step2",
   alt: "Flow 1.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/mobile/results-kit-flow-3-@3x",
+  src: "./img/kitflow-step3",
   alt: "Flow 1.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/mobile/results-kit-flow-4-@3x",
+  src: "./img/kitflow-step4",
   alt: "Flow 1.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/mobile/results-kit-flow-5-@3x",
+  src: "./img/kitflow-step5",
   alt: "Flow 1.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/mobile/results-kit-flow-6-@3x",
+  src: "./img/kitflow-step6",
   alt: "Flow 1.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/mobile/results-kit-flow-7-@3x",
+  src: "./img/kitflow-step7",
   alt: "Flow 1.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/mobile/results-kit-flow-8-@3x",
+  src: "./img/kitflow-step8",
   alt: "Flow 1.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/mobile/results-kit-flow-9-@3x",
+  src: "./img/kitflow-step9",
   alt: "Flow 1.",
   caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "./img/mobile/results-kit-flow-10-@3x",
+  src: "./img/kitflow-step10",
   alt: "Flow 1.",
   caption: " "
 %}
@@ -259,8 +259,7 @@ Final designs:
 </div>
 
 {% render "partials/figure.html",
-  src: "./img/desktop/results-kit-flow-desktop-@2x",
+  src: "./img/kitflow-desktop-overview",
   alt: "Released kit, print assets, and online instructions",
   caption: "Desktop sample."
 %}
-
