@@ -21,9 +21,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPassthroughCopy("src/styles/");
   eleventyConfig.addPassthroughCopy("src/fonts/");
-  eleventyConfig.addPassthroughCopy("src/images/");
-  eleventyConfig.addPassthroughCopy("src/videos/");
   eleventyConfig.addPassthroughCopy("src/documents/");
+  eleventyConfig.addPassthroughCopy({"src/assets/img": "assets/img"});
+  eleventyConfig.addPassthroughCopy({"src/assets/video": "assets/video"});
+  eleventyConfig.addPassthroughCopy("src/selected-work/**/{img,video}");
 
   eleventyConfig.addCollection("work", (api) =>
     api.getFilteredByTag("work").sort((a, b) => (a.data.order||0) - (b.data.order||0))
