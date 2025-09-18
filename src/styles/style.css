@@ -254,7 +254,7 @@ img {
   grid-template-columns: 1fr;
   gap: var(--space-4);
   margin: var(--space-3) 0;
-  justify-content: center;
+  align-items: center;
   justify-items: center;
 }
 
@@ -275,6 +275,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   padding-inline: var(--space-4);
+  align-items: center;
 }
 
 /* Make common media elements fill their grid cell */

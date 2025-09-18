@@ -194,15 +194,73 @@ Final designs:
   caption: " "
 %}
 
+<div class="image-grid full-bleed">
+
 {% render "partials/figure.html",
-  src: "/images/cutting-sample-failures/mobile/kit-activation-final-mobile",
-  alt: "Released kit, print assets, and online instructions",
-  caption: "Online kit activation journey."
+  src: "/images/cutting-sample-failures/mobile/results-kit-flow-1-@3x",
+  alt: "Flow 1.",
+  caption: " "
 %}
 
 {% render "partials/figure.html",
-  src: "/images/cutting-sample-failures/desktop/actions-final-online-desktop-1",
+  src: "/images/cutting-sample-failures/mobile/results-kit-flow-2-@3x",
+  alt: "Flow 1.",
+  caption: " "
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/mobile/results-kit-flow-3-@3x",
+  alt: "Flow 1.",
+  caption: " "
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/mobile/results-kit-flow-4-@3x",
+  alt: "Flow 1.",
+  caption: " "
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/mobile/results-kit-flow-5-@3x",
+  alt: "Flow 1.",
+  caption: " "
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/mobile/results-kit-flow-6-@3x",
+  alt: "Flow 1.",
+  caption: " "
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/mobile/results-kit-flow-7-@3x",
+  alt: "Flow 1.",
+  caption: " "
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/mobile/results-kit-flow-8-@3x",
+  alt: "Flow 1.",
+  caption: " "
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/mobile/results-kit-flow-9-@3x",
+  alt: "Flow 1.",
+  caption: " "
+%}
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/mobile/results-kit-flow-10-@3x",
+  alt: "Flow 1.",
+  caption: " "
+%}
+
+</div>
+
+{% render "partials/figure.html",
+  src: "/images/cutting-sample-failures/desktop/results-kit-flow-desktop-@2x",
   alt: "Released kit, print assets, and online instructions",
-  caption: "Desktop example of online kit activation journey."
+  caption: "Desktop sample."
 %}
 
