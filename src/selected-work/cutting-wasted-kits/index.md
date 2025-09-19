@@ -43,7 +43,7 @@ tools:
 
 ## Summary
 
-I redesigned Health Insights’ genetic test kit and created new online instructions to cut sample rejections as part of a scale-up. The reject rate dropped 9.7 percentage points to 0.3%, saving about $3,880 per 1,000 kits and protecting patient trust.
+I redesigned Health Insights’ genetic test kit and created new online instructions to cut sample rejections as part of a scale-up. The reject rate dropped 9.7 percentage points to 0.3%, saving about $3,880 per 1,000 kits and protecting patient trust. This reduced repeat collections for patients and shortened time to result.
 
 ## Problem
 
@@ -87,7 +87,9 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
 ### Redirected patients online via kit design to reduce paper-first mistakes
 
 - I overhauled the kit to align with Genomics’ new Health Insights brand identity, meeting patient expectations and fostering trust in the kit.
-- DNAGenotek supplied the sample device inside the kit which included the paper instructions. Regulations prevented removal. To mitigate the risk of use and skipping activation, I added a prominent QR code and additional prompts that directed patients online instead.
+- DNAGenotek supplied the sample device inside the kit which included the paper instructions. Regulations prevented removal.
+- To mitigate the risk of paper-instruction use and skipping activation altogether, I added a prominent QR code and additional prompts that directed patients online instead.
+- Analytics showed that 65% of the policyholders who enrolled were mobile users, so I prioritised a mobile experience while supporting desktop-use likely preferred by older patients.
 
 {% render "partials/figure.html",
   src: "./img/first-print1.webp",
@@ -103,7 +105,10 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
 
 ### Built step-by-step instructions to lower collection errors
 
-To address unusable or missing samples, I designed progressively disclosed online instructions with one or two actions per page with simplified language. I included DNAGenotek’s illustrations as a quick way to enhance comprehension. The design would respond to browser preferences such as larger text.
+To address unusable or missing samples, I designed progressively disclosed online instructions with one or two actions per page with simplified language.
+
+- These responded to browser preferences such as larger text for individual accessibility and were fully keyboard-focusable.
+- I included DNAGenotek’s illustrations as a quick way to enhance comprehension.
 
 {% render "partials/figure.html",
   src: "./img/instructions-previous1.webp",

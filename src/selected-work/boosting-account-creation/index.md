@@ -63,6 +63,7 @@ In late 2022, Genomics invited 3,000 MassMutual policyholders to discover their 
 
 - Genomics lacked a product identity, which undermined trust and adoption. I proposed and validated the name Health Insights through a naming survey, where it ranked top.
 - For speed, I extended the existing Genomics brand as a visual identity, increasing the use of navy and introducing bold patterns to stand out from light-toned competitors.
+- I created an initial design system with accessible tokens and components in Figma, ready for cross-team use.
 
 {% render "partials/figure.html",
   src: "./img/brand-exploration1.webp",
