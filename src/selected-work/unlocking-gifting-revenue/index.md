@@ -38,7 +38,7 @@ tools:
 
 ## Summary
 
-I designed and launched garden membership gifting ahead of Christmas to drive seasonal revenue. I simplified the flow, upgraded the calendar UI, and added receiver reassurance features. Visitors bought 505 gifts worth £32k in three months and 13 new gardens initiated partnership discussions.
+I designed and launched garden membership gifting ahead of Christmas to drive seasonal revenue. I simplified the flow, upgraded the calendar UI, and added receiver reassurance features. Visitors bought 505 gifts worth £32k in three months, with 80% of over 65 year olds who received a gift rating the experience as very easy in a survey. 13 new gardens also initiated partnership discussions.
 
 ## Problem
 
@@ -57,7 +57,7 @@ I designed and launched garden membership gifting ahead of Christmas to drive se
 
 ### Identified gifter and receiver needs that blocked purchase
 
-- To understand how access works via QR in the Candide iOS and Android app, I spoke to 10 visitors at The Newt in Somerset gate about their entry experience. I noticed first-time anxiety of using QR passes in older individuals and connectivity issues due to patchy mobile data coverage.
+- To understand how access works via QR in the Candide iOS and Android app, I spoke to 10 visitors at The Newt in Somerset gate about their entry experience. I noticed first-time anxiety of using QR passes in older individuals (20% of garden visitors are 65+) and connectivity issues due to patchy mobile data coverage.
 - To learn about the needs of likely gifters and receivers, I interviewed 5 who'd gifted and 5 who'd received a membership or subscription within 2 years via userinterviews.com. To recruit quickly, the gift could be in a range of attractions, not just public gardens. I asked about their experience of buying, receiving and using, prompting for details such as cost considerations, delivery method, date and more.
 - Key themes across gifters and receivers included value for money as the top driver, concern that older receivers would struggle to use a digital gift, a preference for something physical, and the risk of gifting to someone who already has a membership.
 
@@ -185,7 +185,7 @@ Final designs:
 
 ## Let’s talk
 
-If you need to deliver on a tight timeline, I can help you design and ship flows that convert.
+If you need to deliver on a tight timeline, I can help you design and ship accessible flows that convert.
 
 {% include "partials/button.html",
   href: "https://cal.com/olibatstone/30min",
