@@ -12,7 +12,7 @@
       {% render "partials/figure.html",
       src: "/assets/img/profile/oli-photo.webp",
       alt: "Portrait of Oli",
-      caption: " "
+      caption: ""
       classes: "portrait"
       %}
       <div>
@@ -22,7 +22,7 @@
     </section>
   </header>
   <main id="main" tabindex="-1" aria-label="Main content">
-    <section class="work-list-container" aria-labelledby="selected-work-heading">
+    <section class="about-heading" aria-labelledby="about-heading">
       <h2 id="about-heading">About</h2>
       <p>{{ about }}</p>
       {%- include "partials/button.html", href: "/documents/olibatstone-cv-generic-082025.pdf", label: "View CV →" -%}
@@ -40,12 +40,12 @@
       <h2 id="getintouch-heading">Get in touch</h2>
       <p>{{ cta }}</p>
       {% include "partials/button.html",
-        href: "https://cal.com/olibatstone/30min",
-        label: "Book a call"
+      href: "https://cal.com/olibatstone/30min",
+      label: "Book a call"
       %}
       {% include "partials/button.html",
-        href: "email:hi@olibatstone.com",
-        label: "Send an email"
+      href: "email:hi@olibatstone.com",
+      label: "Send an email"
       %}
     </section>
   </main>

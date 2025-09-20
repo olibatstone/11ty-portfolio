@@ -111,7 +111,7 @@ I created FAQ content that explained why insurers offered the free-benefit test,
 {% render "partials/figure.html",
   src: "./img/homepage-action1.webp",
   alt: "Finalised FAQs addressing the free benefit nature of the test reiterating how the test is different from competitors.",
-  caption: " "
+  caption: ""
 %}
 
 ### Redesigned content to clarify value and drive sign-ups
@@ -166,19 +166,19 @@ To resolve sample report confusion, I explored alternatives to represent the tes
 {% render "partials/figure.html",
   src: "./img/homepage-action2.webp",
   alt: "Ideas on representing the test at different levels of abstraction.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/homepage-action3.webp",
   alt: "Ideas on representing the test at different levels of abstraction.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/homepage-action4.webp",
   alt: "Ideas on representing the test at different levels of abstraction.",
-  caption: " "
+  caption: ""
 %}
 </div>
 
@@ -212,19 +212,19 @@ I partnered with the Lead Product Designer (working on another project) on this 
 {% render "partials/figure.html",
   src: "./img/homepage-action6.webp",
   alt: "Ideas on representing the test at different levels of abstraction.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/homepage-action7.webp",
   alt: "Ideas on representing the test at different levels of abstraction.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/homepage-action8.webp",
   alt: "Ideas on representing the test at different levels of abstraction.",
-  caption: " "
+  caption: ""
 %}
 
 </div>
@@ -259,7 +259,7 @@ An additional usability test showed:
 - Account creation rose to 59.3% as of January 2024 since launch in December 2023, a 5.3 percentage point increase from the pilot’s 54%.
 - The new product identity and visual system reinforced credibility at scale, helping sustain pilot-level conversion rates and enabling the 5.3 percentage point lift.
 - At least 3.2% of total account-creation came directly from *Science*, the largest of any other page, suggesting the new content gave more policyholders a better understanding of the test.
-- The service outperformed healthcare benchmarks, where account-creation rates typically stayed below 40%.
+- The service outperformed [healthcare benchmarks](https://unbounce.com/conversion-benchmark-report/healthcare-wellness-conversion-rate/), where account-creation rates typically stayed below 40%.
 - Genomics strengthened its customer value proposition.
 
 Final designs:

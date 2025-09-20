@@ -100,7 +100,7 @@ I ran a cross-functional ideation workshop with product, engineering, supply and
 {% render "partials/figure.html",
   src: "./img/first-print2.webp",
   alt: "First printed kit design with QR code",
-  caption: " "
+  caption: ""
 %}
 
 ### Built step-by-step instructions to lower collection errors
@@ -158,7 +158,7 @@ With the QR moved to the inside panel, I used the freed up space below the sampl
 {% render "partials/figure.html",
   src: "./img/box-print2.webp",
   alt: "Exploring recognising the test device on the kit print.",
-  caption: " "
+  caption: ""
 %}
 
 
@@ -190,13 +190,13 @@ Final designs:
 {% render "partials/figure.html",
   src: "./img/testkit-final1.webp",
   alt: "Final kit and print files",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/testkit-final2.webp",
   alt: "Final kit and print files",
-  caption: " "
+  caption: ""
 %}
 
 <div class="image-grid full-bleed">
@@ -204,61 +204,61 @@ Final designs:
 {% render "partials/figure.html",
   src: "./img/kitflow-step1.webp",
   alt: "Flow 1.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/kitflow-step2.webp",
   alt: "Flow 1.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/kitflow-step3.webp",
   alt: "Flow 1.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/kitflow-step4.webp",
   alt: "Flow 1.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/kitflow-step5.webp",
   alt: "Flow 1.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/kitflow-step6.webp",
   alt: "Flow 1.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/kitflow-step7.webp",
   alt: "Flow 1.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/kitflow-step8.webp",
   alt: "Flow 1.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/kitflow-step9.webp",
   alt: "Flow 1.",
-  caption: " "
+  caption: ""
 %}
 
 {% render "partials/figure.html",
   src: "./img/kitflow-step10.webp",
   alt: "Flow 1.",
-  caption: " "
+  caption: ""
 %}
 
 </div>
