@@ -4,7 +4,7 @@ tags: work
 order: 2
 
 title: Cutting wasted kits by 9.7% with experience overhaul
-description: I redesigned the Health Insights sample collection experience, saving $2880 per 1000 kits.
+description: I redesigned the Health Insights sample collection experience, saving $3880 per 1000 kits.
 meta-description: cutting wasted kits to 0.3%.
 image: /selected-work/cutting-wasted-kits/img/placeholder2.webp
 

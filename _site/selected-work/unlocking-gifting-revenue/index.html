@@ -95,7 +95,7 @@
       </nav>
     </nav>
     <section class="work-content"><h2 id="summary" tabindex="-1">Summary</h2>
-<p>I designed and launched garden membership gifting ahead of Christmas to drive seasonal revenue. I simplified the flow, upgraded the calendar UI, and added receiver reassurance features. Visitors bought 505 gifts worth £32k in three months and 13 new gardens initiated partnership discussions.</p>
+<p>I designed and launched garden membership gifting ahead of Christmas to drive seasonal revenue. I simplified the flow, upgraded the calendar UI, and added receiver reassurance features. Visitors bought 505 gifts worth £32k in three months, with 80% of over 65 year olds who received a gift rating the experience as very easy in a survey. 13 new gardens also initiated partnership discussions.</p>
 <h2 id="problem" tabindex="-1">Problem</h2>
 <ul>
 <li>Candide's primary customer, The Newt in Somerset, wanted visitors to be able to gift a 12-month membership to others. This would increase their visitor base and drive revenue over the Christmas period where there is a natural slow-down.</li>
@@ -112,7 +112,7 @@
 <h2 id="what-i-did" tabindex="-1">What I did</h2>
 <h3 id="identified-gifter-and-receiver-needs-that-blocked-purchase" tabindex="-1">Identified gifter and receiver needs that blocked purchase</h3>
 <ul>
-<li>To understand how access works via QR in the Candide iOS and Android app, I spoke to 10 visitors at The Newt in Somerset gate about their entry experience. I noticed first-time anxiety of using QR passes in older individuals and connectivity issues due to patchy mobile data coverage.</li>
+<li>To understand how access works via QR in the Candide iOS and Android app, I spoke to 10 visitors at The Newt in Somerset gate about their entry experience. I noticed first-time anxiety of using QR passes in older individuals (20% of garden visitors are 65+) and connectivity issues due to patchy mobile data coverage.</li>
 <li>To learn about the needs of likely gifters and receivers, I interviewed 5 who'd gifted and 5 who'd received a membership or subscription within 2 years via <a href="http://userinterviews.com">userinterviews.com</a>. To recruit quickly, the gift could be in a range of attractions, not just public gardens. I asked about their experience of buying, receiving and using, prompting for details such as cost considerations, delivery method, date and more.</li>
 <li>Key themes across gifters and receivers included value for money as the top driver, concern that older receivers would struggle to use a digital gift, a preference for something physical, and the risk of gifting to someone who already has a membership.</li>
 </ul>
@@ -232,7 +232,7 @@
 <p><figcaption>Key receiving screens for two adults.</figcaption></p>
 </figure>
 <h2 id="let-s-talk" tabindex="-1">Let’s talk</h2>
-<p>If you need to deliver on a tight timeline, I can help you design and ship flows that convert.</p>
+<p>If you need to deliver on a tight timeline, I can help you design and ship accessible flows that convert.</p>
 <p><a
   class="button "
   href="https://cal.com/olibatstone/30min" target="_blank" rel="noopener noreferrer">
@@ -271,7 +271,7 @@ Send an email
       <li>
         <a class="small-thumbnail" href="/selected-work/cutting-wasted-kits/">
           <img src="/selected-work/cutting-wasted-kits/img/placeholder2.webp" alt="Cutting wasted kits by 9.7% with experience overhaul" loading="lazy" decoding="async">
-          <p><span class="title">Cutting wasted kits by 9.7% with experience overhaul. </span>I redesigned the Health Insights sample collection experience, saving $2880 per 1000 kits. →</p>
+          <p><span class="title">Cutting wasted kits by 9.7% with experience overhaul. </span>I redesigned the Health Insights sample collection experience, saving $3880 per 1000 kits. →</p>
           <ul class="pills" aria-label="metadata" role="list">
           <li>Responsive Web</li>
           </ul>
@@ -332,12 +332,26 @@ Send an email
 })();
 </script>
 <script>
-// Minimal emitter: call SA if ready; no buffering
-window.sa_emit = function(){
-  if (typeof window.sa_event === 'function') {
-    return window.sa_event.apply(null, arguments);
+// Unified emitter with page context enrichment
+(function(){
+  function getPageContext(){
+    const path = location.pathname;
+    let page_type = 'page';
+    if (path === '/' || path === '/index.html') page_type = 'home';
+    else if (/\/about\/?$/.test(path)) page_type = 'about';
+    else if (/\/(cv|resume)\/?$/.test(path)) page_type = 'cv';
+    else if (/\/(selected-work|work)\//.test(path)) page_type = 'case_study';
+    const slug = path.replace(/\/$/, '').split('/').filter(Boolean).pop() || 'home';
+    return { page_type, page_slug: slug, path };
   }
-};
+  window.__saPageCtx = getPageContext();
+
+  window.saEmit = function(name, data){
+    if (typeof window.sa_event !== 'function') return;
+    const payload = Object.assign({}, window.__saPageCtx, data || {});
+    try { window.sa_event(name, payload); } catch (_) {}
+  };
+})();
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -345,10 +359,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!container) return;
 
   const h3s = Array.from(container.querySelectorAll('h3'));
-  h3s.forEach((h3, idx) => {
+  h3s.forEach((h3) => {
     if (!h3 || h3.closest('details.details-accordion')) return; // skip already processed
 
-    // Build <details><summary>…</summary>…content…</details>
     const details = document.createElement('details');
     details.className = 'details-accordion';
     if (h3.id) details.id = h3.id;
@@ -356,7 +369,6 @@ document.addEventListener('DOMContentLoaded', () => {
     summary.innerHTML = h3.innerHTML; // preserve inline markup
     details.appendChild(summary);
 
-    // Move following siblings until next H3/H2
     let n = h3.nextElementSibling;
     let moved = 0;
     while (n && !/^H[23]$/.test(n.tagName)) {
@@ -366,57 +378,16 @@ document.addEventListener('DOMContentLoaded', () => {
       moved++;
     }
 
-    // Only replace if there was body content to move
     if (!moved) return;
 
-    // Emit readmore events on toggle for this details
-    details.addEventListener('toggle', () => {
-      const d = details;
-      const all = Array.from((document.querySelector('.work-content')||document).querySelectorAll('details.details-accordion'));
-      const isLast = all.length ? all[all.length - 1] === d : false;
-      const id = d.id || `details-${Math.max(1, all.indexOf(d) + 1)}`;
-      const labelEl = d.querySelector('summary');
-      const label = labelEl ? (labelEl.textContent || '').trim() : '';
-      if (d.open) {
-        if (typeof window.sa_event === 'function') { sa_event('readmore_open', { id, last: isLast, label, path: location.pathname }); }
-      } else {
-        if (typeof window.sa_event === 'function') { sa_event('readmore_close', { id, last: isLast, label, path: location.pathname }); }
-      }
-    }, { passive: true });
-
-    // Swap H3 for details block
     h3.replaceWith(details);
   });
 });
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector('.work-content') || document;
-  container.querySelectorAll('details.details-accordion').forEach((details, idx) => {
-    // skip if already has a toggle listener marker
-    if (details.__hasReadmoreListener) return;
-    details.__hasReadmoreListener = true;
-    details.addEventListener('toggle', () => {
-      const d = details;
-      const all = Array.from(container.querySelectorAll('details.details-accordion'));
-      const isLast = all.length ? all[all.length - 1] === d : false;
-      const id = d.id || `details-${Math.max(1, all.indexOf(d) + 1)}`;
-      const labelEl = d.querySelector('summary');
-      const label = labelEl ? (labelEl.textContent || '').trim() : '';
-      if (d.open) {
-        if (typeof window.sa_event === 'function') { sa_event('readmore_open', { id, last: isLast, label, path: location.pathname }); }
-      } else {
-        if (typeof window.sa_event === 'function') { sa_event('readmore_close', { id, last: isLast, label, path: location.pathname }); }
-      }
-    }, { passive: true });
-  });
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  // Emit readmore events from <details class="details-accordion"> state changes
+  // Delegated listener for all <details class="details-accordion">
   document.addEventListener('toggle', (e) => {
-    if (e.target === document) return; // safety
     const d = e.target;
     if (!(d instanceof HTMLDetailsElement)) return;
     if (!d.classList || !d.classList.contains('details-accordion')) return;
@@ -427,11 +398,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const labelEl = d.querySelector('summary');
     const label = labelEl ? (labelEl.textContent || '').trim() : '';
 
-    if (d.open) {
-      if (typeof window.sa_event === 'function') { sa_event('readmore_open', { id, last: isLast, label, path: location.pathname }); }
-    } else {
-      if (typeof window.sa_event === 'function') { sa_event('readmore_close', { id, last: isLast, label, path: location.pathname }); }
-    }
+    saEmit(d.open ? 'read_more_open' : 'read_more_close', {
+      id,
+      is_last: isLast,
+      label
+    });
   }, { capture: true, passive: true });
 });
 </script>
@@ -440,46 +411,43 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('.work-content') || document.querySelector('main') || document.body;
   const selector = container.classList && container.classList.contains('work-content') ? '.work-content' : (container.tagName ? container.tagName.toLowerCase() : 'body');
 
-  function getThresholds() {
+  function thresholds(){
     const rect = container.getBoundingClientRect();
-    const start = window.scrollY + rect.top; // top of container in document coords
-    const total = container.scrollHeight - window.innerHeight; // scrollable within container relative to viewport
-    const maxY = start + Math.max(total, 0);
+    const startY = window.scrollY + rect.top;
+    const total = Math.max(container.scrollHeight - window.innerHeight, 0);
     return {
-      p25: start + total * 0.25,
-      p50: start + total * 0.50,
-      p75: start + total * 0.75,
-      p100: maxY
+      d25: startY + total * 0.25,
+      d50: startY + total * 0.50,
+      d75: startY + total * 0.75,
+      d100: startY + total
     };
   }
 
-  let sent = { p25: false, p50: false, p75: false, p100: false };
+  let sent = { d25:false, d50:false, d75:false, d100:false };
+  let t = thresholds();
   let ticking = false;
-  let thresholds = getThresholds();
 
-  function check(y) {
-    if (!sent.p25 && y >= thresholds.p25) { if (typeof window.sa_event === 'function') { sa_event('scroll_25', { container: selector, path: location.pathname }); } sent.p25 = true; }
-    if (!sent.p50 && y >= thresholds.p50) { if (typeof window.sa_event === 'function') { sa_event('scroll_50', { container: selector, path: location.pathname }); } sent.p50 = true; }
-    if (!sent.p75 && y >= thresholds.p75) { if (typeof window.sa_event === 'function') { sa_event('scroll_75', { container: selector, path: location.pathname }); } sent.p75 = true; }
-    if (!sent.p100 && y + 2 >= thresholds.p100) { if (typeof window.sa_event === 'function') { sa_event('scroll_100', { container: selector, path: location.pathname }); } sent.p100 = true; }
-    if (y + 2 >= thresholds.p100) { if (typeof window.sa_event === 'function') { sa_event('case_study_scrolled_100', { path: location.pathname }); } }
+  function emit(depth){ saEmit('scroll_depth', { depth, container: selector }); }
+
+  function check(y){
+    if (!sent.d25 && y >= t.d25){ emit(25); sent.d25 = true; }
+    if (!sent.d50 && y >= t.d50){ emit(50); sent.d50 = true; }
+    if (!sent.d75 && y >= t.d75){ emit(75); sent.d75 = true; }
+    if (!sent.d100 && y + 2 >= t.d100){ emit(100); sent.d100 = true; }
   }
 
-  function onScrollOrResize() {
-    if (!ticking) {
-      ticking = true;
-      requestAnimationFrame(() => {
-        thresholds = getThresholds();
-        check(window.scrollY);
-        ticking = false;
-      });
-    }
+  function onScrollOrResize(){
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      t = thresholds();
+      check(window.scrollY);
+      ticking = false;
+    });
   }
 
   window.addEventListener('scroll', onScrollOrResize, { passive: true });
   window.addEventListener('resize', onScrollOrResize, { passive: true });
-
-  // Initial check
   check(window.scrollY);
 });
 </script>
@@ -487,10 +455,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.querySelector('.back-to-top');
   if (!btn) return;
-
-  btn.addEventListener('click', () => {
-    if (typeof window.sa_event === 'function') { sa_event('back_to_top', { path: location.pathname }); }
-  }, { passive: true });
+  btn.addEventListener('click', () => { saEmit('back_to_top'); }, { passive: true });
 });
 </script>
 <script>
@@ -500,7 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!href || href.startsWith('#')) return false;
     let url;
     try { url = new URL(href, location.origin); } catch (_) { return false; }
-    if (url.origin !== location.origin) return false; // external
+    if (url.origin !== location.origin) return false;
     const isCaseStudy = /\b(selected-work|work)\b/.test(url.pathname);
     return isCaseStudy && url.pathname !== location.pathname;
   });
@@ -508,9 +473,31 @@ document.addEventListener('DOMContentLoaded', () => {
   links.forEach(a => {
     a.addEventListener('click', () => {
       const url = new URL(a.getAttribute('href'), location.origin);
-      if (typeof window.sa_event === 'function') { sa_event('case_study_next', { from: location.pathname, to: url.pathname }); }
+      saEmit('case_study_nav', { from: location.pathname, to: url.pathname, direction: 'next' });
     }, { passive: true });
   });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // CV link clicks
+  document.querySelectorAll("a[href*='/cv']").forEach(a => {
+    a.addEventListener('click', () => { saEmit('cv_visit_click', { placement: a.closest('header, footer, nav') ? 'chrome' : 'body' }); }, { passive: true });
+  });
+  // Contact clicks
+  document.querySelectorAll("a[href^='mailto:'], a[href^='tel:']").forEach(a => {
+    a.addEventListener('click', () => {
+      const href = a.getAttribute('href') || '';
+      const type = href.startsWith('mailto:') ? 'email' : 'tel';
+      saEmit('contact_click', { type, label: (a.textContent || '').trim() });
+    }, { passive: true });
+  });
+  // Landing tags from query params (e.g., utm_source, ref)
+  try {
+    const u = new URL(location.href);
+    const src = u.searchParams.get('utm_source') || u.searchParams.get('ref') || '';
+    if (src) saEmit('landing_tag', { source: src });
+  } catch (_) {}
 });
 </script>
 </body>
