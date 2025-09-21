@@ -200,7 +200,7 @@ I partnered with the Lead Product Designer (working on another project) on this 
 
 - To help patients evaluate the test, I looked at previous research on patient motivations and found that perceived test accuracy was a top factor in how many chose between tests.
 - I created a comparison chart of competitor accuracy using newly published AUC (area under the curve) data from Genomic Prediction, 23andMe, and internal sources.
-- The chart emphasised Health Insights’ stronger performance and guided patients to the *Science* page for a more detailed view.
+- The chart emphasised Health Insights’ stronger PRS (polygenic risk score) performance and guided patients to the *Science* page for a more detailed view.
 
 <div class="image-grid full-bleed">
 {% render "partials/figure.html",
@@ -304,7 +304,7 @@ Final designs:
 {% render "partials/video.html",
   base: "./video/science-desktop-full-scroll",
   poster: "./img/science-scroll-poster.webp",
-  caption: "Full *Science*",
+  caption: "*Science*",
   autoplay: false
 %}
 
