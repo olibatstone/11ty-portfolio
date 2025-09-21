@@ -1,6 +1,7 @@
 <figure class="{{ classes }}">
+  {%- assign loading = loading | default: "lazy" -%}
   <picture>
-    <img src="{{ src }}" alt="{{ alt }}" loading="lazy" decoding="async">
+    <img src="{{ src }}" alt="{{ alt }}" loading="{{ loading }}" decoding="async">
   </picture>
   {% if caption %}
     <figcaption>{{ caption }}</figcaption>

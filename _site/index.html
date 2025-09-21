@@ -24,8 +24,10 @@
 
     <link rel="icon" type="image/x-icon" href="/assets/img/profile/favicon.ico">
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://rsms.me" crossorigin>
+    <link rel="preload" as="style" href="https://rsms.me/inter/inter.css" crossorigin>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" media="print" onload="this.media='all'" crossorigin>
+    <noscript><link rel="stylesheet" href="https://rsms.me/inter/inter.css" crossorigin></noscript>
 </head>
 
 <body id="top"><a
@@ -34,9 +36,8 @@
   Skip to content ↓
 </a><header>
     <section class="hero-container">
-      <figure class="portrait">
-  <picture>
-    <img src="/assets/img/profile/oli-photo.webp" alt="Portrait of Oli" loading="lazy" decoding="async">
+      <figure class="portrait"><picture>
+    <img src="/assets/img/profile/oli-photo.webp" alt="Portrait of Oli" loading="eager" decoding="async">
   </picture>
   
     <figcaption></figcaption>

@@ -24,8 +24,10 @@
 
     <link rel="icon" type="image/x-icon" href="/assets/img/profile/favicon.ico">
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://rsms.me" crossorigin>
+    <link rel="preload" as="style" href="https://rsms.me/inter/inter.css" crossorigin>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" media="print" onload="this.media='all'" crossorigin>
+    <noscript><link rel="stylesheet" href="https://rsms.me/inter/inter.css" crossorigin></noscript>
 </head>
 
 <body id="top"><a
@@ -33,7 +35,7 @@
   href="#main">
   Skip to content ↓
 </a><header class="full-bleed">
-    <img src="/selected-work/boosting-account-creation/img/placeholder1.webp" alt="" loading="lazy" decoding="async"><a
+    <img src="/selected-work/boosting-account-creation/img/placeholder1.webp" alt="" loading="eager" decoding="async"><a
   class="button "
   href="/">
   ← Home
@@ -98,8 +100,7 @@
 <p>I redesigned Genomics’ genetic testing marketing site to boost adoption during scale-up. I created a new product identity, clarified the value proposition with fresh content, and resolved trust concerns through transparency pages and usability testing. The redesign drove a 5.3 percentage point increase in account-creation to 59.3%, breaking <a href="https://unbounce.com/conversion-benchmark-report/healthcare-wellness-conversion-rate/">healthcare benchmarks</a>.</p>
 <h2 id="problem" tabindex="-1">Problem</h2>
 <p>In late 2022, Genomics invited 3,000 MassMutual policyholders to discover their genetic risk of common health conditions as a free benefit. 54% created an account from the landing page. Surveys showed the rest lacked clarity as to the value of the test and who was behind it. Many worried about data security and any hidden costs despite the free benefit. Without resolving these pain points, the scale-up risked lower adoption and weaker customer buy-in.</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/hero-original.webp" alt="Original marketing site hero section with unclear value proposition" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Original marketing site home.</figcaption></p>
@@ -111,70 +112,60 @@
 <li>For speed, I extended the existing Genomics brand as a visual identity, increasing the use of navy and introducing bold patterns to stand out from light-toned competitors.</li>
 <li>I created an initial design system with accessible tokens and components in Figma, ready for cross-team use.</li>
 </ul>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/brand-exploration1.webp" alt="Health Insights branding with new gradients and extended navy palette" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Logo explorations.</figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/brand-exploration2.webp" alt="Health Insights branding with new gradients and extended navy palette" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Logomark variations on the Genomics icon.</figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/brand-exploration3.webp" alt="Health Insights branding with new gradients and extended navy palette" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Touchpoint visualisation for each logo concept.</figcaption></p>
 </figure>
 <h3 id="added-content-that-removed-privacy-and-cost-concerns" tabindex="-1">Added content that removed privacy and cost concerns</h3>
 <p>I worked with executive and legal teams to design an <em>About us</em> page featuring founder and medical staff bios, published research, and media coverage.</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/aboutus-action2.webp" alt="Early *About us* content ideation." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Early <em>About us</em> content ideation.</figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/aboutus-action1.webp" alt="Early *About us* content ideation." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Early <em>About us</em> desktop layout ideation.</figcaption></p>
 </figure>
 <p>To address privacy concerns, I added a <em>Trust and privacy</em> page with explicit statements on non-sharing with third parties, GDPR and ISO27001 credentials, and how patients controlled their data.</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/trust-privacy-action1.webp" alt="Early *Trust and privacy* content ideation." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Early <em>Trust and privacy</em> content ideation.</figcaption></p>
 </figure>
 <p>I created FAQ content that explained why insurers offered the free-benefit test, assured that there are no hidden costs and reiterated how the test is different from competitors.</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-action1.webp" alt="Finalised FAQs addressing the free benefit nature of the test reiterating how the test is different from competitors." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
 <h3 id="redesigned-content-to-clarify-value-and-drive-sign-ups" tabindex="-1">Redesigned content to clarify value and drive sign-ups</h3>
 <p>I added a sample report to the homepage hero as an easy way to show what patients would receive, adapting a pattern from other genetic services.</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-sample-report.webp" alt="Concept sample report hero mobile version" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Hero concept showing patients what they would receive in their online report.</figcaption></p>
 </figure>
 <p>The <em>How it works</em> section was buried on the home page. I promoted it in hierarchy, created a dedicated page and new content describing how we use patient genetic data to generate results and what patients could do with them.</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/howitworks-redesign.webp" alt="Early *How it works* content ideation." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Early <em>How it works</em> content ideation.</figcaption></p>
 </figure>
 <p>To simplify <em>Science</em> as much as possible, I worked with the science and medical teams to reduce jargon.</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/science-redesign.webp" alt="Iterating on *Science* content with the Science team" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Iterating on <em>Science</em> content with the Science team.</figcaption></p>
@@ -190,8 +181,7 @@
 <p>I want to know more about the doctors, where they went to school, how long they’ve been in the field, other professional experience, if they’re invested in the company.</p>
 <p>Jack, 40</p>
 </blockquote>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/usertest-howitworks-miro1.webp" alt="How it works and Science sections explaining the genetic testing process" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Thematic analysis of the <em>How it works</em> page feedback in Miro</figcaption></p>
@@ -199,34 +189,29 @@
 <h3 id="iterated-to-simplify-the-test-representation" tabindex="-1">Iterated to simplify the test representation</h3>
 <p>To resolve sample report confusion, I explored alternatives to represent the test that balanced detail with simplicity.</p>
 <div class="image-grid full-bleed three-columns">
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-action2.webp" alt="Ideas on representing the test at different levels of abstraction." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-action3.webp" alt="Ideas on representing the test at different levels of abstraction." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-action4.webp" alt="Ideas on representing the test at different levels of abstraction." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
 </div>
 <p>I partnered with the Lead Product Designer (working on another project) on this and adopted his circular representation. I animated it using avatars to show how results vary between individuals, reflecting the polygenic (not one gene but many) nature of the test.</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/hero-animation-2023.gif" alt="One of my iterations on the motif concept." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Animated representation.</figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/hero-concept1.webp" alt="One of my iterations on the motif concept." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>I had previously ideated on his concept with annotated condition names.</figcaption></p>
@@ -238,26 +223,22 @@
 <li>The chart emphasised Health Insights’ stronger performance and guided patients to the <em>Science</em> page for a more detailed view.</li>
 </ul>
 <div class="image-grid full-bleed">
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-action5.webp" alt="Ideas on representing the test at different levels of abstraction." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Chart explorations</figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-action6.webp" alt="Ideas on representing the test at different levels of abstraction." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-action7.webp" alt="Ideas on representing the test at different levels of abstraction." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-action8.webp" alt="Ideas on representing the test at different levels of abstraction." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
@@ -265,8 +246,7 @@
 </div>
 <h3 id="added-clarity-on-key-personnel-to-boost-trust" tabindex="-1">Added clarity on key personnel to boost trust</h3>
 <p>To meet patient requests for transparency, I expanded executive and medical professional bios to include where individuals studied, their history, and why they joined the company.</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/science-action-expanded.webp" alt="Expanded version exploration." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Expanded version exploration.</figcaption></p>
@@ -295,26 +275,22 @@
 </ul>
 <p>Final designs:</p>
 <div class="image-grid full-bleed">
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-result1.webp" alt="‌Hero section on *Home*" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>‌Hero section on <em>Home</em></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-result2.webp" alt="‌*Science* section on *Home*" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>‌<em>Science</em> section on <em>Home</em></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/homepage-result3.webp" alt="‌*How it works* section on *Home*" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>‌<em>How it works</em> section on <em>Home</em></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/science-result1.webp" alt="PRS chart section on *Science*" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>PRS chart section on <em>Science</em></figcaption></p>

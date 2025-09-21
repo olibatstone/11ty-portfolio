@@ -3,7 +3,7 @@
     {% if work.url != page.url %}
       <li>
         <a class="small-thumbnail" href="{{ work.url }}">
-          <img src="{{ work.data.image }}" alt="""" loading="lazy" decoding="async">
+          <img src="{{ work.data.image }}" alt="""" loading="eager" decoding="async">
           <p><span class="title">{{ work.data.title }}. </span>{{ work.data.description }} →</p>
           <ul class="pills" aria-label="metadata" role="list">
           {% for p in work.data.platform %}<li>{{ p }}</li>{% endfor %}

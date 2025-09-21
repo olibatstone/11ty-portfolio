@@ -24,8 +24,10 @@
 
     <link rel="icon" type="image/x-icon" href="/assets/img/profile/favicon.ico">
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://rsms.me" crossorigin>
+    <link rel="preload" as="style" href="https://rsms.me/inter/inter.css" crossorigin>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" media="print" onload="this.media='all'" crossorigin>
+    <noscript><link rel="stylesheet" href="https://rsms.me/inter/inter.css" crossorigin></noscript>
 </head>
 
 <body id="top"><a
@@ -33,7 +35,7 @@
   href="#main">
   Skip to content ↓
 </a><header class="full-bleed">
-    <img src="/selected-work/cutting-wasted-kits/img/placeholder2.webp" alt="" loading="lazy" decoding="async"><a
+    <img src="/selected-work/cutting-wasted-kits/img/placeholder2.webp" alt="" loading="eager" decoding="async"><a
   class="button "
   href="/">
   ← Home
@@ -109,8 +111,7 @@
 <li>5% had unusable or missing samples.</li>
 <li>A patient survey showed many felt the instructions were complex.</li>
 </ul>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/instructions-original.webp" alt="Original paper instructions." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Original paper instructions.</figcaption></p>
@@ -127,8 +128,7 @@
 <li>With a valid code, patients follow step-by-step online instructions to collect and return the sample.</li>
 <li>With an invalid code, the system blocks progress and offers fixes (recheck, find code, contact support). The system requires activation for every kit, addressing the unidentifiable 5% by forcing identification.</li>
 </ul>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/workshop-crossfunctional.webp" alt="Cross-functional ideation workshop" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Cross-functional ideation workshop.</figcaption></p>
@@ -140,14 +140,12 @@
 <li>To mitigate the risk of paper-instruction use and skipping activation altogether, I added a prominent QR code and additional prompts that directed patients online instead.</li>
 <li>Analytics showed that 65% of the policyholders who enrolled were mobile users, so I prioritised a mobile experience while supporting desktop-use likely preferred by older patients.</li>
 </ul>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/first-print1.webp" alt="First printed kit design with QR code" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Design exploration for the front of the kit printed to test QR and see the print finish quality.</figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/first-print2.webp" alt="First printed kit design with QR code" loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
@@ -158,8 +156,7 @@
 <li>These responded to browser preferences such as larger text for individual accessibility and were fully keyboard-focusable.</li>
 <li>I included DNAGenotek’s illustrations as a quick way to enhance comprehension.</li>
 </ul>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/instructions-previous1.webp" alt="Prototype of online instructions, one to two actions per page" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>First online instruction prototype. One to two actions per page with simplified copy.</figcaption></p>
@@ -179,27 +176,23 @@
 </ul>
 <h3 id="iterated-kit-and-copy-to-address-privacy-and-box-confusion" tabindex="-1">Iterated kit and copy to address privacy and box confusion</h3>
 <p>To address paper-first behaviour and set patient expectations, I pushed the supply chain team to invest in printing on the large inside panel of the kit (about $0.40 or $400 per 1000 kits). I then designed an eye-catching set of steps with the QR alongside.</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/box-print-inside2.webp" alt="Exploring design options for the inside panel." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Exploring design options for the inside panel.</figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/box-print-inside1.webp" alt="Exploring design options for the inside panel." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
 <p>With the QR moved to the inside panel, I used the freed up space below the sample device for supporting signposts. To address the partnership with DNAGenotek and relevant privacy concerns, I added content that explained the partnership and stated they do not receive patient personal data or samples both on the kit and in the online journey.</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/box-print1.webp" alt="Exploring new signposts on the kit print." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Exploring new instructions signpost on the kit print.</figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/box-print2.webp" alt="Exploring recognising the test device on the kit print." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
@@ -209,8 +202,7 @@
 <li>To further reduce the risk of paper-first behaviour, in the online instructions I added a first-page callout advising patients to ignore the paper version. Regulatory rules required softer wording to prevent CLIA non-compliance; as a compromise, I asked patients to refer to them only if they need to.</li>
 <li>DNAGenotek’s illustrations were off-limits, so I designed custom ones which made the experience more cohesive.</li>
 </ul>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/illustrations-overview.webp" alt="Exploring recognising the test device on the kit print." loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Illustrations for each step in the sample process.</figcaption></p>
@@ -225,82 +217,69 @@
 <li>Step-by-step online instructions approach performed so well my colleague adopted it for the sign-up flow.</li>
 </ul>
 <p>Final designs:</p>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/testkit-final1.webp" alt="Final kit and print files" loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/testkit-final2.webp" alt="Final kit and print files" loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
 <div class="image-grid full-bleed">
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/kitflow-step1.webp" alt="Flow 1." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/kitflow-step2.webp" alt="Flow 1." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/kitflow-step3.webp" alt="Flow 1." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/kitflow-step4.webp" alt="Flow 1." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/kitflow-step5.webp" alt="Flow 1." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/kitflow-step6.webp" alt="Flow 1." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/kitflow-step7.webp" alt="Flow 1." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/kitflow-step8.webp" alt="Flow 1." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/kitflow-step9.webp" alt="Flow 1." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/kitflow-step10.webp" alt="Flow 1." loading="lazy" decoding="async">
   </picture>
 <p><figcaption></figcaption></p>
 </figure>
 </div>
-<figure class="">
-  <picture>
+<figure class=""><picture>
     <img src="./img/kitflow-desktop-overview.webp" alt="Released kit, print assets, and online instructions" loading="lazy" decoding="async">
   </picture>
 <p><figcaption>Desktop sample.</figcaption></p>
