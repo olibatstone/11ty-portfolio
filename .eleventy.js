@@ -19,7 +19,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLiquidFilter("md", (str) => (str ? mdInline.renderInline(String(str)) : ""));
 
   eleventyConfig.setUseGitIgnore(false);
-  eleventyConfig.addPassthroughCopy("src/styles/");
   eleventyConfig.addPassthroughCopy("src/fonts/");
   eleventyConfig.addPassthroughCopy("src/documents/");
   eleventyConfig.addPassthroughCopy({"src/assets/img": "assets/img"});
