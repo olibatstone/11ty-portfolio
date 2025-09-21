@@ -1,0 +1,8 @@
+# macOS Finder cruft
+.DS_Store
+
+# Node
+node_modules/
+
+# Build output
+dist/
