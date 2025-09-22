@@ -59,7 +59,7 @@ body {
   background: var(--background-color);
   font-family: var(--font-family);
   inline-size: 100%;
-  max-inline-size: 38vw;
+  max-inline-size: 72ch;
   margin-inline: auto;
   padding-block: var(--space-5);
   -webkit-font-smoothing: antialiased;
