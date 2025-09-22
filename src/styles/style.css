@@ -36,7 +36,7 @@
 @font-face {
   font-family: "Inter Fallback";
   src: local("Arial");
-  size-adjust: 108%;
+  size-adjust: 109%;
   ascent-override: 92%;
   descent-override: 8%;
   line-gap-override: 0%;
@@ -90,7 +90,17 @@ body {
   padding-block: var(--space-5);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s ease;
+}
+
+/* Page fade transitions */
+body {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body.visible {
+  opacity: 1;
 }
 
 .content-container {
