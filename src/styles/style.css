@@ -1,13 +1,24 @@
-@font-face {
-  font-family: "Bebas Neue";
-  src: url("../fonts/BebasNeue-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+@font-face{
+  font-family:"Bebas Neue";
+  src:url("../fonts/BebasNeue-alpha.woff2") format("woff2"),
+      url("../fonts/BebasNeue-webfont.woff") format("woff");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
 }
 
+@font-face {
+  font-family: "Bebas Neue Fallback";
+  src: local("Arial");
+  size-adjust: 102%;
+  ascent-override: 92%;
+  descent-override: 8%;
+  line-gap-override: 0%;
+}
+
+
 :root {
-  --font-family: Inter, sans-serif;
+  --font-family: Inter, Arial, sans-serif;
   --background-color: #222;
   --header-color: #eee;
   --text-color: #bbb;
@@ -73,13 +84,13 @@ body {
 h1 {
   font-size: var(--step-3);
   line-height: 1.2;
-  font-family: "Bebas Neue", var(--font-family);
+  font-family: "Bebas Neue", "Bebas Neue Fallback", var(--font-family);
 }
 
 h2 {
   font-size: var(--step-2);
   line-height: 1.25;
-  font-family: "Bebas Neue", var(--font-family);
+  font-family: "Bebas Neue", "Bebas Neue Fallback", var(--font-family);
 }
 
 h3 {
