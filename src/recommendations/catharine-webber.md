@@ -1,8 +1,8 @@
 ---
 tags: recommendation
 date: 2022-05-01
-image: ./assets/img/recommendations/catharine-webber.webp
+image: /assets/img/recommendations/catharine-webber.webp
 name: Catharine Webber
 role: Head of Digital Product, Candide
-quote: Oli tackled complex journeys which required adherence to regulation and effectively balanced this with keeping things simple and clear for the end user. He was a valued colleague and friend to myself and many of the team during my time at Candide - open minded and fun to collaborate with.
+quote: I constantly relied on Oli's calm, focussed and methodical approach to unlocking the problem we needed to solve. He tackled complex journeys that required adherence to regulation and balanced that with keeping things simple for the end user.
 ---

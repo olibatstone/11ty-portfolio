@@ -7,49 +7,8 @@
 
 <body id="top">
   {%- include "partials/button.html", href: "#main", classes: "skip-link", label: "Skip to content ↓" -%}
-  <header>
-    <section class="hero-container">
-      {% render "partials/figure.html",
-      src: "/assets/img/profile/oli-photo.webp",
-      loading: "eager",
-      alt: "Portrait of Oli",
-      caption: ""
-      classes: "portrait"
-      %}
-      <div>
-        <h1>{{ site.title }}</h1>
-        <p>{{ description }} Available February 2026.</p>
-      </div>
-    </section>
-  </header>
-  <main id="main" tabindex="-1" aria-label="Main content">
-    <section class="about-heading" aria-labelledby="about-heading">
-      <h2 id="about-heading">About</h2>
-      <p>{{ about }}</p>
-      {%- include "partials/button.html", href: "email:hi@olibatstone.com", label: "Email me →" -%}
-    </section>
-    <section class="work-list-container" aria-labelledby="selected-work-heading">
-      <h2 id="selected-work-heading">Selected work</h2>
-      {% include "partials/work-list.html" %}
-    </section>
-    <section class="recommendations-list-container" aria-labelledby="recommendations-heading">
-      <h2 id="recommendations-heading">Recommendations</h2>
-      <p>From <a href="https://linkedin.com/in/olibatstone">LinkedIn</a>.</p>
-      {% include "partials/recommendations.html" %}
-    </section>
-    <section class="getintouch-container" aria-labelledby="getintouch-heading">
-      <h2 id="getintouch-heading">Get in touch</h2>
-      <p>{{ cta }}</p>
-      {% include "partials/button.html",
-      href: "https://cal.com/olibatstone/30min",
-      label: "Book a call"
-      %}
-      {% include "partials/button.html",
-      href: "email:hi@olibatstone.com",
-      label: "Send an email"
-      %}
-    </section>
-  </main>
+  {% include "partials/nav.html" %}
+  {{ content }}
   <footer>
     {% include "partials/footer.html" %}
   </footer>

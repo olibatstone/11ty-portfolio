@@ -1,26 +1,28 @@
 <ul class="recommendations" role="list">
   {% assign sorted = collections.recommendation | sort: "date" | reverse %}
   {% for recommendation in sorted %}
-    <li role="listitem">
-      <figure class="recommendation">
-        <blockquote>
-          <p>{{ recommendation.data.quote }}</p>
-        </blockquote>
-        <figcaption>
+    <li class="recommendation-card">
+      <blockquote class="recommendation-quote">
+        <p>{{ recommendation.data.quote }}</p>
+      </blockquote>
+      <div class="recommendation-meta">
+        {% if recommendation.data.image %}
           <img
             src="{{ recommendation.data.image }}"
             alt="Portrait of {{ recommendation.data.name }}"
-            class="avatar"
+            class="recommendation-avatar"
             loading="lazy"
             decoding="async"
           />
-          <span class="meta">
-            <cite class="name">{{ recommendation.data.name }}</cite>
-            <span class="role">{{ recommendation.data.role }}</span>
-            <span class="date">{{ recommendation.date | date: "%B %Y" }}</span>
-          </span>
-        </figcaption>
-      </figure>
+        {% else %}
+          <div class="recommendation-avatar recommendation-avatar--placeholder" aria-hidden="true"></div>
+        {% endif %}
+        <div class="recommendation-details">
+          <cite class="recommendation-name">{{ recommendation.data.name }}</cite>
+          <span class="recommendation-role">{{ recommendation.data.role }}</span>
+          <time class="recommendation-date" datetime="{{ recommendation.date | date: '%Y-%m-%d' }}">{{ recommendation.date | date: "%B %Y" }}</time>
+        </div>
+      </div>
     </li>
   {% endfor %}
 </ul>

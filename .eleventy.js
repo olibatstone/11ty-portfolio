@@ -29,6 +29,10 @@ module.exports = function(eleventyConfig) {
     api.getFilteredByTag("work").sort((a, b) => (a.data.order||0) - (b.data.order||0))
   );
 
+  eleventyConfig.addCollection("blog", (api) =>
+    api.getFilteredByTag("blog").sort((a, b) => b.date - a.date)
+  );
+
   return {
     htmlTemplateEngine: "liquid",
     markdownTemplateEngine: "liquid",

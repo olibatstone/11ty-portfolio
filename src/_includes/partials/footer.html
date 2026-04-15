@@ -1,11 +1,14 @@
 <footer class="site-footer">
-  <nav aria-label="Footer">
-    <ul class="footer-links">
-      {% for link in site.footerLinks %}
-        <li><a href="{{ link.url }}">{{ link.text }}</a></li>
-      {% endfor %}
-    </ul>
-  </nav>
-    <p>Developed by hand. Debugged with Copilot.</p>
-  <p>&copy; {{ site.title }} {{ 'now' | date: '%Y' }}</p>
+  <div class="footer-top">
+    <a class="footer-brand" href="/">{{ site.title }}</a>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-links">
+        {% for link in site.footerLinks %}
+          <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <p class="footer-legal">&copy; {{ site.title }} {{ 'now' | date: '%Y' }}</p>
+  <p class="footer-legal">Oli Batstone Design Limited &middot; Registered in England and Wales &middot; Company no. 17111922 &middot; Registered office: 80 Ashton Road, Denton, Manchester, England, M34 3JF</p>
 </footer>

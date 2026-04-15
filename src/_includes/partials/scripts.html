@@ -42,7 +42,7 @@
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector('.work-content') || document.querySelector('main');
+  const container = document.querySelector('.work-content');
   if (!container) return;
 
   const h3s = Array.from(container.querySelectorAll('h3'));
@@ -190,5 +190,34 @@ document.addEventListener('DOMContentLoaded', () => {
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("visible");
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".faq-item").forEach((details) => {
+    const summary = details.querySelector(":scope > summary");
+    const p = details.querySelector(":scope > p");
+    if (!summary || !p) return;
+
+    summary.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      if (details.open) {
+        // Animate close
+        p.classList.remove("faq-animating");
+        p.classList.add("faq-closing");
+        p.addEventListener("animationend", () => {
+          p.classList.remove("faq-closing");
+          details.removeAttribute("open");
+        }, { once: true });
+      } else {
+        // Open then animate in
+        details.setAttribute("open", "");
+        p.classList.remove("faq-animating", "faq-closing");
+        void p.offsetWidth;
+        p.classList.add("faq-animating");
+      }
+    });
+  });
 });
 </script>

@@ -1,0 +1,37 @@
+<ul class="work-cards" role="list">
+  {% for work in collections.work %}
+    <li>
+      {% if work.data.coming_soon %}
+        <div class="work-card work-card--coming-soon">
+          <div class="work-card-image" aria-hidden="true">
+            <div class="work-card-gradient"></div>
+          </div>
+          <div class="work-card-body">
+            {% if work.data.metrics and work.data.metrics.size > 0 %}
+              <div class="work-card-stat">
+                <span class="work-card-stat-number">{{ work.data.metrics[0].value }}</span>
+                <span class="work-card-stat-label">{{ work.data['card-stat-label'] | default: work.data.metrics[0].label }}</span>
+              </div>
+            {% endif %}
+            <span class="work-card-cta work-card-cta--soon">Case study coming soon</span>
+          </div>
+        </div>
+      {% else %}
+        <a class="work-card" href="{{ work.url }}">
+          <div class="work-card-image" aria-hidden="true">
+            <div class="work-card-gradient"></div>
+          </div>
+          <div class="work-card-body">
+            {% if work.data.metrics and work.data.metrics.size > 0 %}
+              <div class="work-card-stat">
+                <span class="work-card-stat-number">{{ work.data.metrics[0].value }}</span>
+                <span class="work-card-stat-label">{{ work.data['card-stat-label'] | default: work.data.metrics[0].label }}</span>
+              </div>
+            {% endif %}
+            <span class="work-card-cta">View case study →</span>
+          </div>
+        </a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
