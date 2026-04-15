@@ -6,7 +6,7 @@ coming_soon: true
 permalink: false
 
 title: Increasing clinical uptake by 60% with tool demo redesign
-description: I redesigned a tablet demo tool, reducing onboarding time among doctors and staff.
+description: I redesigned a tablet demo tool, reducing onboarding time among clinicians and staff.
 image: /selected-work/unlocking-gifting-revenue/img/placeholder4.webp
 
 timeline: Coming soon
