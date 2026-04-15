@@ -1028,6 +1028,10 @@ button:focus-visible,
   margin-bottom: var(--space-4);
 }
 
+.landing-how .landing-subheadline {
+  text-align: center;
+}
+
 .landing-hero-cta {
   display: flex;
   flex-wrap: wrap;
