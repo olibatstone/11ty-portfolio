@@ -1,0 +1,59 @@
+---
+layout: layouts/base.html
+title: Case studies
+description: A selection of product design work in digital health, accessibility, and consumer software.
+---
+<main id="main" tabindex="-1" aria-label="Main content">
+  <div class="case-studies-page">
+
+    <header class="case-studies-header">
+      <h1>Case studies</h1>
+      <p class="case-studies-intro">Where I've fixed things recently.</p>
+    </header>
+
+    <ol class="case-studies-list" role="list">
+      {% assign sorted_work = collections.work | sort: "data.order" %}
+      {% for work in sorted_work %}
+        {% if work.data.coming_soon %}
+          <li class="cs-card cs-card--coming-soon">
+            <div class="cs-card-image" aria-hidden="true">
+              <div class="cs-card-gradient"></div>
+            </div>
+            <div class="cs-card-body">
+              <h2 class="cs-card-title">{{ work.data.title }}</h2>
+              {% if work.data['card-summary'] %}
+                <p class="cs-card-summary">{{ work.data['card-summary'] }}</p>
+              {% elsif work.data.description %}
+                <p class="cs-card-summary">{{ work.data.description }}</p>
+              {% endif %}
+              <span class="cs-card-cta cs-card-cta--soon">Case study coming soon</span>
+            </div>
+          </li>
+        {% else %}
+          <li class="cs-card">
+            <a class="cs-card-image" href="{{ work.url }}" tabindex="-1" aria-hidden="true">
+              <img
+                src="{{ work.data.image }}"
+                alt=""
+                loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                decoding="async"
+              >
+            </a>
+            <div class="cs-card-body">
+              <h2 class="cs-card-title">
+                {{ work.data.title }}
+              </h2>
+              {% if work.data['card-summary'] %}
+                <p class="cs-card-summary">{{ work.data['card-summary'] }}</p>
+              {% elsif work.data.description %}
+                <p class="cs-card-summary">{{ work.data.description }}</p>
+              {% endif %}
+              <a href="{{ work.url }}" class="cs-card-cta">View full case study →</a>
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+
+  </div>
+</main>

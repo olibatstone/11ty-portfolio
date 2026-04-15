@@ -1,0 +1,18 @@
+---
+layout: layouts/base.html
+---
+<main id="main" tabindex="-1" aria-label="Main content">
+  <article class="blog-content">
+    <header class="blog-post-header">
+      <h1>{{ title }}</h1>
+      <p class="blog-post-meta">
+        <time datetime="{{ date | date: '%Y-%m-%d' }}">{{ date | date: "%d %B %Y" }}</time>
+        {% if description %}<span class="blog-post-description">{{ description }}</span>{% endif %}
+      </p>
+    </header>
+    <div class="blog-post-body">
+      {{ content }}
+    </div>
+    {% include "partials/newsletter-signup.html" %}
+  </article>
+</main>

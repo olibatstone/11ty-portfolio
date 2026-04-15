@@ -1,0 +1,303 @@
+---
+layout: layouts/base.html
+---
+<main id="main" tabindex="-1" aria-label="Main content">
+
+  <!-- Hero -->
+  <section class="landing-hero" aria-labelledby="hero-heading">
+    <div class="landing-hero-text">
+      <h1 id="hero-heading">{{ headline }}</h1>
+      <p class="landing-subheadline">{{ subheadline }}</p>
+      <div class="landing-hero-cta">
+        {% include "partials/button.html",
+        href: "https://cal.com/olibatstone/30min",
+        label: "Book a short call"
+        %}
+        {% include "partials/button.html",
+        href: "mailto:hi@olibatstone.com",
+        label: "Email a problem or brief"
+        %}
+      </div>
+    </div>
+  </section>
+  
+  <!-- Problems -->
+  <section class="landing-problems" aria-labelledby="problems-heading">
+    <h2 id="problems-heading">Typical problems I help with</h2>
+    <ul class="problems-grid" role="list">
+
+      <li class="problem-item">
+        <svg class="problem-card-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Open door: frame cutout + open panel -->
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5h18v32H7V5zm2.5 2.5v27h13v-27h-13z" fill="currentColor"/>
+          <rect x="4" y="35.5" width="32" height="2" rx="1" fill="currentColor"/>
+          <path d="M22.5 7.5L32 5v30l-9.5-2.5z" fill="currentColor"/>
+          <circle cx="24" cy="21" r="1.5" fill="white"/>
+        </svg>
+        <h3 class="problem-card-title">Patients drop out during registration</h3>
+        <p class="problem-card-desc">No one can agree why. Legal and clinical are unhappy, engineering is stuck in rework.</p>
+      </li>
+
+      <li class="problem-item">
+        <svg class="problem-card-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Footsteps: two shoe soles at 15° -->
+          <g transform="translate(12,14) rotate(-15)">
+            <ellipse cx="0" cy="-6" rx="6" ry="7.5" fill="currentColor"/>
+            <ellipse cx="0" cy="5.5" rx="4.5" ry="3.5" fill="currentColor"/>
+          </g>
+          <g transform="translate(28,26) rotate(15) scale(-1,1)">
+            <ellipse cx="0" cy="-6" rx="6" ry="7.5" fill="currentColor"/>
+            <ellipse cx="0" cy="5.5" rx="4.5" ry="3.5" fill="currentColor"/>
+          </g>
+        </svg>
+        <h3 class="problem-card-title">Few patients take the first step</h3>
+        <p class="problem-card-desc">They don't connect a device, begin an assessment or otherwise engage. Nothing moves the needle.</p>
+      </li>
+
+      <li class="problem-item">
+        <svg class="problem-card-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Frustrated face: filled circle with white features -->
+          <circle cx="20" cy="20" r="17" fill="currentColor"/>
+          <circle cx="14" cy="18" r="2" fill="white"/>
+          <circle cx="26" cy="18" r="2" fill="white"/>
+          <path d="M14 28c1.5-3 10.5-3 12 0" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M12 12l3.5 3M28 12l-3.5 3" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h3 class="problem-card-title">Clinicians and staff work around the product</h3>
+        <p class="problem-card-desc">They don't use it. Adoption is low and the team doesn't understand why.</p>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- Selected work -->
+  <section class="landing-work" aria-labelledby="work-heading" id="work">
+    <h2 id="work-heading">Examples in practice</h2>
+    <div class="wide-grid">
+      {% include "partials/work-card.html" %}
+    </div>
+  </section>
+
+  <!-- How I work -->
+  <section class="landing-how" aria-labelledby="how-heading">
+    <h2 id="how-heading">How I work</h2>
+    <ol class="how-grid" role="list">
+      <li class="how-step">
+        <div class="how-step-header">
+          <span class="how-step-number" aria-hidden="true">1</span>
+          <h3 class="how-step-heading">Choose one critical journey</h3>
+        </div>
+        <p>We pick one high-impact flow and agree what success looks like.</p>
+        <ul class="how-step-outcome" role="list">
+          <li>a scoped brief</li>
+          <li>agreed metrics</li>
+          <li>a shared definition of done</li>
+        </ul>
+      </li>
+      <li class="how-step">
+        <div class="how-step-header">
+          <span class="how-step-number" aria-hidden="true">2</span>
+          <h3 class="how-step-heading">Map, test and design</h3>
+        </div>
+        <p>I turn workflows and assumptions into journeys and production-ready designs.</p>
+        <ul class="how-step-outcome" role="list">
+          <li>tested designs</li>
+          <li>surfaced risks</li>
+          <li>clinical sign-off built in</li>
+        </ul>
+      </li>
+      <li class="how-step">
+        <div class="how-step-header">
+          <span class="how-step-number" aria-hidden="true">3</span>
+          <h3 class="how-step-heading">Deliver, support and iterate</h3>
+        </div>
+        <p>I stay involved through build and launch so the design survives contact with reality.</p>
+        <ul class="how-step-outcome" role="list">
+          <li>fewer build surprises</li>
+          <li>a working product</li>
+          <li>data to act on</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Why teams bring me in -->
+  <section class="landing-why" aria-labelledby="why-heading">
+    <h2 id="why-heading">Why teams bring me in</h2>
+    <ul class="why-grid" role="list">
+      <li class="why-item">
+        <span class="why-item-title">Healthcare-specific</span>
+        <p>I've shipped regulated products. I know how to work with clinical advisors and legal teams, not just PMs and engineers.</p>
+      </li>
+      <li class="why-item">
+        <span class="why-item-title">Outcome-led</span>
+        <p>My benchmark is patient activation rates, clinician adoption and other key metrics. Not screens.</p>
+      </li>
+      <li class="why-item">
+        <span class="why-item-title">Low coordination overhead</span>
+        <p>I define my work and give engineering clear design specifications. You're not project-managing me.</p>
+      </li>
+      <li class="why-item">
+        <span class="why-item-title">Accessible by default</span>
+        <p>Health products reach older adults, people with low digital literacy, and users under stress. I design for that from the start, not in a last-minute audit.</p>
+      </li>
+      <li class="why-item">
+        <span class="why-item-title">Senior attention</span>
+        <p>You work directly with me throughout. Not a junior who gets handed the brief. Not a team where the senior shows up for pitches.</p>
+      </li>
+      <li class="why-item">
+        <span class="why-item-title">Honest, not just agreeable</span>
+        <p>I'll tell you if I see issues with a brief, the timeline is too ambitious, or the design isn't addressing the right problem.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Social proof -->
+  <section class="landing-recommendations" aria-labelledby="recommendations-heading">
+    <h2 id="recommendations-heading">What they say</h2>
+    <div class="wide-grid wide-grid--recommendations">
+      {% include "partials/recommendations.html" %}
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="landing-pricing" aria-labelledby="pricing-heading">
+    <h2 id="pricing-heading">What it costs</h2>
+
+    <div class="pricing-cards">
+
+      <!-- Card 1: Ongoing engagement -->
+      <div class="pricing-card">
+        <div class="pricing-card-header">
+          <span class="pricing-card-icon pricing-card-icon--engagement" aria-hidden="true"></span>
+          <h3 class="pricing-card-title">Ongoing engagement</h3>
+        </div>
+        <p class="pricing-card-desc">For teams who need a designer embedded in the product, from discovery through to live.</p>
+        <p class="pricing-card-amount">£500 per day</p>
+        {% include "partials/button.html",
+        href: "https://cal.com/olibatstone/30min",
+        label: "Book a short call"
+        %}
+        <p class="pricing-card-note">Based on scope and commitment. Most engagements run 2–8 weeks.</p>
+      </div>
+
+      <!-- Card 2: Journey review -->
+      <div class="pricing-card pricing-card--featured">
+        <div class="pricing-card-header">
+          <span class="pricing-card-icon pricing-card-icon--review" aria-hidden="true"></span>
+          <h3 class="pricing-card-title">Journey review</h3>
+        </div>
+        <p class="pricing-card-desc">A focused review of one key flow whether live, in build, or at the design stage. Great for an expert view before committing further.</p>
+        <p class="pricing-card-amount">£950 fixed price</p>
+        {% include "partials/button.html",
+        href: "https://cal.com/olibatstone/30min",
+        label: "Book a short call"
+        %}
+        <div class="pricing-what-you-get">
+          <p>Delivered in 5 working days, you'll get:</p>
+          <ul class="pricing-bullet-list" role="list">
+            <li>where users are likely to drop off</li>
+            <li>gaps in logic or edge cases</li>
+            <li>compliance or delivery risks</li>
+            <li>practical suggestions to improve the flow</li>
+            <li>short written summary and annotated feedback</li>
+            <li>optional walkthrough call</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+  <section class="landing-faq" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">FAQs</h2>
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>What work do you do?</summary>
+        <p>Product design for digital health: onboarding flows, patient journeys, clinical tools, consent and eligibility screens, and regulated product experiences. I work from initial discovery and research through to build-ready designs.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you work solo or in a team?</summary>
+        <p>Both. I work independently on smaller engagements, or embedded in your team alongside product managers, engineers and clinical staff. Either way, you'll know what I'm doing and why.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Where do you work?</summary>
+        <p>Based in Bristol, working remotely with clients across the UK. I'm available for occasional on-site working.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Why not just use AI?</summary>
+        <p>AI tools are useful for drafting and iteration. They don't observe real clinical workflows, facilitate stakeholder alignment, or navigate regulatory context. Health UX requires judgement that comes from years of domain experience.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What tools do you use?</summary>
+        <p>Figma for design and prototyping, Miro for journey mapping and workshops. I use whatever your team already has in place.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are you familiar with GOV.UK and NHS Prototyping kits?</summary>
+        <p>Yes. I've designed in NHS and regulated health contexts and am familiar with the GOV.UK Design System and NHS Frontend.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is there anything you don't take on?</summary>
+        <p>A few things. I'm not a brand or visual designer. I don't do logo work, marketing graphics or illustration. I'm also not a good fit if the brief is fully defined and you need someone to execute a spec without contributing to the thinking. I work best where the problem is real but the solution isn't decided yet. If you're unsure, just ask.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- Blog teaser -->
+  {% if collections.blog.size > 0 %}
+  <section class="landing-blog" aria-labelledby="blog-heading">
+    <h2 id="blog-heading">From the blog</h2>
+    <ul class="blog-teaser-list" role="list">
+      {% for post in collections.blog limit: 2 %}
+        <li>
+          <a href="{{ post.url }}" class="blog-teaser-link">
+            <span class="blog-teaser-title">{{ post.data.title }}</span>
+            <time class="blog-teaser-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%d %B %Y" }}</time>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% include "partials/button.html",
+    href: "/blog/",
+    label: "All posts →"
+    %}
+  </section>
+  {% endif %}
+
+  <!-- Newsletter hidden per site config -->
+  {%- comment -%}{% include "partials/newsletter-signup.html" %}{%- endcomment -%}
+
+  <!-- Get started -->
+  <section class="landing-cta" aria-labelledby="cta-heading">
+    <div class="landing-cta-inner">
+      <div class="landing-cta-text">
+        <h2 id="cta-heading">Got a critical journey that isn't performing? Let's fix it.</h2>
+        <div class="landing-cta-buttons">
+          {% include "partials/button.html",
+          href: "https://cal.com/olibatstone/30min",
+          label: "Book a short call"
+          %}
+          {% include "partials/button.html",
+          href: "mailto:hi@olibatstone.com",
+          label: "Email a problem or brief"
+          %}
+        </div>
+      </div>
+      <div class="landing-cta-image" aria-hidden="true">
+        <img src="/assets/img/profile/oli-photo-hires.webp" alt="" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  {{ content }}
+</main>
