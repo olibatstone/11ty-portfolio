@@ -1,8 +1,7 @@
 {
-  "title": "Oli Batstone",
+  "title": "Oli Batstone Design",
   "url": "https://olibatstone.com",
   "footerLinks": [
-    { "label": "Home", "text": "Home", "url": "/" },
     { "label": "Case studies", "text": "Case studies", "url": "/case-studies/" },
     { "label": "About", "text": "About", "url": "/about/" }
   ]

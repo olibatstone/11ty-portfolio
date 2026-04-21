@@ -19,25 +19,10 @@
       <h1 class="cs-hero-title">{{ title }}</h1>
     </header>
 
-    <!-- Results gallery: masonry grid under title -->
-    {% if gallery %}
-    <div class="cs-gallery">
-      {% for item in gallery %}
-      <div class="cs-gallery-item{% if item.cols == 2 %} cs-gallery-item--wide{% endif %}">
-        <img src="{{ item.src }}" alt="" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}" decoding="async">
-      </div>
-      {% endfor %}
-    </div>
-    {% elsif image %}
-    <div class="cs-hero-image">
-      <img src="{{ image }}" alt="" loading="eager" decoding="async">
-    </div>
-    {% endif %}
-
     <!-- Outcomes — full width -->
     {% if metrics %}
     <section class="cs-outcomes" aria-labelledby="cs-outcomes-heading">
-      <h2 id="cs-outcomes-heading">Outcomes</h2>
+      <h2 id="cs-outcomes-heading">{{ section_takeaways | default: "Results" }}</h2>
       <div class="cs-outcome-cards">
         {% for metric in metrics %}
         <div class="cs-outcome-card">
@@ -49,37 +34,63 @@
     </section>
     {% endif %}
 
+    
+
     <!-- Background — narrow -->
     {% if background %}
     <section class="cs-section cs-section--narrow" aria-labelledby="cs-background-heading">
-      <h2 id="cs-background-heading">Background</h2>
+      <h2 id="cs-background-heading">{{ section_background | default: "Background" }}</h2>
       <p>{{ background }}</p>
     </section>
     {% endif %}
 
-    <!-- Problems & Solutions — full width -->
-    {% if problems_solutions %}
-    <section class="cs-section cs-section--full" aria-labelledby="cs-problems-heading">
-      <h2 id="cs-problems-heading">Problems and solutions</h2>
-      <div class="cs-problems-table">
-        <div class="cs-problems-header">
-          <span>Problem</span>
-          <span>Solution</span>
-        </div>
-        {% for row in problems_solutions %}
-        <div class="cs-problems-row">
-          <p>{{ row.problem }}</p>
-          <p>{{ row.solution }}</p>
-        </div>
+    <!-- The problem — narrow -->
+    {% if problem %}
+    <section class="cs-section cs-section--narrow" aria-labelledby="cs-problems-heading">
+      <h2 id="cs-problems-heading">{{ section_problems | default: "The problem" }}</h2>
+      <ul class="cs-problem-list" role="list">
+        {% for item in problem %}
+        <li>
+          {% if item.text %}{{ item.text }}{% else %}{{ item }}{% endif %}
+          {% if item.image %}
+          <div class="cs-problem-image{% if item.image.cols == 2 %} cs-problem-image--wide{% elsif item.image.cols == 3 %} cs-problem-image--full{% endif %}">
+            <img src="{{ item.image.src }}" alt="{{ item.image.alt | default: '' }}" loading="lazy">
+            {% if item.image.caption %}<p class="cs-what-image-caption">{{ item.image.caption }}</p>{% endif %}
+          </div>
+          {% endif %}
+        </li>
         {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    <!-- What I did — full width, text narrows internally -->
+    {% if what_i_did %}
+    <section class="cs-section cs-section--what" aria-labelledby="cs-what-heading">
+      <h2 id="cs-what-heading">{{ section_what_i_did | default: "What I did" }}</h2>
+      {% for item in what_i_did %}
+      <div class="cs-what-item">
+        <h3 class="cs-what-heading">{{ item.heading }}</h3>
+        <div class="cs-what-body">{{ item.body | markdownify }}</div>
+        {% if item.images %}
+        <div class="cs-what-images">
+          {% for img in item.images %}
+          <div class="cs-what-image-item{% if img.cols == 2 %} cs-what-image-item--wide{% elsif img.cols == 3 %} cs-what-image-item--full{% endif %}">
+            <img src="{{ img.src }}" alt="{{ img.alt | default: '' }}" loading="lazy">
+            {% if img.caption %}<p class="cs-what-image-caption">{{ img.caption }}</p>{% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
+      {% endfor %}
     </section>
     {% endif %}
 
     <!-- Key takeaways — narrow -->
     {% if takeaways %}
     <section class="cs-section cs-section--narrow" aria-labelledby="cs-takeaways-heading">
-      <h2 id="cs-takeaways-heading">Key takeaways</h2>
+      <h2 id="cs-takeaways-heading">{{ section_takeaways | default: "Key takeaways" }}</h2>
       <ul class="cs-takeaways" role="list">
         {% for item in takeaways %}
         <li>{{ item }}</li>
@@ -88,29 +99,56 @@
     </section>
     {% endif %}
 
+    <!-- Key learning — narrow -->
+    {% if key_learning %}
+    <section class="cs-section cs-section--narrow" aria-labelledby="cs-learning-heading">
+      <h2 id="cs-learning-heading">Key learning</h2>
+      <p>{{ key_learning }}</p>
+    </section>
+    {% endif %}
+
     <!-- CTA — full width -->
     <section class="cs-cta" aria-labelledby="cs-cta-heading">
-      <h2 id="cs-cta-heading">Got a similar problem?</h2>
-      <p>Let's fix it together.</p>
-      <div class="cs-cta-buttons">
-        {% include "partials/button.html",
-        href: "https://cal.com/olibatstone/30min",
-        label: "Book a short call"
-        %}
-        {% include "partials/button.html",
-        href: "mailto:hi@olibatstone.com",
-        label: "Email a problem or brief"
-        %}
+      <div class="cs-cta-inner">
+        <div class="cs-cta-text">
+          <h2 id="cs-cta-heading">Got a similar problem?</h2>
+          <p>Let's fix it together.</p>
+          <div class="cs-cta-buttons">
+            {% include "partials/button.html",
+            href: "https://cal.com/olibatstone/30min",
+            label: "Book a short call"
+            %}
+            {% include "partials/button.html",
+            href: "mailto:hi@olibatstone.com",
+            label: "Email a problem or brief"
+            %}
+          </div>
+        </div>
+        <div class="cs-cta-image" aria-hidden="true">
+          <img src="/assets/img/profile/oli-photo-hires.webp" alt="" loading="lazy" decoding="async">
+        </div>
       </div>
     </section>
 
   </main>
+
+  <a href="#top" class="back-to-top" aria-label="Back to top">Back to top ↑</a>
 
   <footer>
     {% include "partials/footer.html" %}
   </footer>
 
   {% include "partials/scripts.html"%}
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.back-to-top');
+      if (!btn) return;
+      window.addEventListener('scroll', function () {
+        btn.classList.toggle('is-visible', window.scrollY > 400);
+      }, { passive: true });
+    })();
+  </script>
 
 </body>
 

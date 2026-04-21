@@ -18,6 +18,9 @@ module.exports = function(eleventyConfig) {
   const mdInline = markdownIt({ html: true, linkify: true, breaks: false });
   eleventyConfig.addLiquidFilter("md", (str) => (str ? mdInline.renderInline(String(str)) : ""));
 
+  // Block Markdown filter for case study body content
+  eleventyConfig.addLiquidFilter("markdownify", (str) => (str ? md.render(String(str)) : ""));
+
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPassthroughCopy("src/fonts/");
   eleventyConfig.addPassthroughCopy("src/documents/");

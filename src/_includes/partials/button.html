@@ -4,5 +4,5 @@
   {%- if href contains '://' %} target="_blank" rel="noopener noreferrer"{% endif -%}
   {%- if page and page.url and href == page.url %} aria-current="page"{% endif -%}
 >
-  {{ label }}
+  {{ label }}{% if href contains '://' %}<span class="visually-hidden"> (opens in new window)</span>{% endif %}
 </a>
