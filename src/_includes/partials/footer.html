@@ -2,7 +2,7 @@
   <div class="footer-top">
     <a class="footer-brand" href="/">{{ site.title }}</a>
     <nav aria-label="Footer navigation">
-      <ul class="footer-links">
+      <ul class="footer-links" role="list">
         {% for link in site.footerLinks %}
           <li><a href="{{ link.url }}">{{ link.text }}</a></li>
         {% endfor %}

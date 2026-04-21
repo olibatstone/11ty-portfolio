@@ -1,7 +1,6 @@
 <nav class="site-nav" aria-label="Main navigation">
   <a class="nav-logo" href="/">{{ site.title }}</a>
   <ul class="nav-links" role="list">
-    <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
     <li><a href="/case-studies/"{% if page.url contains "/case-studies/" or page.url contains "/selected-work/" %} aria-current="page"{% endif %}>Case studies</a></li>
     <li><a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a></li>
   </ul>

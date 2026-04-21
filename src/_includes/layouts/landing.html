@@ -63,7 +63,7 @@ layout: layouts/base.html
           <path d="M14 28c1.5-3 10.5-3 12 0" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
           <path d="M12 12l3.5 3M28 12l-3.5 3" stroke="white" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        <h3 class="problem-card-title">Clinicians and staff work around the product</h3>
+        <h3 class="problem-card-title">Clinicians and staff avoid the product</h3>
         <p class="problem-card-desc">They don't use it. Adoption is low and the team doesn't understand why.</p>
       </li>
 
@@ -127,27 +127,27 @@ layout: layouts/base.html
     <h2 id="why-heading">Why teams bring me in</h2>
     <ul class="why-grid" role="list">
       <li class="why-item">
-        <span class="why-item-title">Healthcare-specific</span>
+        <h3 class="why-item-title">Healthcare-specific</h3>
         <p>I've shipped regulated products. I know how to work with clinical advisors and legal teams, not just PMs and engineers.</p>
       </li>
       <li class="why-item">
-        <span class="why-item-title">Outcome-led</span>
+        <h3 class="why-item-title">Outcome-led</h3>
         <p>My benchmark is patient activation rates, clinician adoption and other key metrics. Not screens.</p>
       </li>
       <li class="why-item">
-        <span class="why-item-title">Low coordination overhead</span>
+        <h3 class="why-item-title">Low coordination overhead</h3>
         <p>I define my work and give engineering clear design specifications. You're not project-managing me.</p>
       </li>
       <li class="why-item">
-        <span class="why-item-title">Accessible by default</span>
+        <h3 class="why-item-title">Accessible by default</h3>
         <p>Health products reach older adults, people with low digital literacy, and users under stress. I design for that from the start, not in a last-minute audit.</p>
       </li>
       <li class="why-item">
-        <span class="why-item-title">Senior attention</span>
+        <h3 class="why-item-title">Senior attention</h3>
         <p>You work directly with me throughout, not someone new to design who gets handed the brief.</p>
       </li>
       <li class="why-item">
-        <span class="why-item-title">Honest, not just agreeable</span>
+        <h3 class="why-item-title">Honest, not just agreeable</h3>
         <p>I'll tell you if I see issues with a brief, the timeline is too ambitious, or the design isn't addressing the right problem.</p>
       </li>
     </ul>
@@ -174,12 +174,12 @@ layout: layouts/base.html
           <h3 class="pricing-card-title">Ongoing engagement</h3>
         </div>
         <p class="pricing-card-desc">For teams who need a designer embedded in the product, from discovery through to live.</p>
-        <p class="pricing-card-amount">£500 per day</p>
+        <p class="pricing-card-amount">From £500 per day (excludes VAT) based on scope and commitment.</p>
+        <p class="pricing-card-note">Most engagements run 2–8 weeks.</p>
         {% include "partials/button.html",
         href: "https://cal.com/olibatstone/30min",
         label: "Book a short call"
         %}
-        <p class="pricing-card-note">Based on scope and commitment. Most engagements run 2–8 weeks.</p>
       </div>
 
       <!-- Card 2: Journey review -->
@@ -189,11 +189,7 @@ layout: layouts/base.html
           <h3 class="pricing-card-title">Journey review</h3>
         </div>
         <p class="pricing-card-desc">A focused review of one key flow whether live, in build, or at the design stage. Great for an expert view before committing further.</p>
-        <p class="pricing-card-amount">£950 fixed price</p>
-        {% include "partials/button.html",
-        href: "https://cal.com/olibatstone/30min",
-        label: "Book a short call"
-        %}
+        <p class="pricing-card-amount">£950 fixed price (excludes VAT).</p>
         <div class="pricing-what-you-get">
           <p>Delivered in 5 working days, you'll get:</p>
           <ul class="pricing-bullet-list" role="list">
@@ -205,6 +201,10 @@ layout: layouts/base.html
             <li>optional walkthrough call</li>
           </ul>
         </div>
+        {% include "partials/button.html",
+        href: "https://cal.com/olibatstone/30min",
+        label: "Book a short call"
+        %}
       </div>
 
     </div>
