@@ -265,12 +265,13 @@ cite {
 }
 
 /* Consolidated text color for body content */
-:is(p, ul, blockquote, figcaption, dd, .recommendation .role, .recommendation .date) {
+:is(p, ul, blockquote, figcaption, dd) {
   color: var(--text-color);
 }
 
 .recommendation .role,
 .recommendation .date {
+  color: var(--text-color);
   font-size: var(--step--1);
 }
 
@@ -1092,7 +1093,7 @@ button:focus-visible,
 
 .landing-cta-inner {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr;
   gap: 0;
   border-radius: var(--border-radius-md);
   overflow: hidden;
@@ -1147,21 +1148,13 @@ button:focus-visible,
   border-radius: 0;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 641px) {
   .landing-cta-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .landing-cta-image {
-    display: none;
+    grid-template-columns: 1.1fr 0.9fr;
   }
 
   .cs-cta-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .cs-cta-image {
-    display: none;
+    grid-template-columns: 1.1fr 0.9fr;
   }
 }
 
@@ -2402,7 +2395,7 @@ li:nth-child(3) .work-card-gradient {
 
 .cs-cta-inner {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr;
   min-height: 18rem;
 }
 
@@ -2438,7 +2431,7 @@ li:nth-child(3) .work-card-gradient {
   font-weight: 700;
 }
 
-.cs-cta p {
+.cs-cta .cs-cta-text p {
   color: #fff;
   margin: 0;
 }
@@ -2849,5 +2842,10 @@ li:nth-child(3) .work-card-gradient {
 
   .landing-hero, .case-studies-page, .about-hero, .cs-hero  {
     padding: 0
+  }
+
+  .landing-cta-image,
+  .cs-cta-image {
+    display: none;
   }
 }
