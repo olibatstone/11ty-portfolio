@@ -1093,7 +1093,6 @@ button:focus-visible,
 
 .landing-cta-inner {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 0;
   border-radius: var(--border-radius-md);
   overflow: hidden;
@@ -2395,7 +2394,6 @@ li:nth-child(3) .work-card-gradient {
 
 .cs-cta-inner {
   display: grid;
-  grid-template-columns: 1fr;
   min-height: 18rem;
 }
 
