@@ -3,7 +3,7 @@ layout: layouts/selected-work.html
 tags: work
 order: 1
 title: Boosting sign-up by 5.3% with marketing site redesign
-description: I redesigned Genomics' genetic testing website, breaking healthcare conversion benchmarks.
+description: I redesigned Genomics' genetic testing website, increasing sign-up from 54% to 59.3% and breaking healthcare conversion benchmarks.
 image: /selected-work/boosting-sign-up/img/placeholder1.webp
 timeline: September – December 2023
 role: Senior Product Designer
@@ -14,7 +14,7 @@ client:
   size: ~150 employees
   businessModel: B2B2C SaaS
 
-card-stat-label: increase in sign-up
+card-stat-label: more sign-ups
 
 section_background: Context
 section_problems: Problem
@@ -24,11 +24,9 @@ section_takeaways: Results
 
 metrics:
   - value: "5.3%"
-    label: increase in sign-up
-  - value: ">40%"
-    label: above the healthcare conversion benchmark
+    label: increase in sign-up from 54% to 59.3%
   - value: "2×"
-    label: more users showed sign-up intent
+    label: as many showed sign-up intent in tests
 
 problem:
   - text: Genomics invited 3,000 MassMutual policyholders to discover their genetic risk of common health conditions as a free benefit. 54% signed up from the landing page.
