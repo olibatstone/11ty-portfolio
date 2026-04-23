@@ -3,7 +3,7 @@ layout: layouts/selected-work.html
 tags: work
 order: 2
 title: Cutting wasted kits by 9.7% with sample collection redesign
-description: I redesigned the Health Insights sample collection experience, reducing the genetic test reject rate from 10% to 0.3%.
+description: I redesigned the Health Insights sample collection experience, reducing the genetic test kit reject rate from 10% to 0.3%.
 image: /selected-work/cutting-wasted-kits/img/placeholder2.webp
 timeline: November 2023 – January 2024
 role: Senior Product Designer
@@ -14,7 +14,7 @@ client:
   size: ~150 employees
   businessModel: B2B2C SaaS
 
-card-stat-label: drop in lab rejection rate
+card-stat-label: fewer wasted test kits
 
 section_background: Context
 section_problems: Problem
@@ -24,11 +24,9 @@ section_takeaways: Results
 
 metrics:
   - value: "9.7%"
-    label: reduction in rejection rate
-  - value: "$2,000"
-    label: saved in first month
+    label: fewer wasted test kits from 10% to 0.3%
   - value: "$3,880"
-    label: saved per 1,000 kits
+    label: saved per 1,000 test kits
 
 
 problem:

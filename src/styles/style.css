@@ -2111,7 +2111,7 @@ li:nth-child(3) .work-card-gradient {
 
 .cs-outcome-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: var(--space-3);
 }
 
@@ -2122,7 +2122,7 @@ li:nth-child(3) .work-card-gradient {
   padding: var(--space-4);
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: 0.4rem;
 }
 
 .cs-metric-value {
