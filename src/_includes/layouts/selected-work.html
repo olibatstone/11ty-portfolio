@@ -63,6 +63,18 @@
     </section>
     {% endif %}
 
+    <!-- Constraints — narrow (optional, case-study specific) -->
+    {% if constraints %}
+    <section class="cs-section cs-section--narrow" aria-labelledby="cs-constraints-heading">
+      <h2 id="cs-constraints-heading">{{ section_constraints | default: "Constraints" }}</h2>
+      <ul class="cs-problem-list" role="list">
+        {% for item in constraints %}
+        <li>{% if item.text %}{{ item.text }}{% else %}{{ item }}{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
     <!-- What I did — full width, text narrows internally -->
     {% if what_i_did %}
     <section class="cs-section cs-section--what" aria-labelledby="cs-what-heading">
@@ -95,6 +107,16 @@
         <li>{{ item }}</li>
         {% endfor %}
       </ul>
+      {% if results_images %}
+      <div class="cs-what-images">
+        {% for img in results_images %}
+        <div class="cs-what-image-item{% if img.cols == 2 %} cs-what-image-item--wide{% elsif img.cols == 3 %} cs-what-image-item--full{% endif %}">
+          <img src="{{ img.src }}" alt="{{ img.alt | default: '' }}" loading="lazy">
+          {% if img.caption %}<p class="cs-what-image-caption">{{ img.caption }}</p>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
     </section>
     {% endif %}
 
