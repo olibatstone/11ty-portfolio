@@ -163,50 +163,52 @@ layout: layouts/base.html
 
   <!-- Pricing -->
   <section class="landing-pricing" aria-labelledby="pricing-heading">
-    <h2 id="pricing-heading">What it costs</h2>
+    <h2 id="pricing-heading">Two ways to work together</h2>
 
     <div class="pricing-cards">
 
+      <!-- Card 1: Journey review -->
+      <div class="pricing-card pricing-card--featured">
+        <div class="pricing-card-header">
+          <span class="pricing-card-icon pricing-card-icon--review" aria-hidden="true"></span>
+          <h3 class="pricing-card-title">Journey diagnosis</h3>
+        </div>
+        <p class="pricing-card-desc">A focused analysis of one key flow, whether live, in build, or still at the design stage. Find key fixes before committing to treat it.</p>
+        <p class="pricing-card-amount">£2500 fixed price (excludes VAT).</p>
+        {% include "partials/button.html",
+        href: "https://cal.com/olibatstone/30min",
+        label: "Book a short call"
+        %}
+        <ul class="pricing-bullet-list" role="list">
+          <li>3-5 changes likely to move activation numbers with rationale</li>
+          <li>annotated screens showing drop-off points and why</li>
+          <li>edge cases, logic gaps and compliance risk to fix before scale</li>
+          <li>45-minute video call to talk through findings and agree priority</li>
+          <li>everything in a written document ready for sharing</li>
+          <li>delivered in 5 working days</li>
+        </ul>
+      </div>
       <!-- Card 1: Ongoing engagement -->
       <div class="pricing-card">
         <div class="pricing-card-header">
           <span class="pricing-card-icon pricing-card-icon--engagement" aria-hidden="true"></span>
           <h3 class="pricing-card-title">Ongoing engagement</h3>
         </div>
-        <p class="pricing-card-desc">For teams who need a designer embedded in the product, from discovery through to live.</p>
-        <p class="pricing-card-amount">From £500 per day (excludes VAT) based on scope and commitment.</p>
-        <p class="pricing-card-note">Most engagements run 2–8 weeks.</p>
+        <p class="pricing-card-desc">For teams who want the diagnosis and the fix. I work embedded with you from discovery through to live, on one or more critical flows.</p>
+        <p class="pricing-card-amount">From £500 per day (excludes VAT).</p>
         {% include "partials/button.html",
         href: "https://cal.com/olibatstone/30min",
         label: "Book a short call"
         %}
+        <ul class="pricing-bullet-list" role="list">
+          <li>everything in the Journey diagnosis</li>
+          <li>tested, production-ready designs for the fix</li>
+          <li>designed for smoother clinical and legal sign-off</li>
+          <li>engineering support through build and launch</li>
+          <li>most engagements run for 2-6 weeks</li>
+        </ul>
       </div>
-
-      <!-- Card 2: Journey review -->
-      <div class="pricing-card pricing-card--featured">
-        <div class="pricing-card-header">
-          <span class="pricing-card-icon pricing-card-icon--review" aria-hidden="true"></span>
-          <h3 class="pricing-card-title">Journey review</h3>
-        </div>
-        <p class="pricing-card-desc">A focused review of one key flow whether live, in build, or at the design stage. Great for an expert view before committing further.</p>
-        <p class="pricing-card-amount">£2500 fixed price (excludes VAT).</p>
-        <div class="pricing-what-you-get">
-          <p>Delivered in 5 working days, you'll get:</p>
-          <ul class="pricing-bullet-list" role="list">
-            <li>where users are likely to drop off</li>
-            <li>gaps in logic or edge cases</li>
-            <li>compliance or delivery risks</li>
-            <li>practical suggestions to improve the flow</li>
-            <li>short written summary and annotated feedback</li>
-            <li>optional walkthrough call</li>
-          </ul>
-        </div>
-        {% include "partials/button.html",
-        href: "https://cal.com/olibatstone/30min",
-        label: "Book a short call"
-        %}
-      </div>
-
+      
     </div>
 
   </section>
