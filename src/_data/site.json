@@ -1,6 +1,9 @@
 {
   "title": "Oli Batstone",
   "url": "https://olibatstone.com",
+  "description": "Independent Senior Product Designer specialising in digital health UX. I help founders, scale-ups and agencies fix the critical journeys that aren't working.",
+  "image": "/assets/img/profile/oli-photo-hires.webp",
+  "twitter": "",
   "footerLinks": [
     { "label": "Case studies", "text": "Case studies", "url": "/case-studies/" },
     { "label": "About", "text": "About", "url": "/about/" }

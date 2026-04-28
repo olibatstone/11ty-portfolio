@@ -1,5 +1,6 @@
 ---
 layout: layouts/selected-work.html
+sitemap: false
 title: Unlocking £32k revenue with new gifting feature
 description: I designed a garden membership gifting service, driving 13 new customer acquisition discussions.
 image: /selected-work/unlocking-gifting-revenue/img/placeholder4.webp
