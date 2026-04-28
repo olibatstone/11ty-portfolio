@@ -22,6 +22,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLiquidFilter("markdownify", (str) => (str ? md.render(String(str)) : ""));
 
   eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/fonts/");
   eleventyConfig.addPassthroughCopy("src/documents/");
   eleventyConfig.addPassthroughCopy({"src/assets/img": "assets/img"});

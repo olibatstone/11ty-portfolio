@@ -1,6 +1,7 @@
 ---
 layout: layouts/selected-work.html
 # Add "tags: work" and remove this comment when content is ready to publish
+sitemap: false
 order: 3
 
 title: "[TODO: Case study title with outcome metric]"
