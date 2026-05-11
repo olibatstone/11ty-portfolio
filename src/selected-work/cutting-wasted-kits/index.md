@@ -2,6 +2,9 @@
 layout: layouts/selected-work.html
 tags: work
 order: 2
+coming_soon: true
+permalink: false
+sitemap: false
 title: Cutting wasted kits by 9.7% with sample collection redesign
 description: I redesigned the Health Insights sample collection experience, reducing the genetic test kit reject rate from 10% to 0.3%.
 image: /selected-work/cutting-wasted-kits/img/placeholder2.webp
