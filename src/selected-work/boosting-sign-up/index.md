@@ -2,6 +2,9 @@
 layout: layouts/selected-work.html
 tags: work
 order: 1
+coming_soon: true
+permalink: false
+sitemap: false
 title: Boosting sign-up by 5.3% with marketing site redesign
 description: I redesigned Genomics' genetic testing website, increasing sign-up from 54% to 59.3% and breaking healthcare conversion benchmarks.
 image: /selected-work/boosting-sign-up/img/placeholder1.webp
