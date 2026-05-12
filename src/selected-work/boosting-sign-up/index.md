@@ -2,17 +2,14 @@
 layout: layouts/selected-work.html
 tags: work
 order: 1
-coming_soon: true
-permalink: false
-sitemap: false
 title: Boosting sign-up by 5.3% with marketing site redesign
-description: I redesigned Genomics' genetic testing website, increasing sign-up from 54% to 59.3% and breaking healthcare conversion benchmarks.
+description: I redesigned the client's genetic testing website, increasing sign-up from 54% to 59.3% and breaking healthcare conversion benchmarks.
 image: /selected-work/boosting-sign-up/img/placeholder1.webp
 timeline: September – December 2023
 role: Senior Product Designer
 sector: Health · Genetics
 client:
-  name: Genomics
+  name: The client
   stage: Series B
   size: ~150 employees
   businessModel: B2B2C SaaS
@@ -32,7 +29,7 @@ metrics:
     label: as many showed sign-up intent in tests
 
 problem:
-  - text: Genomics invited 3,000 MassMutual policyholders to discover their genetic risk of common health conditions as a free benefit. 54% signed up from the landing page.
+  - text: The client invited 3,000 policyholders to discover their genetic risk of common health conditions as a free benefit. 54% signed up from the landing page.
   - text: Surveys showed the rest lacked clarity as to the value of the test and who was behind it. Many worried about data security and any hidden costs despite the free benefit.
   - text: Without resolving these pain points, the scale-up risked lower adoption and weaker customer buy-in.
     image:
@@ -44,44 +41,15 @@ problem:
 what_i_did:
   - heading: Created a product identity that built trust and supported conversion
     body: |
-      - Genomics lacked a product identity, which undermined trust and adoption. I proposed and validated the name Health Insights through a naming survey, where it ranked top.
-      - For speed, I extended the existing Genomics brand as a visual identity, increasing the use of navy and introducing bold patterns to stand out from light-toned competitors.
+      - The client lacked a product identity, which undermined trust and adoption. I proposed and validated a new product name through a naming survey, where it ranked top.
+      - For speed, I extended the existing brand as a visual identity, increasing the use of navy and introducing bold patterns to stand out from light-toned competitors.
       - I created an initial design system with accessible tokens and components in Figma, ready for cross-team use.
-    images:
-      - src: /selected-work/boosting-sign-up/img/brand-exploration1.webp
-        alt: Health Insights logo explorations with extended navy palette.
-        caption: Logo explorations.
-        cols: 1
-      - src: /selected-work/boosting-sign-up/img/brand-exploration2.webp
-        alt: Logomark variations based on the Genomics icon.
-        caption: Logomark variations on the Genomics icon.
-        cols: 1
-      - src: /selected-work/boosting-sign-up/img/brand-exploration3.webp
-        alt: Touchpoint visualisation for each logo concept.
-        caption: Touchpoint visualisation for each logo concept.
-        cols: 1
 
   - heading: Added content that removed privacy and cost concerns
     body: |
       - I worked with executive and legal teams to design an About us page featuring founder and medical staff bios, published research, and media coverage.
       - To address privacy concerns, I added a Trust and privacy page with explicit statements on non-sharing with third parties, GDPR and ISO27001 credentials, and how patients controlled their data.
       - I created FAQ content explaining why insurers offered the free-benefit test, assuring there are no hidden costs and reiterating how the test differs from competitors.
-    images:
-      - src: /selected-work/boosting-sign-up/img/aboutus-action2.webp
-        alt: Early About us content ideation.
-        caption: Early About us content ideation.
-        cols: 2
-      - src: /selected-work/boosting-sign-up/img/aboutus-action1.webp
-        alt: Early About us desktop layout ideation.
-        caption: Early About us desktop layout ideation.
-        cols: 1
-      - src: /selected-work/boosting-sign-up/img/trust-privacy-action1.webp
-        alt: Early Trust and privacy content ideation.
-        caption: Early Trust and privacy content ideation.
-        cols: 2
-      - src: /selected-work/boosting-sign-up/img/homepage-action1.webp
-        alt: Finalised FAQs addressing the free benefit nature of the test and how it differs from competitors.
-        cols: 1
 
   - heading: Redesigned content to clarify value and drive sign-ups
     body: |
@@ -145,18 +113,8 @@ what_i_did:
     body: |
       - To help patients evaluate the test, I reviewed previous research on patient motivations and found that perceived test accuracy was a top factor in choosing between tests.
       - I created a comparison chart of competitor accuracy using newly published AUC data from Genomic Prediction, 23andMe, and internal sources.
-      - The chart emphasised Health Insights' stronger PRS performance and guided patients to the Science page for a more detailed view.
+      - The chart emphasised the products' stronger PRS performance and guided patients to the Science page for a more detailed view.
     images:
-      - src: /selected-work/boosting-sign-up/img/homepage-action5.webp
-        alt: Chart explorations for the competitor comparison.
-        caption: Chart explorations.
-        cols: 1
-      - src: /selected-work/boosting-sign-up/img/homepage-action6.webp
-        alt: Competitor comparison chart iteration.
-        cols: 1
-      - src: /selected-work/boosting-sign-up/img/homepage-action7.webp
-        alt: Competitor comparison chart iteration.
-        cols: 1
       - src: /selected-work/boosting-sign-up/img/homepage-action8.webp
         alt: Competitor comparison chart iteration.
         cols: 3
@@ -187,7 +145,7 @@ what_i_did:
 
 takeaways:
   - Sign-ups increased from 54% to 59.3%, a 5.3 percentage-point lift that exceeded typical healthcare conversion benchmarks.
-  - The redesign clarified the value of the genetic test, addressed patient trust concerns, and introduced a scalable product identity for the Health Insights service.
+  - The redesign clarified the value of the genetic test, addressed patient trust concerns, and introduced a scalable product identity for the product service.
   - The Science page generated 3.2% of total sign-ups, showing that trust-building content had direct commercial value.
 
 key_learning: For complex healthcare products, trust and transparency are as important as usability. Explaining the science clearly and showing the people behind the service proved essential for adoption.
