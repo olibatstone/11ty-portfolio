@@ -2,17 +2,14 @@
 layout: layouts/selected-work.html
 tags: work
 order: 2
-coming_soon: true
-permalink: false
-sitemap: false
 title: Cutting wasted kits by 9.7% with sample collection redesign
-description: I redesigned the Health Insights sample collection experience, reducing the genetic test kit reject rate from 10% to 0.3%.
+description: I redesigned the client's sample collection experience, reducing the genetic test kit reject rate from 10% to 0.3%.
 image: /selected-work/cutting-wasted-kits/img/placeholder2.webp
 timeline: November 2023 – January 2024
 role: Senior Product Designer
 sector: Health · Regulated
 client:
-  name: Genomics
+  name: The client
   stage: Series B
   size: ~150 employees
   businessModel: B2B2C SaaS
@@ -33,7 +30,7 @@ metrics:
 
 
 problem:
-  - text: Genomics invited 3,000 MassMutual policyholders to a free-benefit genetic test service. 1,620 enrolled over a few months with 1,367 returning a kit. The lab rejected 10% (about 137) for invalid samples.
+  - text: The client invited 3,000 policyholders to a free-benefit genetic test service. The lab rejected 10% (about 137) for invalid samples.
   - text: Those patients received no result, waited roughly a week for a replacement kit, collected another sample, and posted it back. Support handled reships and explanations.
   - text: Each rejection consumed about $40 in kit cost plus shipping and support time. At scale, repeat kits and delays would erode patient and customer trust and make growth unviable.
 
@@ -46,11 +43,6 @@ what_i_did:
 
       > "Consider rewriting the instructions, they were tricky"
       > — Patient, September 2022
-    images:
-      - src: /selected-work/cutting-wasted-kits/img/instructions-original.webp
-        alt: Original paper instructions included in the kit.
-        caption: Original paper instructions.
-        cols: 3
 
   - heading: Linked kits to patients with activation codes to stop ID errors
     body: |
@@ -68,18 +60,10 @@ what_i_did:
 
   - heading: Redirected patients online via kit design to reduce paper-first mistakes
     body: |
-      - I overhauled the kit to align with Genomics' new Health Insights brand identity, meeting patient expectations and fostering trust.
+      - I overhauled the kit to align with the client's new product identity, meeting patient expectations and fostering trust.
       - DNAGenotek supplied the sample device inside the kit which included the paper instructions. Regulations prevented removal.
       - To mitigate the risk of patients using paper instructions and skipping activation, I added a prominent QR code and additional prompts directing patients online instead.
       - Analytics showed 65% of enrolled policyholders were mobile users, so I prioritised a mobile experience while supporting desktop use likely preferred by older patients.
-    images:
-      - src: /selected-work/cutting-wasted-kits/img/first-print1.webp
-        alt: First printed kit design with QR code on the front panel.
-        caption: Design exploration for the front of the kit — printed to test the QR and see the print finish quality.
-        cols: 2
-      - src: /selected-work/cutting-wasted-kits/img/first-print2.webp
-        alt: First printed kit design, reverse side.
-        cols: 1
 
   - heading: Built step-by-step instructions to lower collection errors
     body: |
