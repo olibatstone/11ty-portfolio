@@ -4,7 +4,7 @@ tags: work
 order: 2
 title: Cutting wasted kits by 9.7% with sample collection redesign
 description: I redesigned the client's sample collection experience, reducing the genetic test kit reject rate from 10% to 0.3%.
-image: /selected-work/cutting-wasted-kits/img/placeholder2.webp
+image: /selected-work/cutting-wasted-kits/img/illustrations-overview.webp
 timeline: November 2023 – January 2024
 role: Senior Product Designer
 sector: Health · Regulated
