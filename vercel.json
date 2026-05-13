@@ -3,7 +3,7 @@
     {
       "source": "/li/:slug",
       "destination": "/?utm_source=linkedin&utm_medium=social&utm_campaign=:slug",
-      "permanent": false
+      "permanent": true
     }
   ]
 }
