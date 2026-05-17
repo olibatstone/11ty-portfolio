@@ -14,7 +14,7 @@ client:
   size: ~150 employees
   businessModel: B2B2C SaaS
 
-card-stat-label: fewer wasted test kits
+card-stat-label: more activation
 
 section_background: Context
 section_problems: Problem

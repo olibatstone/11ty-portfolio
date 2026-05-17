@@ -6,211 +6,69 @@ layout: layouts/base.html
   <!-- Hero -->
   <section class="landing-hero" aria-labelledby="hero-heading">
     <div class="landing-hero-text">
+      <p class="landing-eyebrow">{{ subheadline }}</p>
       <h1 id="hero-heading">{{ headline }}</h1>
-      <p class="landing-subheadline">{{ subheadline }}</p>
-      <div class="landing-hero-cta">
+      <p class="landing-hero-tagline">A UX diagnosis and fix plan for digital health teams needing more product engagement.</p>
+      <ul class="landing-hero-bullets" role="list">
+        <li><strong>Fixes found or money back</strong></li>
+        <li><strong>Report delivered in 5 working days</strong></li>
+        <li><strong>Done by a senior product designer</strong></li>
+      </ul>
+      <p class="landing-eyebrow">£2500 + VAT</p>
+      <div class="button-row">
         {% include "partials/button.html",
         href: "https://cal.com/olibatstone/30min",
-        label: "Book a short call"
-        %}
-        {% include "partials/button.html",
-        href: "mailto:hi@olibatstone.com",
-        label: "Email a problem or brief"
+        label: "Start The Treatment"
         %}
       </div>
     </div>
+    {% include "partials/recommendations.html",
+      names: "Catharine Webber,Giles Currington,Tom Byers",
+      wrapper_class: "landing-hero-testimonials"
+    %}
   </section>
-  
+
   <!-- Problems -->
   <section class="landing-problems" aria-labelledby="problems-heading">
-    <h2 id="problems-heading">Typical problems I help with</h2>
-    <ul class="problems-grid" role="list">
-
-      <li class="problem-item">
-        <svg class="problem-card-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <!-- Open door: frame cutout + open panel -->
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5h18v32H7V5zm2.5 2.5v27h13v-27h-13z" fill="currentColor"/>
-          <rect x="4" y="35.5" width="32" height="2" rx="1" fill="currentColor"/>
-          <path d="M22.5 7.5L32 5v30l-9.5-2.5z" fill="currentColor"/>
-          <circle cx="24" cy="21" r="1.5" fill="white"/>
-        </svg>
-        <h3 class="problem-card-title">Patients drop out during registration</h3>
-        <p class="problem-card-desc">No one can agree why. Legal and clinical are unhappy, engineering is stuck in rework.</p>
-      </li>
-
-      <li class="problem-item">
-        <svg class="problem-card-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <!-- Footsteps: two shoe soles at 15° -->
-          <g transform="translate(12,14) rotate(-15)">
-            <ellipse cx="0" cy="-6" rx="6" ry="7.5" fill="currentColor"/>
-            <ellipse cx="0" cy="5.5" rx="4.5" ry="3.5" fill="currentColor"/>
-          </g>
-          <g transform="translate(28,26) rotate(15) scale(-1,1)">
-            <ellipse cx="0" cy="-6" rx="6" ry="7.5" fill="currentColor"/>
-            <ellipse cx="0" cy="5.5" rx="4.5" ry="3.5" fill="currentColor"/>
-          </g>
-        </svg>
-        <h3 class="problem-card-title">Few patients take the first step</h3>
-        <p class="problem-card-desc">They don't connect a device, begin an assessment or otherwise engage. Nothing moves the needle.</p>
-      </li>
-
-      <li class="problem-item">
-        <svg class="problem-card-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <!-- Frustrated face: filled circle with white features -->
-          <circle cx="20" cy="20" r="17" fill="currentColor"/>
-          <circle cx="14" cy="18" r="2" fill="white"/>
-          <circle cx="26" cy="18" r="2" fill="white"/>
-          <path d="M14 28c1.5-3 10.5-3 12 0" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M12 12l3.5 3M28 12l-3.5 3" stroke="white" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <h3 class="problem-card-title">Clinicians and staff avoid the product</h3>
-        <p class="problem-card-desc">They don't use it. Adoption is low and the team doesn't understand why.</p>
-      </li>
-
-    </ul>
+    <div class="problems-layout">
+      <div class="problems-statement">
+        <h2 id="problems-heading">You're not getting the traction you need. You've tried all sorts of fixes, but users just aren't engaging.</h2>
+      </div>
+      <div class="problems-copy">
+        <p>Patients leave on the first pages of registration. Some register but don't use it. Clinicians avoid it. The Treatment shows why and what to do - I review your user journeys, analytics data, business goals, competitors, then document what's wrong with practical fixes.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Selected work -->
+  <!-- How it works -->
+  <section class="landing-how" aria-labelledby="how-heading">
+    <div class="how-layout">
+      <div class="how-intro">
+        <h2 id="how-heading">How it works</h2>
+        <p>Here's how you'll get practical fixes to boost engagement, built on 10 years of product and UX design experience.</p>
+        <div class="button-row">
+        {% include "partials/button.html",
+        href: "https://cal.com/olibatstone/30min",
+        label: "Start the Treatment"
+        %}
+      </div>
+      </div>
+      <ol class="how-steps">
+        <li><strong>1 - Share your user journey.</strong> Once paid, I'll send a 10-minute form to access your online or design-only user journey, understand your users' needs, business, and what you've done before.</li>
+        <li><strong>2 - Investigate.</strong> I analyse your journey, data, business goals, competitors and more from an expert lens. Depending on available data, I may advise extra user research (optional) and explain why.</li>
+        <li><strong>3 - Fixes.</strong> Within 5 working days, you'll see a concise report land in your inbox. It will explain why users aren't engaging, where it is happening, and what to do about it. In the unlikely event I can't find a fix, I'll refund you in full.</li>
+        <li><strong>4 - Action.</strong> You put the fixes into action with your design and engineering team. Or, you ask me to design them for you, either solo or embedded in your team.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Example Treatments -->
   <section class="landing-work" aria-labelledby="work-heading" id="work">
-    <h2 id="work-heading">Examples in practice</h2>
+    <h2 id="work-heading">How I helped other teams scale</h2>
+    <p>Where I found fixes for a business, designed them and saw increased engagement.</p>
     <div class="wide-grid">
       {% include "partials/work-card.html" %}
     </div>
-  </section>
-
-  <!-- How I work -->
-  <section class="landing-how" aria-labelledby="how-heading">
-    <h2 id="how-heading">How I work</h2>
-    <p class="landing-subheadline">As a Senior Product Designer with ten years experience, I know what works.</p>
-    <ol class="how-grid" role="list">
-      <li class="how-step">
-        <div class="how-step-header">
-          <span class="how-step-number" aria-hidden="true">1</span>
-          <h3 class="how-step-heading">Choose one critical journey</h3>
-        </div>
-        <p>We pick one high-impact flow and agree what success looks like.</p>
-        <ul class="how-step-outcome" role="list">
-          <li>a scoped brief</li>
-          <li>agreed metrics</li>
-          <li>a shared definition of done</li>
-        </ul>
-      </li>
-      <li class="how-step">
-        <div class="how-step-header">
-          <span class="how-step-number" aria-hidden="true">2</span>
-          <h3 class="how-step-heading">Map, test and design</h3>
-        </div>
-        <p>I turn workflows and assumptions into journeys and production-ready designs.</p>
-        <ul class="how-step-outcome" role="list">
-          <li>tested designs</li>
-          <li>surfaced risks</li>
-          <li>clinical sign-off built in</li>
-        </ul>
-      </li>
-      <li class="how-step">
-        <div class="how-step-header">
-          <span class="how-step-number" aria-hidden="true">3</span>
-          <h3 class="how-step-heading">Deliver, support and iterate</h3>
-        </div>
-        <p>I stay involved through build and launch so the design survives contact with reality.</p>
-        <ul class="how-step-outcome" role="list">
-          <li>fewer build surprises</li>
-          <li>a working product</li>
-          <li>data to act on</li>
-        </ul>
-      </li>
-    </ol>
-  </section>
-
-  <!-- Why teams bring me in -->
-  <section class="landing-why" aria-labelledby="why-heading">
-    <h2 id="why-heading">Why teams bring me in</h2>
-    <ul class="why-grid" role="list">
-      <li class="why-item">
-        <h3 class="why-item-title">Healthcare-specific</h3>
-        <p>I've shipped regulated products. I know how to work with clinical advisors and legal teams, not just PMs and engineers.</p>
-      </li>
-      <li class="why-item">
-        <h3 class="why-item-title">Outcome-led</h3>
-        <p>My benchmark is patient activation rates, clinician adoption and other key metrics. Not screens.</p>
-      </li>
-      <li class="why-item">
-        <h3 class="why-item-title">Low coordination overhead</h3>
-        <p>I define my work and give engineering clear design specifications. You're not project-managing me.</p>
-      </li>
-      <li class="why-item">
-        <h3 class="why-item-title">Accessible by default</h3>
-        <p>Health products reach older adults, people with low digital literacy, and users under stress. I design for that from the start, not in a last-minute audit.</p>
-      </li>
-      <li class="why-item">
-        <h3 class="why-item-title">Senior attention</h3>
-        <p>You work directly with me throughout, not someone new to design who gets handed the brief.</p>
-      </li>
-      <li class="why-item">
-        <h3 class="why-item-title">Honest, not just agreeable</h3>
-        <p>I'll tell you if I see issues with a brief, the timeline is too ambitious, or the design isn't addressing the right problem.</p>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Social proof -->
-  <section class="landing-recommendations" aria-labelledby="recommendations-heading">
-    <h2 id="recommendations-heading">What they say</h2>
-    <div class="wide-grid wide-grid--recommendations">
-      {% include "partials/recommendations.html" %}
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section class="landing-pricing" aria-labelledby="pricing-heading">
-    <h2 id="pricing-heading">Two ways to work together</h2>
-
-    <div class="pricing-cards">
-
-      <!-- Card 1: Journey review -->
-      <div class="pricing-card pricing-card--featured">
-        <div class="pricing-card-header">
-          <span class="pricing-card-icon pricing-card-icon--review" aria-hidden="true"></span>
-          <h3 class="pricing-card-title">Journey diagnosis</h3>
-        </div>
-        <p class="pricing-card-desc">A focused analysis of one key flow, whether live, in build, or still at the design stage. Find key fixes before committing to treat it.</p>
-        <p class="pricing-card-amount">£2500 fixed price (excludes VAT).</p>
-        {% include "partials/button.html",
-        href: "https://cal.com/olibatstone/30min",
-        label: "Book a short call"
-        %}
-        <ul class="pricing-bullet-list" role="list">
-          <li>3-5 changes likely to move activation numbers with rationale</li>
-          <li>annotated screens showing drop-off points and why</li>
-          <li>edge cases, logic gaps and compliance risk to fix before scale</li>
-          <li>45-minute video call to talk through findings and agree priority</li>
-          <li>everything in a written document ready for sharing</li>
-          <li>delivered in 5 working days</li>
-        </ul>
-      </div>
-      <!-- Card 1: Ongoing engagement -->
-      <div class="pricing-card">
-        <div class="pricing-card-header">
-          <span class="pricing-card-icon pricing-card-icon--engagement" aria-hidden="true"></span>
-          <h3 class="pricing-card-title">Ongoing engagement</h3>
-        </div>
-        <p class="pricing-card-desc">For teams who want the diagnosis and the fix. I work embedded with you from discovery through to live, on one or more critical flows.</p>
-        <p class="pricing-card-amount">From £500 per day (excludes VAT).</p>
-        {% include "partials/button.html",
-        href: "https://cal.com/olibatstone/30min",
-        label: "Book a short call"
-        %}
-        <ul class="pricing-bullet-list" role="list">
-          <li>everything in the Journey diagnosis</li>
-          <li>tested, production-ready designs for the fix</li>
-          <li>designed for smoother clinical and legal sign-off</li>
-          <li>engineering support through build and launch</li>
-          <li>most engagements run for 2-6 weeks</li>
-        </ul>
-      </div>
-      
-    </div>
-
   </section>
 
   <!-- FAQ -->
@@ -284,15 +142,15 @@ layout: layouts/base.html
   <section class="landing-cta" aria-labelledby="cta-heading">
     <div class="landing-cta-inner">
       <div class="landing-cta-text">
-        <h2 id="cta-heading">Got a critical journey that isn't performing? Let's fix it.</h2>
+        <h2 id="cta-heading">Get The Treatment for the traction you need.</h2>
         <div class="landing-cta-buttons">
           {% include "partials/button.html",
           href: "https://cal.com/olibatstone/30min",
-          label: "Book a short call"
+          label: "Start The Treatment"
           %}
           {% include "partials/button.html",
           href: "mailto:hi@olibatstone.com",
-          label: "Email a problem or brief"
+          label: "Email a question"
           %}
         </div>
       </div>

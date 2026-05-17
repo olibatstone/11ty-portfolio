@@ -1,28 +1,60 @@
-<ul class="recommendations" role="list">
-  {% assign sorted = collections.recommendation | sort: "date" | reverse %}
-  {% for recommendation in sorted %}
-    <li class="recommendation-card">
-      <blockquote class="recommendation-quote">
-        <p>{{ recommendation.data.quote }}</p>
-      </blockquote>
-      <div class="recommendation-meta">
-        {% if recommendation.data.image %}
-          <img
-            src="{{ recommendation.data.image }}"
-            alt="Portrait of {{ recommendation.data.name }}"
-            class="recommendation-avatar"
-            loading="lazy"
-            decoding="async"
-          />
-        {% else %}
-          <div class="recommendation-avatar recommendation-avatar--placeholder" aria-hidden="true"></div>
-        {% endif %}
-        <div class="recommendation-details">
-          <cite class="recommendation-name">{{ recommendation.data.name }}</cite>
-          <span class="recommendation-role">{{ recommendation.data.role }}</span>
-          <time class="recommendation-date" datetime="{{ recommendation.date | date: '%Y-%m-%d' }}">{{ recommendation.date | date: "%B %Y" }}</time>
+{%- if names -%}
+  {%- assign nameList = names | split: "," -%}
+{%- else -%}
+  {%- assign sorted = collections.recommendation | sort: "date" | reverse -%}
+{%- endif -%}
+<ul class="{{ wrapper_class | default: 'recommendations' }}" role="list">
+  {%- if names -%}
+    {% for nm in nameList %}
+      {%- assign trimmedName = nm | strip -%}
+      {%- assign recommendation = collections.recommendation | where: "data.name", trimmedName | first -%}
+      {% if recommendation %}
+        <li class="{{ card_class | default: 'recommendation-card' }}">
+          <blockquote class="recommendation-quote">
+            <p>{{ recommendation.data.quote }}</p>
+          </blockquote>
+          <div class="recommendation-meta">
+            {% if recommendation.data.image %}
+              <img
+                src="{{ recommendation.data.image }}"
+                alt="Portrait of {{ recommendation.data.name }}"
+                class="recommendation-avatar"
+                loading="lazy"
+                decoding="async"
+              />
+            {% else %}
+              <div class="recommendation-avatar recommendation-avatar--placeholder" aria-hidden="true"></div>
+            {% endif %}
+            <div class="recommendation-details">
+              <cite class="recommendation-name">{{ recommendation.data.name }}, {{ recommendation.data.role }}</cite>
+            </div>
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {%- else -%}
+    {% for recommendation in sorted %}
+      <li class="{{ card_class | default: 'recommendation-card' }}">
+        <blockquote class="recommendation-quote">
+          <p>{{ recommendation.data.quote }}</p>
+        </blockquote>
+        <div class="recommendation-meta">
+          {% if recommendation.data.image %}
+            <img
+              src="{{ recommendation.data.image }}"
+              alt="Portrait of {{ recommendation.data.name }}"
+              class="recommendation-avatar"
+              loading="lazy"
+              decoding="async"
+            />
+          {% else %}
+            <div class="recommendation-avatar recommendation-avatar--placeholder" aria-hidden="true"></div>
+          {% endif %}
+          <div class="recommendation-details">
+            <cite class="recommendation-name">{{ recommendation.data.name }}, {{ recommendation.data.role }}</cite>
+          </div>
         </div>
-      </div>
-    </li>
-  {% endfor %}
+      </li>
+    {% endfor %}
+  {%- endif -%}
 </ul>
