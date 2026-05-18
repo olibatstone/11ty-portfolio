@@ -6,68 +6,95 @@ layout: layouts/base.html
   <!-- Hero -->
   <section class="landing-hero" aria-labelledby="hero-heading">
     <div class="landing-hero-text">
-      <p class="landing-eyebrow">{{ subheadline }}</p>
       <h1 id="hero-heading">{{ headline }}</h1>
-      <p class="landing-hero-tagline">A UX diagnosis and fix plan for digital health teams needing more product engagement.</p>
+      <p class="landing-hero-tagline">I help founders and scale-ups deliver UX that patients and clinicians don't avoid.</p>
       <ul class="landing-hero-bullets" role="list">
-        <li><strong>Fixes found or money back</strong></li>
-        <li><strong>Report delivered in 5 working days</strong></li>
-        <li><strong>Done by a senior product designer</strong></li>
+        <li><strong>Designed regulated health products</strong></li>
+        <li><strong>Embedded in your team, not handed off to juniors</strong></li>
       </ul>
-      <p class="landing-eyebrow">£2500 + VAT</p>
       <div class="button-row">
         {% include "partials/button.html",
         href: "https://cal.com/olibatstone/30min",
-        label: "Start The Treatment"
+        label: "Book a call"
+        %}
+        {% include "partials/button.html",
+        href: "mailto:hi@olibatstone.com",
+        label: "Ask a question"
         %}
       </div>
     </div>
-    {% include "partials/recommendations.html",
-      names: "Catharine Webber,Giles Currington,Tom Byers",
-      wrapper_class: "landing-hero-testimonials"
-    %}
   </section>
 
   <!-- Problems -->
   <section class="landing-problems" aria-labelledby="problems-heading">
-    <div class="problems-layout">
-      <div class="problems-statement">
-        <h2 id="problems-heading">You're not getting the traction you need. You've tried all sorts of fixes, but users just aren't engaging.</h2>
-      </div>
-      <div class="problems-copy">
-        <p>Patients leave on the first pages of registration. Some register but don't use it. Clinicians avoid it. The Treatment shows why and what to do - I review your user journeys, analytics data, business goals, competitors, then document what's wrong with practical fixes.</p>
-      </div>
-    </div>
+    <h2 id="problems-heading">Typical problems I solve</h2>
+    <ul class="problems-grid" role="list">
+      <li class="problem-item"><p><strong>Patients leave during registration.</strong> Legal, clinical and engineering disagree on why. The fix never lands.</p></li>
+      <li class="problem-item"><p><strong>Some register but don't engage.</strong> Activation numbers stay the same no matter what you try.</p></li>
+      <li class="problem-item"><p><strong>Clinicians and staff avoid the product.</strong> It's built for them but they won't touch it. No one knows why.</p></li>
+    </ul>
   </section>
-
-  <!-- How it works -->
-  <section class="landing-how" aria-labelledby="how-heading">
-    <div class="how-layout">
-      <div class="how-intro">
-        <h2 id="how-heading">How it works</h2>
-        <p>Here's how you'll get practical fixes to boost engagement, built on 10 years of product and UX design experience.</p>
-        <div class="button-row">
-        {% include "partials/button.html",
-        href: "https://cal.com/olibatstone/30min",
-        label: "Start the Treatment"
-        %}
-      </div>
-      </div>
-      <ol class="how-steps">
-        <li><strong>1 - Share your user journey.</strong> Once paid, I'll send a 10-minute form to access your online or design-only user journey, understand your users' needs, business, and what you've done before.</li>
-        <li><strong>2 - Investigate.</strong> I analyse your journey, data, business goals, competitors and more from an expert lens. Depending on available data, I may advise extra user research (optional) and explain why.</li>
-        <li><strong>3 - Fixes.</strong> Within 5 working days, you'll see a concise report land in your inbox. It will explain why users aren't engaging, where it is happening, and what to do about it. In the unlikely event I can't find a fix, I'll refund you in full.</li>
-        <li><strong>4 - Action.</strong> You put the fixes into action with your design and engineering team. Or, you ask me to design them for you, either solo or embedded in your team.</li>
-      </ol>
-    </div>
-  </section>
-
+  
   <!-- Example Treatments -->
   <section class="landing-work" aria-labelledby="work-heading" id="work">
-    <h2 id="work-heading">How I helped other teams scale</h2>
-    <p>Where I found fixes for a business, designed them and saw increased engagement.</p>
+    <h2 id="work-heading">Where I've solved them</h2>
     <div class="wide-grid">
       {% include "partials/work-card.html" %}
+      {% include "partials/recommendations.html",
+      names: "Tom Byers,Giles Currington,Catharine Webber"
+      %}
+    </div>
+  </section>  
+
+  <!-- Why teams bring me in -->
+  <section class="landing-why" aria-labelledby="why-heading">
+    <h2 id="why-heading">Why teams bring me in</h2>
+    <ul class="why-grid" role="list">
+      <li class="why-item"><p><strong>Healthcare-specific.</strong> I've shipped regulated products. I know how to work with clinical advisors and legal teams, not just PMs and engineers.</p></li>
+      <li class="why-item"><p><strong>Outcome-led.</strong> Engagement is my benchmark, for example patient activation rates, clinician adoption and other key metrics. Not screens.</p></li>
+      <li class="why-item"><p><strong>Low coordination overhead.</strong> I define my work and give engineering clear design specifications. You're not project-managing me.</p></li>
+      <li class="why-item"><p><strong>Accessible by default.</strong> Your products likely reach people under stress or older adults. I design for that from the start, not in a last-minute audit.</p></li>
+      <li class="why-item"><p><strong>Senior attention.</strong> You work with me throughout, not someone new to design who gets handed the brief.</p></li>
+      <li class="why-item"><p><strong>Honest, not just agreeable.</strong> I'll tell you if I see issues with a brief, the timeline is too ambitious, or the design isn't addressing the right problem.</p></li>
+    </ul>
+  </section>
+
+
+  <!-- Pricing -->
+  <section class="landing-pricing" aria-labelledby="pricing-heading">
+    <h2 id="pricing-heading">Two ways to work together</h2>
+
+    <div class="pricing-cards">
+
+      <div class="pricing-card">
+        <div class="pricing-card-header">
+          <h3 class="pricing-card-title">Ongoing engagement</h3>
+        </div>
+        <p class="pricing-card-desc">I work in your team 5-days a week for 2-6 months, sometimes more or less depending on what the work needs. I'm in your Slack, your meetings, your design reviews. I'm there to find problems and ship the fixes alongside your team. While I contribute the work and judgement as a senior designer, your team decides what ships.</p>
+        <p><strong>From £500 per day + VAT.</strong> Remote or up to 2 days per week on-site in UK.</p>
+        {% include "partials/button.html",
+        href: "https://cal.com/olibatstone/30min",
+        label: "Book a call"
+        %}
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-card-header">
+          <h3 class="pricing-card-title">Journey diagnosis</h3>
+        </div>
+        <p class="pricing-card-desc">For when you need a focused outside view on one part of your product rather than full embedded support. A journey diagnosis is a review of one flow, whether live, in build, or still at the design stage. You'll know what's stopping engagement and what to do about it. This can be a first step before deeper work together.</p>
+        <p><strong>£2500 + VAT.</strong> Delivered remotely in 5 working days. You'll receive:</p>
+        <ul class="pricing-bullet-list" role="list">
+          <li>Report with annotated screenshots and found issues</li>
+          <li>3-5 prioritised fix recommendations</li>
+          <li>45-minute video call to walk through findings</li>
+        </ul>
+        {% include "partials/button.html",
+        href: "https://cal.com/olibatstone/30min",
+        label: "Book a call"
+        %}
+      </div>
+
     </div>
   </section>
 
@@ -142,15 +169,15 @@ layout: layouts/base.html
   <section class="landing-cta" aria-labelledby="cta-heading">
     <div class="landing-cta-inner">
       <div class="landing-cta-text">
-        <h2 id="cta-heading">Get The Treatment for the traction you need.</h2>
+        <h2 id="cta-heading">Get the traction you need.</h2>
         <div class="landing-cta-buttons">
           {% include "partials/button.html",
           href: "https://cal.com/olibatstone/30min",
-          label: "Start The Treatment"
+          label: "Book a call"
           %}
           {% include "partials/button.html",
           href: "mailto:hi@olibatstone.com",
-          label: "Email a question"
+          label: "Ask a question"
           %}
         </div>
       </div>

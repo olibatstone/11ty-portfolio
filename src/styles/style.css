@@ -89,14 +89,15 @@ body {
 :is(h1, h2, h3) {
   color: var(--header-color);
   font-weight: 400;
-  margin: var(--space-5) 0 var(--space-2) 0;
+  margin: var(--space-5) 0 var(--space-4) 0;
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 5rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1.15;
   font-weight: 700;
   letter-spacing: -0.02em;
+  max-width: 62ch;
 }
 
 h2 {
@@ -207,13 +208,9 @@ img {
   display: inline-block;
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shared-box-shadow);
-  padding: var(--space-1) var(--space-3);
+  padding: var(--space-2) var(--space-3);
   margin: var(--space-3) 0 var(--space-1) 0;
   margin-right: var(--space-3);
-  text-transform: uppercase;
-  font-size: var(--step--1);
-  font-weight: 800;
-  letter-spacing: .08em;
 }
 
 /* Work meta as grid: dt and dd side-by-side */
@@ -789,11 +786,15 @@ button:focus-visible,
 }
 
 .landing-hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: var(--space-3);
 }
 
 .landing-hero h1 {
-  margin: 0 0 var(--space-2) 0;
+  margin: 0 0 var(--space-3) 0;
+  max-width: 13em;
 }
 
 .landing-eyebrow {
@@ -807,8 +808,10 @@ button:focus-visible,
 }
 
 .landing-hero-tagline {
+  font-size: var(--step-1);
+  line-height: 1.6;
+  color: var(--text-color);
   margin-bottom: var(--space-3);
-  color: var(--text-color-2);
 }
 
 .landing-hero-bullets {
@@ -1010,6 +1013,9 @@ button:focus-visible,
 
 .landing-problems,
 .landing-how,
+.landing-why,
+.landing-recommendations,
+.landing-pricing,
 .landing-faq,
 .landing-work {
   margin-bottom: var(--space-7);
@@ -1017,42 +1023,98 @@ button:focus-visible,
 
 .landing-problems h2,
 .landing-how h2,
+.landing-why h2,
+.landing-recommendations h2,
+.landing-pricing h2,
 .landing-faq h2,
 .landing-work h2 {
   margin-top: 0;
   text-align: center;
 }
 
-.problems-layout {
-  display: grid;
-  gap: var(--space-4);
-}
-
-@media (min-width: 700px) {
-  .problems-layout {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.landing-problems h2,
 .landing-how h2 {
   text-align: left;
 }
 
-.problems-list {
+.problems-grid {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  padding-left: var(--space-3);
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--space-3);
 }
 
-.problems-list li {
+@media (min-width: 700px) {
+  .problems-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.problem-item {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.problem-item::before {
+  content: "";
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #f5d5d5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3 3l6 6 M9 3l-6 6' stroke='%23c0392b' stroke-width='1.8' stroke-linecap='round' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.875rem;
+}
+
+.problem-item p {
+  margin: 0;
   line-height: 1.6;
+}
+
+.landing-problems-summary {
+  max-width: 62ch;
+  margin: var(--space-5) auto 0;
+  text-align: center;
 }
 
 /* .wide-grid is now a no-op — body handles max-width */
 .wide-grid { width: 100%; }
+
+/* Unified grid for work + testimonials inside .landing-work */
+.landing-work .wide-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+@media (min-width: 700px) {
+  .landing-work .wide-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .landing-work .wide-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.landing-work .work-cards,
+.landing-work .work-cards li,
+.landing-work .recommendations {
+  display: contents;
+}
+
+.landing-work .recommendation-card {
+  margin-bottom: 0;
+}
 
 /* =====================
    Work cards — stat-first layout
@@ -1245,19 +1307,8 @@ li:nth-child(3) .work-card-gradient {
   padding: var(--space-3);
 }
 
-.why-item-title {
-  font-weight: 700;
-  color: var(--header-color);
-  font-size: var(--step-0);
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin: 0 0 var(--space-1) 0;
-}
-
-.why-item-title::before {
+.why-item::before {
   content: "";
-  display: inline-flex;
   flex-shrink: 0;
   width: 1.5rem;
   height: 1.5rem;
@@ -1297,6 +1348,10 @@ li:nth-child(3) .work-card-gradient {
 .recommendation-card {
   break-inside: avoid;
   margin-bottom: var(--space-3);
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  padding: var(--space-3);
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
@@ -1350,6 +1405,97 @@ li:nth-child(3) .work-card-gradient {
 }
 
 /* About page — full-width recommendations section */
+/* =====================
+   Pricing cards
+   ===================== */
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+@media (max-width: 700px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pricing-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.pricing-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pricing-card-title {
+  font-size: var(--step-1);
+  font-weight: 700;
+  color: var(--header-color);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.pricing-card-desc {
+  margin: 0;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.pricing-card-amount {
+  font-weight: 700;
+  color: var(--header-color);
+  line-height: 1.2;
+}
+
+.pricing-card .button {
+  margin: 0;
+  margin-top: auto;
+  background: var(--accent-color);
+  color: #fff;
+  box-shadow: none;
+  align-self: flex-start;
+}
+
+.pricing-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.pricing-bullet-list li {
+  display: flex;
+  align-items: start;
+  gap: 0.625rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.pricing-bullet-list li::before {
+  content: "";
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 6l3 3 5-5' stroke='%231db154' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-top: 0.4rem;
+}
+
 /* =====================
    FAQ section
    ===================== */
@@ -2089,7 +2235,8 @@ li:nth-child(3) .work-card-gradient {
    ===================== */
 
 @media (max-width: 640px) {
-  .landing-hero {
+  .landing-hero,
+  .landing-hero-text {
     text-align: left;
     align-items: flex-start;
     padding: 0;
@@ -2106,6 +2253,11 @@ li:nth-child(3) .work-card-gradient {
   }
 
   .about-section h2,
+  .landing-problems h2,
+  .landing-how h2,
+  .landing-why h2,
+  .landing-recommendations h2,
+  .landing-pricing h2,
   .landing-faq h2,
   .landing-work h2,
   .landing-work > p,
@@ -2114,12 +2266,19 @@ li:nth-child(3) .work-card-gradient {
     text-align: left;
   }
 
-  .newsletter-signup {
-    align-items: flex-start;
+  .landing-hero,
+  .landing-problems,
+  .landing-how,
+  .landing-why,
+  .landing-recommendations,
+  .landing-pricing,
+  .landing-faq,
+  .landing-work {
+    margin-bottom: var(--space-5);
   }
 
-  .problems-layout {
-    gap: 0;
+  .newsletter-signup {
+    align-items: flex-start;
   }
 
   .button-row,
