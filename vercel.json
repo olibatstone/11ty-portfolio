@@ -1,8 +1,13 @@
 {
   "redirects": [
     {
-      "source": "/li/:slug",
-      "destination": "/?utm_source=linkedin&utm_medium=social&utm_campaign=:slug",
+      "source": "/email",
+      "destination": "/?utm_source=emailsignature&utm_medium=email&utm_campaign=none",
+      "permanent": true
+    },
+    {
+      "source": "/card",
+      "destination": "/?utm_source=businesscard&utm_medium=offline&utm_campaign=none",
       "permanent": true
     }
   ]
